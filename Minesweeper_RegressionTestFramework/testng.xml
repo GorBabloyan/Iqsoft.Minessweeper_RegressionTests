@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Iqsoft API Regression Testing" preserve-order="true">
+    <listeners>
+        <listener class-name="com.utilities.ReportingAllure"/>
+    </listeners>
+
+    <test name="API Regression Testing" preserve-order="true">
+
+<!--        <groups>-->
+<!--            <run>-->
+<!--                <include name="BaseTest"/>-->
+<!--                <include name="setup"/>-->
+<!--                <include name="FrontEnd"/>-->
+<!--                <include name="BackendLoggedOut"/>-->
+<!--                <include name="BackendLoggedIn"/>-->
+<!--                <include name="SocketMessages"/>-->
+<!--            </run>-->
+<!--        </groups>-->
+
+
+        <classes>
+
+
+
+        </classes>
+    </test>
+
+</suite>

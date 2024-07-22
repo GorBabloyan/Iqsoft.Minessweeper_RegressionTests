@@ -1,0 +1,7 @@
+com\testCases\BaseTest.class
+com\utilities\ReadConfig.class
+com\utilities\DriverFactory.class
+com\pageObjects\Iqsoft_001_BasePage.class
+com\utilities\ReportingAllure.class
+com\testCases\Iqsoft_001__Test.class
+com\pageObjects\CraftWorld_0001_Header_1.class

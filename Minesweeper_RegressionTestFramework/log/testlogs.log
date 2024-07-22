@@ -1,0 +1,167 @@
+2024-07-17 17:31:01,548 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<< Test Suite Started  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-17 17:31:01,553 [main] INFO craftBet - 
+2024-07-17 17:33:51,041 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<< Test Suite Started  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-17 17:33:51,046 [main] INFO craftBet - 
+2024-07-17 17:38:08,801 [main] INFO craftBet - All Page elements are initialized
+2024-07-17 17:38:08,802 [main] INFO craftBet - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  Test Suite started 
+2024-07-17 17:38:19,324 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<< Test Suite Started  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-17 17:38:19,329 [main] INFO craftBet - 
+2024-07-17 17:47:00,179 [main] INFO craftBet - All Page elements are initialized
+2024-07-17 17:47:00,179 [main] INFO craftBet - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  Test Suite started 
+2024-07-17 17:47:00,573 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  Test Suite finished  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-17 18:03:29,335 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<< Test Suite Started  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-17 18:03:29,340 [main] INFO craftBet - 
+2024-07-17 18:05:32,634 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<< Test Suite Started  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-17 18:05:32,639 [main] INFO craftBet - 
+2024-07-17 18:06:09,492 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<< Test Suite Started  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-17 18:06:09,498 [main] INFO craftBet - 
+2024-07-17 18:33:00,002 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<< Test Suite Started  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-17 18:33:00,008 [main] INFO craftBet - 
+2024-07-17 18:33:01,812 [main] INFO craftBet - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  Test Suite started 
+2024-07-17 18:33:01,873 [main] INFO craftBet - Browser for test will be firefox as chosen
+2024-07-17 18:33:05,921 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  Test Suite finished  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-17 18:33:29,889 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<< Test Suite Started  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-17 18:33:29,895 [main] INFO craftBet - 
+2024-07-17 18:33:32,510 [main] INFO craftBet - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  Test Suite started 
+2024-07-17 18:33:32,580 [main] INFO craftBet - Browser for test will be firefox as chosen
+2024-07-17 18:33:34,382 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  Test Suite finished  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-17 18:34:06,799 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<< Test Suite Started  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-17 18:34:06,805 [main] INFO craftBet - 
+2024-07-17 18:34:35,366 [main] INFO craftBet - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  Test Suite started 
+2024-07-17 18:34:43,780 [main] INFO craftBet - Browser for test will be firefox as chosen
+2024-07-17 18:34:44,775 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  Test Suite finished  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-17 18:35:14,746 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<< Test Suite Started  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-17 18:35:14,751 [main] INFO craftBet - 
+2024-07-17 18:35:18,491 [main] INFO craftBet - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  Test Suite started 
+2024-07-17 18:35:26,992 [main] INFO craftBet - Browser for test will be firefox as chosen
+2024-07-17 18:35:29,536 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  Test Suite finished  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-17 18:35:57,540 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<< Test Suite Started  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-17 18:35:57,545 [main] INFO craftBet - 
+2024-07-17 18:36:01,851 [main] INFO craftBet - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  Test Suite started 
+2024-07-17 18:36:01,917 [main] INFO craftBet - Browser for test will be chrome as chosen
+2024-07-17 18:36:08,413 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  Test Suite finished  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-17 18:36:25,393 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<< Test Suite Started  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-17 18:36:25,397 [main] INFO craftBet - 
+2024-07-17 18:36:27,424 [main] INFO craftBet - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  Test Suite started 
+2024-07-17 18:36:27,485 [main] INFO craftBet - Browser for test will be edge as chosen
+2024-07-17 18:36:50,821 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  Test Suite finished  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-17 18:37:10,061 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<< Test Suite Started  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-17 18:37:10,066 [main] INFO craftBet - 
+2024-07-17 18:37:12,204 [main] INFO craftBet - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  Test Suite started 
+2024-07-17 18:37:12,265 [main] INFO craftBet - Browser for test will be edge as chosen
+2024-07-17 18:37:17,732 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  Test Suite finished  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-17 19:32:09,861 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<< Test Suite Started  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-17 19:32:09,865 [main] INFO craftBet - 
+2024-07-17 19:32:13,203 [main] INFO craftBet - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  Test Suite started 
+2024-07-17 19:32:13,265 [main] INFO craftBet - Browser for test will be edge as chosen
+2024-07-17 19:32:21,553 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  Test Suite finished  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-17 19:32:43,010 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<< Test Suite Started  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-17 19:32:43,020 [main] INFO craftBet - 
+2024-07-17 19:32:46,961 [main] INFO craftBet - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  Test Suite started 
+2024-07-17 19:32:51,321 [main] INFO craftBet - Browser for test will be edge as chosen
+2024-07-17 19:33:37,840 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  Test Suite finished  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-17 19:36:51,035 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<< Test Suite Started  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-17 19:36:51,040 [main] INFO craftBet - 
+2024-07-17 19:36:53,003 [main] INFO craftBet - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  Test Suite started 
+2024-07-17 19:36:53,090 [main] INFO craftBet - Browser for test will be edge as chosen
+2024-07-17 19:37:19,718 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  Test Suite finished  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-17 19:37:52,901 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<< Test Suite Started  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-17 19:37:52,909 [main] INFO craftBet - 
+2024-07-17 19:37:57,054 [main] INFO craftBet - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  Test Suite started 
+2024-07-17 19:37:57,123 [main] INFO craftBet - Browser for test will be firefox as chosen
+2024-07-17 19:38:20,065 [main] INFO craftBet - Browser close_order has an exception
+2024-07-17 19:38:20,066 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  Test finished 
+2024-07-17 19:38:20,089 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  Test Suite finished  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-17 19:38:46,473 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<< Test Suite Started  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-17 19:38:46,479 [main] INFO craftBet - 
+2024-07-17 19:38:51,692 [main] INFO craftBet - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  Test Suite started 
+2024-07-17 19:38:51,791 [main] INFO craftBet - Browser for test will be chrome as chosen
+2024-07-17 19:38:58,815 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  Test Suite finished  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-17 19:43:51,444 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<< Test Suite Started  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-17 19:43:51,449 [main] INFO craftBet - 
+2024-07-17 19:43:54,021 [main] INFO craftBet - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  Test Suite started 
+2024-07-17 19:43:54,085 [main] INFO craftBet - Browser for test will be chrome as chosen
+2024-07-17 19:44:01,216 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  Test Suite finished  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-17 19:44:54,020 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<< Test Suite Started  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-17 19:44:54,024 [main] INFO craftBet - 
+2024-07-17 19:44:55,900 [main] INFO craftBet - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  Test Suite started 
+2024-07-17 19:44:55,961 [main] INFO craftBet - Browser for test will be chrome as chosen
+2024-07-17 19:44:59,471 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  Test Suite finished  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-17 19:49:30,937 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<< Test Suite Started  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-17 19:49:30,942 [main] INFO craftBet - 
+2024-07-17 19:49:33,567 [main] INFO craftBet - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  Test Suite started 
+2024-07-17 19:49:33,626 [main] INFO craftBet - Browser for test will be chrome as chosen
+2024-07-17 19:49:34,274 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  Test Suite finished  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-17 19:50:26,873 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<< Test Suite Started  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-17 19:50:26,878 [main] INFO craftBet - 
+2024-07-17 19:50:28,902 [main] INFO craftBet - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  Test Suite started 
+2024-07-17 19:50:28,964 [main] INFO craftBet - Browser for test will be chrome as chosen
+2024-07-17 19:50:32,329 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  Test Suite finished  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-17 19:54:56,543 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<< Test Suite Started  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-17 19:54:56,548 [main] INFO craftBet - 
+2024-07-17 19:54:58,741 [main] INFO craftBet - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  Test Suite started 
+2024-07-17 19:54:58,800 [main] INFO craftBet - Browser for test will be chrome as chosen
+2024-07-17 19:55:02,360 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  Test Suite finished  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-17 19:57:34,216 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<< Test Suite Started  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-17 19:57:34,222 [main] INFO craftBet - 
+2024-07-17 19:57:36,968 [main] INFO craftBet - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  Test Suite started 
+2024-07-17 19:57:37,041 [main] INFO craftBet - Browser for test will be chrome as chosen
+2024-07-17 19:57:38,021 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  Test Suite finished  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-17 20:03:28,899 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<< Test Suite Started  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-17 20:03:28,904 [main] INFO craftBet - 
+2024-07-17 20:03:30,738 [main] INFO craftBet - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  Test Suite started 
+2024-07-17 20:03:30,831 [main] INFO craftBet - Browser for test will be chrome as chosen
+2024-07-17 20:03:38,744 [main] INFO craftBet - Browser closed
+2024-07-17 20:03:38,744 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  Test finished 
+2024-07-17 20:03:38,770 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  Test Suite finished  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-17 20:04:02,450 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<< Test Suite Started  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-17 20:04:02,461 [main] INFO craftBet - 
+2024-07-17 20:04:06,374 [main] INFO craftBet - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  Test Suite started 
+2024-07-17 20:04:06,434 [main] INFO craftBet - Browser for test will be edge as chosen
+2024-07-17 20:04:36,430 [main] INFO craftBet - Browser closed
+2024-07-17 20:04:36,431 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  Test finished 
+2024-07-17 20:04:36,445 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  Test Suite finished  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-17 20:05:28,389 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<< Test Suite Started  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-17 20:05:28,394 [main] INFO craftBet - 
+2024-07-17 20:05:31,150 [main] INFO craftBet - Browser for test will be edge as chosen
+2024-07-17 20:05:34,665 [main] INFO craftBet - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  Test Suite started 
+2024-07-17 20:05:35,136 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  Test finished 
+2024-07-17 20:05:41,610 [main] INFO craftBet - Browser closed
+2024-07-17 20:05:41,611 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  Test Suite finished  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-17 20:06:09,758 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<< Test Suite Started  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-17 20:06:09,763 [main] INFO craftBet - 
+2024-07-17 20:06:11,717 [main] INFO craftBet - Browser for test will be edge as chosen
+2024-07-17 20:06:16,656 [main] INFO craftBet - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  Test Suite started 
+2024-07-17 20:06:16,968 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  Test Suite finished  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-17 20:09:14,257 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<< Test Suite Started  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-17 20:09:14,262 [main] INFO craftBet - 
+2024-07-17 20:09:16,327 [main] INFO craftBet - Browser for test will be edge as chosen
+2024-07-17 20:09:21,799 [main] INFO craftBet - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  Test Suite started 
+2024-07-17 20:09:22,493 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  Test Suite finished  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-17 20:12:46,381 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<< Test Suite Started  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-17 20:12:46,396 [main] INFO craftBet - 
+2024-07-17 20:13:27,046 [main] INFO craftBet - Browser for test will be chrome as chosen
+2024-07-17 20:13:42,129 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<< Test Suite Started  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-17 20:13:42,134 [main] INFO craftBet - 
+2024-07-17 20:14:06,837 [main] INFO craftBet - Browser for test will be chrome as chosen
+2024-07-17 20:14:18,834 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<< Test Suite Started  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-17 20:14:18,838 [main] INFO craftBet - 
+2024-07-17 20:14:21,417 [main] INFO craftBet - Browser for test will be chrome as chosen
+2024-07-17 20:14:24,485 [main] INFO craftBet - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  Test Suite started 
+2024-07-17 20:14:24,906 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  Test Suite finished  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-17 20:17:13,977 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<< Test Suite Started  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-17 20:17:13,985 [main] INFO craftBet - 
+2024-07-17 20:17:19,511 [main] INFO craftBet - Browser for test will be chrome as chosen
+2024-07-17 20:17:23,546 [main] INFO craftBet - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  Test Suite started 
+2024-07-17 20:17:26,368 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  Test Suite finished  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-17 20:18:43,599 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<< Test Suite Started  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-17 20:18:43,605 [main] INFO craftBet - 
+2024-07-17 20:18:46,591 [main] INFO craftBet - Browser for test will be chrome as chosen
+2024-07-17 20:18:50,022 [main] INFO craftBet - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  Test Suite started 
+2024-07-17 20:18:52,760 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  Test Suite finished  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-17 20:24:25,277 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<< Test Suite Started  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-17 20:24:25,282 [main] INFO craftBet - 
+2024-07-17 20:24:27,469 [main] INFO craftBet - Browser for test will be chrome as chosen
+2024-07-17 20:24:30,386 [main] INFO craftBet - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  Test Suite started 
+2024-07-17 20:24:40,109 [main] INFO craftBet - Browser closed
+2024-07-17 20:24:40,109 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  Test Suite finished  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
