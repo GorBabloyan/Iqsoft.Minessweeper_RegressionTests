@@ -18,18 +18,6 @@ public class Iqsoft_TestClass_03_PlayGame extends Iqsoft_001_BaseTest{
     }
 
 
-//    @Test(description = "Check Play now buttons functionality")
-//    @Feature("Minesweeper Lobby")
-//    @Story("Check Play now buttons functionality")
-//    @Description("Check Play now buttons functionality")
-//    @Severity(SeverityLevel.BLOCKER)
-//    public void checkPlayNowFunctionality() {
-//        basePage.setElement(iqsoftPage02.getWebElementButtonPlay());
-//        iqsoftPage02.clickOnButtonPlayNow();
-//        Assert.assertFalse(iqsoftPage02.isDisplayedButtonPlayNow(),
-//                "After clicking Play Now button game page didn't opened");
-//    }
-
 
 
 

@@ -36,12 +36,12 @@ public class Iqsoft_Page_02_Lobby extends Iqsoft_001_BasePage{
         }
     }
 
-    public boolean isDisplayedButtonPlayNow() {
+    public boolean isDVisibleButtonPlayNow() {
         try {
-            return  buttonPlayNow.isDisplayed();
+            return iqsoft001BasePage.waitElementToBeVisibleBoolean(buttonDefaultOption);
 
         } catch (Exception e) {
-            logger.error("isDisplayedButtonPlayNow() method has an Exception: " + e);
+            logger.error("isDVisibleButtonPlayNow() method has an Exception: " + e);
         }
         return false;
     }
@@ -60,12 +60,12 @@ public class Iqsoft_Page_02_Lobby extends Iqsoft_001_BasePage{
         }
     }
 
-    public boolean isDisplayedButtonDefaultOption() {
+    public boolean isVisibleButtonDefaultOption() {
         try {
-            return  buttonDefaultOption.isDisplayed();
+            return waitElementToBeVisibleBoolean(buttonDefaultOption);
 
         } catch (Exception e) {
-            logger.error("isDisplayedButtonDefaultOption() method has an Exception: " + e);
+            logger.error("isVisibleButtonDefaultOption() method has an Exception: " + e);
         }
         return false;
     }
@@ -85,12 +85,12 @@ public class Iqsoft_Page_02_Lobby extends Iqsoft_001_BasePage{
         }
     }
 
-    public boolean isDisplayedButtonCustomOption() {
+    public boolean isVisibleButtonCustomOption() {
         try {
-            return  buttonCustomOption.isDisplayed();
+            return  waitElementToBeVisibleBoolean(buttonCustomOption);
 
         } catch (Exception e) {
-            logger.error("isDisplayedButtonCustomOption() method has an Exception: " + e);
+            logger.error("isVisibleButtonCustomOption() method has an Exception: " + e);
         }
         return false;
     }

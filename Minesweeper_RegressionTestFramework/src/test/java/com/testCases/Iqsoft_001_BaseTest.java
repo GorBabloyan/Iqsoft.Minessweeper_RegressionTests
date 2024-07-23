@@ -121,6 +121,15 @@ public class Iqsoft_001_BaseTest extends DriverFactory {
     }
 
 
+
+
+
+
+
+
+
+
+
     public void loginRequest() {
         HttpResponse<String> response;
         int statusCode;
@@ -194,6 +203,7 @@ public class Iqsoft_001_BaseTest extends DriverFactory {
 
         }
     }
+
 
     public void initElements() {
         try {

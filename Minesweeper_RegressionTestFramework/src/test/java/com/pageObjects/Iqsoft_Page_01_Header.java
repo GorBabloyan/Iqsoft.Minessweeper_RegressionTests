@@ -24,7 +24,7 @@ public class Iqsoft_Page_01_Header extends Iqsoft_001_BasePage{
 
     public void clickOnHeader() {
         try {
-            iqsoft001BasePage.elementIsDisplayed(header);
+            iqsoft001BasePage.waitElementToBeVisible(header);
             iqsoft001BasePage.clickOnElementIfClickable(header);
 
         } catch (Exception e) {
@@ -169,7 +169,7 @@ public class Iqsoft_Page_01_Header extends Iqsoft_001_BasePage{
     public boolean isVisibleInfoIcon() {
         boolean isVisible = false;
         try {
-            isVisible = iqsoft001BasePage.elementIsDisplayed(iconInfo);
+            isVisible = iqsoft001BasePage.waitElementToBeVisibleBoolean(iconInfo);
 
         } catch (Exception e) {
             logger.error("isVisibleInfoIcon() method has an Exception: " + e);
@@ -179,7 +179,7 @@ public class Iqsoft_Page_01_Header extends Iqsoft_001_BasePage{
 
     public void clickOnInfoIcon() {
         try {
-            iqsoft001BasePage.elementIsDisplayed(iconInfo);
+            iqsoft001BasePage.waitElementToBeVisibleBoolean(iconInfo);
             iqsoft001BasePage.clickOnElementIfClickable(iconInfo);
 
         } catch (Exception e) {
@@ -195,7 +195,7 @@ public class Iqsoft_Page_01_Header extends Iqsoft_001_BasePage{
     public boolean isVisibleMuteIcon() {
         boolean isVisible = false;
         try {
-            isVisible = iqsoft001BasePage.elementIsDisplayed(iconMute);
+            isVisible = iqsoft001BasePage.waitElementToBeVisibleBoolean(iconMute);
 
         } catch (Exception e) {
             logger.error("isVisibleMuteIcon() method has an Exception: " + e);
@@ -205,7 +205,7 @@ public class Iqsoft_Page_01_Header extends Iqsoft_001_BasePage{
 
     public void clickOnMuteIcon() {
         try {
-            iqsoft001BasePage.elementIsDisplayed(iconInfo);
+            iqsoft001BasePage.waitElementToBeVisibleBoolean(iconInfo);
             iqsoft001BasePage.clickOnElementIfClickable(iconMute);
 
         } catch (Exception e) {
