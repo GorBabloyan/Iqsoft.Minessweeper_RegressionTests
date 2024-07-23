@@ -7,21 +7,10 @@
 
     <test name="API Regression Testing" preserve-order="true">
 
-<!--        <groups>-->
-<!--            <run>-->
-<!--                <include name="BaseTest"/>-->
-<!--                <include name="setup"/>-->
-<!--                <include name="FrontEnd"/>-->
-<!--                <include name="BackendLoggedOut"/>-->
-<!--                <include name="BackendLoggedIn"/>-->
-<!--                <include name="SocketMessages"/>-->
-<!--            </run>-->
-<!--        </groups>-->
-
-
         <classes>
 
-
+            <class name="com.testCases.Iqsoft_TestClass_01_Header"/>
+            <class name="com.testCases.Iqsoft_TestClass_02_Lobby"/>
 
         </classes>
     </test>

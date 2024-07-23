@@ -30,6 +30,14 @@ public class DriverFactory {
                 if (isHeadless.equals("true")){
                     cOptions.addArguments("--headless", "--window-size=1920,1080");
 //                    cOptions.setHeadless(true);
+                    cOptions.setAcceptInsecureCerts(true);
+
+                    cOptions.addArguments("--disable-web-security");
+                    cOptions.addArguments("--ignore-certificate-errors");
+                    cOptions.addArguments("--allow-running-insecure-content");
+                    cOptions.addArguments("--no-sandbox");
+                    cOptions.addArguments("--disable-dev-shm-usage");
+                    cOptions.addArguments("--remote-allow-origins=*");
                     driver= new ChromeDriver(cOptions);
                 }
                 else{
@@ -40,6 +48,7 @@ public class DriverFactory {
                     cOptions.addArguments("--allow-running-insecure-content");
                     cOptions.addArguments("--no-sandbox");
                     cOptions.addArguments("--disable-dev-shm-usage");
+                    cOptions.addArguments("--remote-allow-origins=*");
 
                     driver = new ChromeDriver(cOptions);
                 }
@@ -51,10 +60,26 @@ public class DriverFactory {
                 if (isHeadless.equals("true")){
                     fOptions=new FirefoxOptions();
                     fOptions.addArguments("--headless", "--window-size=1920,1080");
+                    fOptions.setAcceptInsecureCerts(true);
+
+                    fOptions.addArguments("--disable-web-security");
+                    fOptions.addArguments("--ignore-certificate-errors");
+                    fOptions.addArguments("--allow-running-insecure-content");
+                    fOptions.addArguments("--no-sandbox");
+                    fOptions.addArguments("--disable-dev-shm-usage");
+                    fOptions.addArguments("--remote-allow-origins=*");
 //                    fOptions.setHeadless(true);
                     driver= new FirefoxDriver(fOptions);
                 }
                 else{
+                    fOptions.setAcceptInsecureCerts(true);
+
+                    fOptions.addArguments("--disable-web-security");
+                    fOptions.addArguments("--ignore-certificate-errors");
+                    fOptions.addArguments("--allow-running-insecure-content");
+                    fOptions.addArguments("--no-sandbox");
+                    fOptions.addArguments("--disable-dev-shm-usage");
+                    fOptions.addArguments("--remote-allow-origins=*");
                     driver = new FirefoxDriver();
                 }
                 break;
@@ -67,6 +92,13 @@ public class DriverFactory {
                 if (isHeadless.equals("true")){
                     eOptions.addArguments("--headless", "--window-size=1920,1080");
                     eOptions.setAcceptInsecureCerts(true);
+
+                    eOptions.addArguments("--disable-web-security");
+                    eOptions.addArguments("--ignore-certificate-errors");
+                    eOptions.addArguments("--allow-running-insecure-content");
+                    eOptions.addArguments("--no-sandbox");
+                    eOptions.addArguments("--disable-dev-shm-usage");
+                    eOptions.addArguments("--remote-allow-origins=*");
 //                    eOptions.setHeadless(true);
                     driver= new EdgeDriver(eOptions);
                 }
@@ -77,6 +109,7 @@ public class DriverFactory {
                     eOptions.addArguments("--allow-running-insecure-content");
                     eOptions.addArguments("--no-sandbox");
                     eOptions.addArguments("--disable-dev-shm-usage");
+                    eOptions.addArguments("--remote-allow-origins=*");
                     driver = new EdgeDriver(eOptions);
                 }
                 break;
@@ -93,6 +126,7 @@ public class DriverFactory {
                     cOptions.addArguments("--allow-running-insecure-content");
                     cOptions.addArguments("--no-sandbox");
                     cOptions.addArguments("--disable-dev-shm-usage");
+                    cOptions.addArguments("--remote-allow-origins=*");
 //                    cOptions.setHeadless(true);
                     driver= new ChromeDriver(cOptions);
                 }

@@ -165,3 +165,359 @@
 2024-07-17 20:24:30,386 [main] INFO craftBet - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  Test Suite started 
 2024-07-17 20:24:40,109 [main] INFO craftBet - Browser closed
 2024-07-17 20:24:40,109 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  Test Suite finished  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-23 10:28:49,109 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<< Test Suite Started  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-23 10:28:49,115 [main] INFO craftBet - 
+2024-07-23 10:28:52,189 [main] INFO craftBet - Browser for test will be chrome as chosen
+2024-07-23 10:28:57,398 [main] INFO craftBet - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  Test Suite started 
+2024-07-23 10:28:59,208 [main] ERROR craftBet - getBalance() method has an Exception: java.lang.NumberFormatException: For input string: "Now
+5EUR"
+2024-07-23 10:28:59,707 [main] ERROR craftBet - isVisibleUserID() method has an Exception: java.lang.NumberFormatException: For input string: "Play Now
+5EUR"
+2024-07-23 10:29:02,566 [main] INFO craftBet - Browser closed
+2024-07-23 10:29:02,567 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  Test Suite finished  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-23 10:33:24,118 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<< Test Suite Started  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-23 10:33:24,123 [main] INFO craftBet - 
+2024-07-23 10:33:26,385 [main] INFO craftBet - Browser for test will be chrome as chosen
+2024-07-23 10:33:29,732 [main] INFO craftBet - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  Test Suite started 
+2024-07-23 10:33:32,287 [main] ERROR craftBet - getBalance() method has an Exception: java.lang.NumberFormatException: For input string: "Now
+5EUR"
+2024-07-23 10:33:32,294 [main] INFO craftBet - checkBalanceVisibility test is succeed.
+2024-07-23 10:33:32,537 [main] INFO craftBet - checkLogoVisibility test is succeed.
+2024-07-23 10:33:32,628 [main] INFO craftBet - checkTextBalanceVisibility test is failed.
+2024-07-23 10:33:32,628 [main] ERROR craftBet - Screenshot captured for test case:checkTextBalanceVisibility
+2024-07-23 10:33:33,116 [main] INFO craftBet - checkTextUserIdVisibility test is failed.
+2024-07-23 10:33:33,116 [main] ERROR craftBet - Screenshot captured for test case:checkTextUserIdVisibility
+2024-07-23 10:33:33,452 [main] INFO craftBet - checkTitleVisibility test is succeed.
+2024-07-23 10:33:33,495 [main] ERROR craftBet - isVisibleUserID() method has an Exception: java.lang.NumberFormatException: For input string: "Play Now
+5EUR"
+2024-07-23 10:33:33,524 [main] ERROR craftBet - isVisibleUserID() method has an Exception: java.lang.NumberFormatException: For input string: "Play Now
+5EUR"
+2024-07-23 10:33:33,525 [main] INFO craftBet - checkUserIdVisibility test is failed.
+2024-07-23 10:33:33,525 [main] ERROR craftBet - Screenshot captured for test case:checkUserIdVisibility
+2024-07-23 10:33:36,330 [main] INFO craftBet - Browser closed
+2024-07-23 10:33:36,330 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  Test Suite finished  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-23 11:57:25,089 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<< Test Suite Started  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-23 11:57:25,095 [main] INFO craftBet - 
+2024-07-23 11:57:27,332 [main] INFO craftBet - Browser for test will be chrome as chosen
+2024-07-23 11:57:31,249 [main] INFO craftBet - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  Test Suite started 
+2024-07-23 11:57:33,871 [main] INFO craftBet - checkBalanceVisibility test is succeed.
+2024-07-23 11:57:34,344 [main] ERROR craftBet - checkLogoImgLink() method has an Exception: java.net.MalformedURLException: Cannot invoke "String.length()" because "spec" is null
+2024-07-23 11:57:34,350 [main] INFO craftBet - checkLogoVisibility test is failed.
+2024-07-23 11:57:34,350 [main] ERROR craftBet - Screenshot captured for test case:checkLogoVisibility
+2024-07-23 11:57:35,002 [main] INFO craftBet - checkTextBalanceVisibility test is succeed.
+2024-07-23 11:57:35,482 [main] INFO craftBet - checkTextUserIdVisibility test is succeed.
+2024-07-23 11:57:35,643 [main] INFO craftBet - checkTitleVisibility test is failed.
+2024-07-23 11:57:35,644 [main] ERROR craftBet - Screenshot captured for test case:checkTitleVisibility
+2024-07-23 11:57:36,166 [main] INFO craftBet - checkUserIdVisibility test is succeed.
+2024-07-23 11:57:40,060 [main] INFO craftBet - Browser closed
+2024-07-23 11:57:40,060 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  Test Suite finished  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-23 11:58:59,608 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<< Test Suite Started  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-23 11:58:59,613 [main] INFO craftBet - 
+2024-07-23 11:59:03,073 [main] INFO craftBet - Browser for test will be chrome as chosen
+2024-07-23 11:59:06,860 [main] INFO craftBet - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  Test Suite started 
+2024-07-23 11:59:10,519 [main] INFO craftBet - checkBalanceVisibility test is succeed.
+2024-07-23 11:59:11,002 [main] ERROR craftBet - checkLogoImgLink() method has an Exception: java.net.MalformedURLException: Cannot invoke "String.length()" because "spec" is null
+2024-07-23 11:59:11,010 [main] INFO craftBet - checkLogoVisibility test is failed.
+2024-07-23 11:59:11,010 [main] ERROR craftBet - Screenshot captured for test case:checkLogoVisibility
+2024-07-23 11:59:52,973 [main] INFO craftBet - checkTextBalanceVisibility test is succeed.
+2024-07-23 11:59:53,059 [main] INFO craftBet - checkTextUserIdVisibility test is succeed.
+2024-07-23 11:59:53,101 [main] INFO craftBet - checkTitleVisibility test is failed.
+2024-07-23 11:59:53,101 [main] ERROR craftBet - Screenshot captured for test case:checkTitleVisibility
+2024-07-23 11:59:54,575 [main] INFO craftBet - checkUserIdVisibility test is succeed.
+2024-07-23 11:59:56,592 [main] INFO craftBet - Browser closed
+2024-07-23 11:59:56,593 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  Test Suite finished  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-23 12:01:17,882 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<< Test Suite Started  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-23 12:01:17,887 [main] INFO craftBet - 
+2024-07-23 12:01:22,396 [main] INFO craftBet - Browser for test will be chrome as chosen
+2024-07-23 12:01:30,776 [main] INFO craftBet - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  Test Suite started 
+2024-07-23 12:04:14,765 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<< Test Suite Started  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-23 12:04:14,770 [main] INFO craftBet - 
+2024-07-23 12:04:19,903 [main] INFO craftBet - Browser for test will be chrome as chosen
+2024-07-23 12:04:26,412 [main] INFO craftBet - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  Test Suite started 
+2024-07-23 12:04:48,390 [main] INFO craftBet - Browser closed
+2024-07-23 12:04:48,390 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  Test Suite finished  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-23 12:17:30,098 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<< Test Suite Started  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-23 12:17:30,108 [main] INFO craftBet - 
+2024-07-23 12:17:32,634 [main] INFO craftBet - Browser for test will be chrome as chosen
+2024-07-23 12:17:39,540 [main] INFO craftBet - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  Test Suite started 
+2024-07-23 12:17:51,720 [main] INFO craftBet - Browser closed
+2024-07-23 12:17:51,720 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  Test Suite finished  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-23 12:18:46,813 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<< Test Suite Started  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-23 12:18:46,819 [main] INFO craftBet - 
+2024-07-23 12:18:51,855 [main] INFO craftBet - Browser for test will be chrome as chosen
+2024-07-23 12:19:05,337 [main] INFO craftBet - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  Test Suite started 
+2024-07-23 12:19:20,960 [main] INFO craftBet - Browser closed
+2024-07-23 12:19:20,960 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  Test Suite finished  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-23 12:23:27,904 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<< Test Suite Started  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-23 12:23:27,909 [main] INFO craftBet - 
+2024-07-23 12:23:30,496 [main] INFO craftBet - Browser for test will be chrome as chosen
+2024-07-23 12:23:51,276 [main] INFO craftBet - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  Test Suite started 
+2024-07-23 12:24:06,162 [main] INFO craftBet - Browser closed
+2024-07-23 12:24:06,162 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  Test Suite finished  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-23 12:35:20,774 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<< Test Suite Started  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-23 12:35:20,781 [main] INFO craftBet - 
+2024-07-23 12:35:23,121 [main] INFO craftBet - Browser for test will be chrome as chosen
+2024-07-23 12:35:26,204 [main] INFO craftBet - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  Test Suite started 
+2024-07-23 12:35:28,776 [main] INFO craftBet - Browser closed
+2024-07-23 12:35:28,776 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  Test Suite finished  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-23 12:35:58,694 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<< Test Suite Started  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-23 12:35:58,699 [main] INFO craftBet - 
+2024-07-23 12:36:00,563 [main] INFO craftBet - Browser for test will be chrome as chosen
+2024-07-23 12:36:03,226 [main] INFO craftBet - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  Test Suite started 
+2024-07-23 12:36:06,054 [main] INFO craftBet - Browser closed
+2024-07-23 12:36:06,054 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  Test Suite finished  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-23 12:36:35,669 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<< Test Suite Started  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-23 12:36:35,675 [main] INFO craftBet - 
+2024-07-23 12:36:37,916 [main] INFO craftBet - Browser for test will be chrome as chosen
+2024-07-23 12:36:40,845 [main] INFO craftBet - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  Test Suite started 
+2024-07-23 12:36:45,163 [main] INFO craftBet - Browser closed
+2024-07-23 12:36:45,164 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  Test Suite finished  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-23 12:38:02,936 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<< Test Suite Started  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-23 12:38:02,944 [main] INFO craftBet - 
+2024-07-23 12:38:05,380 [main] INFO craftBet - Browser for test will be chrome as chosen
+2024-07-23 12:38:07,846 [main] INFO craftBet - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  Test Suite started 
+2024-07-23 12:38:09,739 [main] INFO craftBet - checkBalanceVisibility test is succeed.
+2024-07-23 12:38:09,953 [main] ERROR craftBet - checkLogoImgLink() method has an Exception: java.net.MalformedURLException: Cannot invoke "String.length()" because "spec" is null
+2024-07-23 12:38:09,960 [main] INFO craftBet - checkLogoVisibility test is failed.
+2024-07-23 12:38:09,960 [main] ERROR craftBet - Screenshot captured for test case:checkLogoVisibility
+2024-07-23 12:38:11,153 [main] INFO craftBet - checkTextBalanceVisibility test is succeed.
+2024-07-23 12:38:11,235 [main] INFO craftBet - checkTextUserIdVisibility test is succeed.
+2024-07-23 12:38:11,277 [main] INFO craftBet - checkTitleVisibility test is failed.
+2024-07-23 12:38:11,278 [main] ERROR craftBet - Screenshot captured for test case:checkTitleVisibility
+2024-07-23 12:38:12,138 [main] INFO craftBet - checkUserIdVisibility test is succeed.
+2024-07-23 12:38:13,980 [main] INFO craftBet - Browser closed
+2024-07-23 12:38:13,980 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  Test Suite finished  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-23 13:05:18,791 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<< Test Suite Started  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-23 13:05:18,797 [main] INFO craftBet - 
+2024-07-23 13:05:20,994 [main] INFO craftBet - Browser for test will be chrome as chosen
+2024-07-23 13:05:24,481 [main] INFO craftBet - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  Test Suite started 
+2024-07-23 13:05:26,556 [main] INFO craftBet - checkBalanceVisibility test is succeed.
+2024-07-23 13:05:26,771 [main] ERROR craftBet - checkLogoImgLink() method has an Exception: java.net.MalformedURLException: Cannot invoke "String.length()" because "spec" is null
+2024-07-23 13:05:26,777 [main] INFO craftBet - checkLogoVisibility test is failed.
+2024-07-23 13:05:26,780 [main] ERROR craftBet - Screenshot captured for test case:checkLogoVisibility
+2024-07-23 13:05:27,722 [main] INFO craftBet - checkTextBalanceVisibility test is succeed.
+2024-07-23 13:05:27,802 [main] INFO craftBet - checkTextUserIdVisibility test is succeed.
+2024-07-23 13:05:27,848 [main] INFO craftBet - checkTitleVisibility test is succeed.
+2024-07-23 13:05:27,921 [main] INFO craftBet - checkUserIdVisibility test is succeed.
+2024-07-23 13:05:27,928 [main] INFO craftBet - checkPlayNowFunctionality test is failed.
+2024-07-23 13:05:27,928 [main] ERROR craftBet - Screenshot captured for test case:checkPlayNowFunctionality
+2024-07-23 13:05:29,131 [main] INFO craftBet - Browser closed
+2024-07-23 13:05:29,131 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  Test Suite finished  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-23 13:06:00,364 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<< Test Suite Started  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-23 13:06:00,370 [main] INFO craftBet - 
+2024-07-23 13:06:02,665 [main] INFO craftBet - Browser for test will be chrome as chosen
+2024-07-23 13:06:05,370 [main] INFO craftBet - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  Test Suite started 
+2024-07-23 13:06:10,536 [main] INFO craftBet - Browser closed
+2024-07-23 13:06:10,537 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  Test Suite finished  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-23 13:32:47,064 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<< Test Suite Started  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-23 13:32:47,070 [main] INFO craftBet - 
+2024-07-23 13:32:49,546 [main] INFO craftBet - Browser for test will be chrome as chosen
+2024-07-23 13:32:53,147 [main] INFO craftBet - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  Test Suite started 
+2024-07-23 13:32:54,911 [main] INFO craftBet - checkBalanceVisibility test is succeed.
+2024-07-23 13:32:55,378 [main] ERROR craftBet - checkLogoImgLink() method has an Exception: java.net.MalformedURLException: Cannot invoke "String.length()" because "spec" is null
+2024-07-23 13:32:55,385 [main] INFO craftBet - checkLogoVisibility test is failed.
+2024-07-23 13:32:55,385 [main] ERROR craftBet - Screenshot captured for test case:checkLogoVisibility
+2024-07-23 13:32:56,557 [main] INFO craftBet - checkTextBalanceVisibility test is succeed.
+2024-07-23 13:32:56,654 [main] INFO craftBet - checkTextUserIdVisibility test is succeed.
+2024-07-23 13:32:56,718 [main] INFO craftBet - checkTitleVisibility test is succeed.
+2024-07-23 13:32:56,872 [main] INFO craftBet - checkUserIdVisibility test is succeed.
+2024-07-23 13:32:56,911 [main] INFO craftBet - checkPlayNowFunctionality test is failed.
+2024-07-23 13:32:56,911 [main] ERROR craftBet - Screenshot captured for test case:checkPlayNowFunctionality
+2024-07-23 13:32:59,383 [main] INFO craftBet - Browser closed
+2024-07-23 13:32:59,384 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  Test Suite finished  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-23 13:34:07,882 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<< Test Suite Started  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-23 13:34:07,886 [main] INFO craftBet - 
+2024-07-23 13:34:10,196 [main] INFO craftBet - Browser for test will be chrome as chosen
+2024-07-23 13:34:14,628 [main] INFO craftBet - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  Test Suite started 
+2024-07-23 13:34:16,644 [main] INFO craftBet - checkBalanceVisibility test is succeed.
+2024-07-23 13:34:17,066 [main] ERROR craftBet - checkLogoImgLink() method has an Exception: java.net.MalformedURLException: Cannot invoke "String.length()" because "spec" is null
+2024-07-23 13:34:17,072 [main] INFO craftBet - checkLogoVisibility test is failed.
+2024-07-23 13:34:17,073 [main] ERROR craftBet - Screenshot captured for test case:checkLogoVisibility
+2024-07-23 13:34:17,889 [main] INFO craftBet - checkTextBalanceVisibility test is succeed.
+2024-07-23 13:34:17,974 [main] INFO craftBet - checkTextUserIdVisibility test is succeed.
+2024-07-23 13:34:18,028 [main] INFO craftBet - checkTitleVisibility test is succeed.
+2024-07-23 13:34:18,108 [main] INFO craftBet - checkUserIdVisibility test is succeed.
+2024-07-23 13:34:18,201 [main] INFO craftBet - checkPlayNowFunctionality test is failed.
+2024-07-23 13:34:18,201 [main] ERROR craftBet - Screenshot captured for test case:checkPlayNowFunctionality
+2024-07-23 13:34:22,106 [main] INFO craftBet - Browser closed
+2024-07-23 13:34:22,106 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  Test Suite finished  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-23 13:37:19,064 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<< Test Suite Started  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-23 13:37:19,069 [main] INFO craftBet - 
+2024-07-23 13:37:22,828 [main] INFO craftBet - Browser for test will be chrome as chosen
+2024-07-23 13:37:29,595 [main] INFO craftBet - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  Test Suite started 
+2024-07-23 13:37:30,111 [main] INFO craftBet - checkBalanceVisibility test is succeed.
+2024-07-23 13:37:30,603 [main] ERROR craftBet - checkLogoImgLink() method has an Exception: java.net.MalformedURLException: Cannot invoke "String.length()" because "spec" is null
+2024-07-23 13:37:30,610 [main] INFO craftBet - checkLogoVisibility test is failed.
+2024-07-23 13:37:30,610 [main] ERROR craftBet - Screenshot captured for test case:checkLogoVisibility
+2024-07-23 13:37:31,630 [main] INFO craftBet - checkTextBalanceVisibility test is succeed.
+2024-07-23 13:37:31,733 [main] INFO craftBet - checkTextUserIdVisibility test is succeed.
+2024-07-23 13:37:31,794 [main] INFO craftBet - checkTitleVisibility test is succeed.
+2024-07-23 13:37:31,885 [main] INFO craftBet - checkUserIdVisibility test is succeed.
+2024-07-23 13:37:32,200 [main] INFO craftBet - checkPlayNowFunctionality test is failed.
+2024-07-23 13:37:32,200 [main] ERROR craftBet - Screenshot captured for test case:checkPlayNowFunctionality
+2024-07-23 13:37:33,035 [main] INFO craftBet - checkPlayNowFunctionality test is failed.
+2024-07-23 13:37:33,035 [main] ERROR craftBet - Screenshot captured for test case:checkPlayNowFunctionality
+2024-07-23 13:38:38,743 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<< Test Suite Started  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-23 13:38:38,747 [main] INFO craftBet - 
+2024-07-23 13:38:41,423 [main] INFO craftBet - Browser for test will be chrome as chosen
+2024-07-23 13:38:46,747 [main] INFO craftBet - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  Test Suite started 
+2024-07-23 13:38:48,776 [main] INFO craftBet - checkBalanceVisibility test is succeed.
+2024-07-23 13:38:49,077 [main] ERROR craftBet - checkLogoImgLink() method has an Exception: java.net.MalformedURLException: Cannot invoke "String.length()" because "spec" is null
+2024-07-23 13:38:49,083 [main] INFO craftBet - checkLogoVisibility test is failed.
+2024-07-23 13:38:49,084 [main] ERROR craftBet - Screenshot captured for test case:checkLogoVisibility
+2024-07-23 13:38:50,140 [main] INFO craftBet - checkTextBalanceVisibility test is succeed.
+2024-07-23 13:38:50,221 [main] INFO craftBet - checkTextUserIdVisibility test is succeed.
+2024-07-23 13:38:50,271 [main] INFO craftBet - checkTitleVisibility test is succeed.
+2024-07-23 13:38:50,353 [main] INFO craftBet - checkUserIdVisibility test is succeed.
+2024-07-23 13:38:50,513 [main] INFO craftBet - checkPlayNowFunctionality test is failed.
+2024-07-23 13:38:50,513 [main] ERROR craftBet - Screenshot captured for test case:checkPlayNowFunctionality
+2024-07-23 13:38:51,331 [main] INFO craftBet - checkPlayNowFunctionality test is failed.
+2024-07-23 13:38:51,332 [main] ERROR craftBet - Screenshot captured for test case:checkPlayNowFunctionality
+2024-07-23 13:52:12,969 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<< Test Suite Started  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-23 13:52:12,976 [main] INFO craftBet - 
+2024-07-23 13:52:15,944 [main] INFO craftBet - Browser for test will be chrome as chosen
+2024-07-23 13:52:23,462 [main] INFO craftBet - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  Test Suite started 
+2024-07-23 13:52:26,561 [main] INFO craftBet - checkBalanceVisibility test is succeed.
+2024-07-23 13:52:26,861 [main] ERROR craftBet - checkLogoImgLink() method has an Exception: java.net.MalformedURLException: Cannot invoke "String.length()" because "spec" is null
+2024-07-23 13:52:26,870 [main] INFO craftBet - checkLogoVisibility test is failed.
+2024-07-23 13:52:38,370 [main] ERROR craftBet - Screenshot captured for test case:checkLogoVisibility
+2024-07-23 13:52:40,570 [main] INFO craftBet - checkTextBalanceVisibility test is succeed.
+2024-07-23 13:52:40,660 [main] INFO craftBet - checkTextUserIdVisibility test is succeed.
+2024-07-23 13:52:40,717 [main] INFO craftBet - checkTitleVisibility test is succeed.
+2024-07-23 13:52:40,807 [main] INFO craftBet - checkUserIdVisibility test is succeed.
+2024-07-23 13:52:51,682 [main] ERROR craftBet - isDisplayedButtonCashout() method has an Exception: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@class='btn_play']"}
+  (Session info: chrome=126.0.6478.183)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5503af2b36fbea76cc54a7859dc812b7, findElement {using=xpath, value=//button[@class='btn_play']}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 126.0.6478.183, chrome: {chromedriverVersion: 126.0.6478.182 (5b5d8292ddf..., userDataDir: C:\Users\NERSES~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53139}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53139/devtoo..., se:cdpVersion: 126.0.6478.183, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5503af2b36fbea76cc54a7859dc812b7
+2024-07-23 13:52:51,682 [main] INFO craftBet - checkPlayNowFunctionality test is succeed.
+2024-07-23 13:52:52,162 [main] INFO craftBet - Browser closed
+2024-07-23 13:52:52,162 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  Test Suite finished  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-23 13:54:44,703 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<< Test Suite Started  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-23 13:54:44,718 [main] INFO craftBet - 
+2024-07-23 13:54:48,143 [main] INFO craftBet - Browser for test will be chrome as chosen
+2024-07-23 13:54:54,979 [main] INFO craftBet - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  Test Suite started 
+2024-07-23 13:54:55,645 [main] INFO craftBet - checkBalanceVisibility test is succeed.
+2024-07-23 13:56:59,884 [main] ERROR craftBet - checkLogoImgLink() method has an Exception: java.net.MalformedURLException: Cannot invoke "String.length()" because "spec" is null
+2024-07-23 13:56:59,891 [main] INFO craftBet - checkLogoVisibility test is failed.
+2024-07-23 13:56:59,892 [main] ERROR craftBet - Screenshot captured for test case:checkLogoVisibility
+2024-07-23 13:57:22,404 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<< Test Suite Started  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-23 13:57:22,409 [main] INFO craftBet - 
+2024-07-23 13:57:27,733 [main] INFO craftBet - Browser for test will be chrome as chosen
+2024-07-23 13:57:33,623 [main] INFO craftBet - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  Test Suite started 
+2024-07-23 13:57:34,083 [main] INFO craftBet - checkBalanceVisibility test is succeed.
+2024-07-23 13:57:34,597 [main] INFO craftBet - checkLogoVisibility test is succeed.
+2024-07-23 13:57:34,763 [main] INFO craftBet - checkTextBalanceVisibility test is succeed.
+2024-07-23 13:57:34,868 [main] INFO craftBet - checkTextUserIdVisibility test is succeed.
+2024-07-23 13:57:34,929 [main] INFO craftBet - checkTitleVisibility test is succeed.
+2024-07-23 13:57:35,015 [main] INFO craftBet - checkUserIdVisibility test is succeed.
+2024-07-23 13:57:35,206 [main] INFO craftBet - checkPlayNowFunctionality test is succeed.
+2024-07-23 13:57:39,732 [main] INFO craftBet - Browser closed
+2024-07-23 13:57:39,732 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  Test Suite finished  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-23 13:58:50,700 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<< Test Suite Started  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-23 13:58:50,704 [main] INFO craftBet - 
+2024-07-23 13:58:54,412 [main] INFO craftBet - Browser for test will be chrome as chosen
+2024-07-23 13:59:03,885 [main] INFO craftBet - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  Test Suite started 
+2024-07-23 13:59:04,267 [main] INFO craftBet - checkBalanceVisibility test is succeed.
+2024-07-23 13:59:04,680 [main] INFO craftBet - checkLogoVisibility test is succeed.
+2024-07-23 13:59:04,981 [main] INFO craftBet - checkTextBalanceVisibility test is succeed.
+2024-07-23 13:59:05,150 [main] INFO craftBet - checkTextUserIdVisibility test is succeed.
+2024-07-23 13:59:05,240 [main] INFO craftBet - checkTitleVisibility test is succeed.
+2024-07-23 13:59:05,624 [main] INFO craftBet - checkUserIdVisibility test is succeed.
+2024-07-23 13:59:15,788 [main] ERROR craftBet - clickOnButtonPlay() method has an Exception: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //button[@class='btn_play']//img//div' (tried for 5 second(s) with 500 milliseconds interval)
+2024-07-23 13:59:15,861 [main] INFO craftBet - checkPlayNowFunctionality test is succeed.
+2024-07-23 13:59:20,978 [main] INFO craftBet - Browser closed
+2024-07-23 13:59:20,978 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  Test Suite finished  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-23 14:00:47,795 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<< Test Suite Started  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-23 14:00:47,801 [main] INFO craftBet - 
+2024-07-23 14:00:50,181 [main] INFO craftBet - Browser for test will be chrome as chosen
+2024-07-23 14:01:01,688 [main] INFO craftBet - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  Test Suite started 
+2024-07-23 14:01:10,069 [main] INFO craftBet - checkBalanceVisibility test is succeed.
+2024-07-23 14:01:12,825 [main] INFO craftBet - checkLogoVisibility test is succeed.
+2024-07-23 14:01:14,892 [main] INFO craftBet - checkTextBalanceVisibility test is succeed.
+2024-07-23 14:01:16,301 [main] INFO craftBet - checkTextUserIdVisibility test is succeed.
+2024-07-23 14:01:16,715 [main] INFO craftBet - checkTitleVisibility test is succeed.
+2024-07-23 14:01:18,151 [main] INFO craftBet - checkUserIdVisibility test is succeed.
+2024-07-23 14:01:28,346 [main] ERROR craftBet - clickOnButtonPlay() method has an Exception: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //button[@class='btn_play']//img//div' (tried for 5 second(s) with 500 milliseconds interval)
+2024-07-23 14:01:35,411 [main] INFO craftBet - checkPlayNowFunctionality test is succeed.
+2024-07-23 14:01:39,725 [main] INFO craftBet - Browser closed
+2024-07-23 14:01:39,725 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  Test Suite finished  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-23 14:06:23,012 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<< Test Suite Started  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-23 14:06:23,017 [main] INFO craftBet - 
+2024-07-23 14:06:25,875 [main] INFO craftBet - Browser for test will be chrome as chosen
+2024-07-23 14:06:29,015 [main] INFO craftBet - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  Test Suite started 
+2024-07-23 14:06:39,282 [main] ERROR craftBet - clickOnButtonPlay() method has an Exception: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //button[@class='btn_play']//img//div' (tried for 5 second(s) with 500 milliseconds interval)
+2024-07-23 14:06:42,240 [main] INFO craftBet - Browser closed
+2024-07-23 14:06:42,240 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  Test Suite finished  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-23 14:07:30,589 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<< Test Suite Started  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-23 14:07:30,595 [main] INFO craftBet - 
+2024-07-23 14:07:32,707 [main] INFO craftBet - Browser for test will be chrome as chosen
+2024-07-23 14:07:35,311 [main] INFO craftBet - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  Test Suite started 
+2024-07-23 14:07:45,595 [main] ERROR craftBet - clickOnButtonPlay() method has an Exception: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //button[@class='btn_play']//img//div' (tried for 5 second(s) with 500 milliseconds interval)
+2024-07-23 14:07:50,639 [main] INFO craftBet - Browser closed
+2024-07-23 14:07:50,640 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  Test Suite finished  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-23 14:08:06,758 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<< Test Suite Started  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-23 14:08:06,763 [main] INFO craftBet - 
+2024-07-23 14:08:09,093 [main] INFO craftBet - Browser for test will be chrome as chosen
+2024-07-23 14:08:12,440 [main] INFO craftBet - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  Test Suite started 
+2024-07-23 14:09:08,218 [main] ERROR craftBet - clickOnButtonPlay() method has an Exception: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //button[@class='btn_play']//img//div' (tried for 5 second(s) with 500 milliseconds interval)
+2024-07-23 14:09:35,545 [main] ERROR craftBet - isDisplayedButtonCashout() method has an Exception: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@class='btn_play']"}
+  (Session info: chrome=126.0.6478.183)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [424cbc8eec298faf92269c7fc7ede24e, findElement {value=//button[@class='btn_play'], using=xpath}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 126.0.6478.183, chrome: {chromedriverVersion: 126.0.6478.182 (5b5d8292ddf..., userDataDir: C:\Users\NERSES~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53749}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53749/devtoo..., se:cdpVersion: 126.0.6478.183, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 424cbc8eec298faf92269c7fc7ede24e
+2024-07-23 14:09:42,485 [main] INFO craftBet - Browser closed
+2024-07-23 14:09:42,485 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  Test Suite finished  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-23 14:10:37,670 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<< Test Suite Started  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-23 14:10:37,675 [main] INFO craftBet - 
+2024-07-23 14:10:39,827 [main] INFO craftBet - Browser for test will be chrome as chosen
+2024-07-23 14:10:43,025 [main] INFO craftBet - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  Test Suite started 
+2024-07-23 14:14:11,123 [main] ERROR craftBet - isDisplayedButtonCashout() method has an Exception: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@class='btn_play']"}
+  (Session info: chrome=126.0.6478.183)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5895f227fa63230ec88511c243d4d8e0, findElement {value=//button[@class='btn_play'], using=xpath}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 126.0.6478.183, chrome: {chromedriverVersion: 126.0.6478.182 (5b5d8292ddf..., userDataDir: C:\Users\NERSES~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53806}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53806/devtoo..., se:cdpVersion: 126.0.6478.183, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5895f227fa63230ec88511c243d4d8e0
+2024-07-23 14:14:23,003 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<< Test Suite Started  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-23 14:14:23,008 [main] INFO craftBet - 
+2024-07-23 14:14:27,452 [main] INFO craftBet - Browser for test will be chrome as chosen
+2024-07-23 14:14:30,836 [main] INFO craftBet - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  Test Suite started 
+2024-07-23 14:14:53,435 [main] INFO craftBet - Browser closed
+2024-07-23 14:14:53,436 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  Test Suite finished  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-23 14:17:38,155 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<< Test Suite Started  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-23 14:17:38,160 [main] INFO craftBet - 
+2024-07-23 14:17:40,132 [main] INFO craftBet - Browser for test will be chrome as chosen
+2024-07-23 14:17:43,333 [main] INFO craftBet - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  Test Suite started 
+2024-07-23 14:17:47,069 [main] INFO craftBet - Browser closed
+2024-07-23 14:17:47,070 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  Test Suite finished  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-23 14:18:06,357 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<< Test Suite Started  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-23 14:18:06,362 [main] INFO craftBet - 
+2024-07-23 14:18:08,662 [main] INFO craftBet - Browser for test will be chrome as chosen
+2024-07-23 14:18:11,662 [main] INFO craftBet - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  Test Suite started 
+2024-07-23 14:18:24,388 [main] INFO craftBet - Browser closed
+2024-07-23 14:18:24,389 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  Test Suite finished  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-23 14:21:59,142 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<< Test Suite Started  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-23 14:21:59,147 [main] INFO craftBet - 
+2024-07-23 14:22:03,862 [main] INFO craftBet - Browser for test will be chrome as chosen
+2024-07-23 14:22:08,030 [main] INFO craftBet - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  Test Suite started 
+2024-07-23 14:22:09,764 [main] INFO craftBet - checkBalanceVisibility test is succeed.
+2024-07-23 14:22:10,088 [main] INFO craftBet - checkLogoVisibility test is succeed.
+2024-07-23 14:22:10,202 [main] INFO craftBet - checkTextBalanceVisibility test is succeed.
+2024-07-23 14:22:10,275 [main] INFO craftBet - checkTextUserIdVisibility test is succeed.
+2024-07-23 14:22:10,322 [main] INFO craftBet - checkTitleVisibility test is succeed.
+2024-07-23 14:22:10,410 [main] INFO craftBet - checkUserIdVisibility test is succeed.
+2024-07-23 14:22:20,512 [main] INFO craftBet - checkPlayNowFunctionality test is failed.
+2024-07-23 14:22:20,512 [main] ERROR craftBet - Screenshot captured for test case:checkPlayNowFunctionality
+2024-07-23 14:22:23,637 [main] INFO craftBet - Browser closed
+2024-07-23 14:22:23,638 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  Test Suite finished  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  

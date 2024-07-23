@@ -1,12 +1,12 @@
 package com.pageObjects;
 
-
-import com.utilities.DriverFactory;
-import com.utilities.ReadConfig;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.*;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.devtools.DevTools;
+import org.openqa.selenium.devtools.v124.network.Network;
 import org.openqa.selenium.html5.WebStorage;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.logging.LogEntries;
@@ -43,11 +43,13 @@ public class Iqsoft_001_BasePage {
 
     public Iqsoft_001_BasePage(WebDriver driver) throws AWTException {
 
-        this.driver = driver;
-        actions = new Actions(driver);
-        webDriverWait = new WebDriverWait(driver, Duration.ofSeconds(5));
-        js = (JavascriptExecutor) driver;
-        robot = new Robot();
+        Iqsoft_001_BasePage.driver = driver;
+        if (driver!=null){
+            actions = new Actions(driver);
+            webDriverWait = new WebDriverWait(driver, Duration.ofSeconds(5));
+            js = (JavascriptExecutor) driver;
+            robot = new Robot();
+        }
     }
 
     public Iqsoft_001_BasePage(){
@@ -130,6 +132,7 @@ public class Iqsoft_001_BasePage {
     }
 
     public boolean waitElementToBeVisibleBoolean(WebElement element) {
+
         try {
             this.webDriverWait.until(ExpectedConditions.visibilityOf(element));
             return true;
@@ -187,7 +190,6 @@ public class Iqsoft_001_BasePage {
 
     public boolean elementIsDisplayed(WebElement element) {
         return element.isDisplayed();
-
     }
 
     /* this method will return true if element is selected */
@@ -416,6 +418,20 @@ public class Iqsoft_001_BasePage {
 
     //region <Take Screenshot>
     /* this method will be take Screenshot whale page*/
+
+    static WebElement alineElement;
+    public WebElement getElement(){
+        return alineElement;
+    }
+
+    public void setElement(WebElement element){
+        alineElement = element;
+    }
+
+    public static void clearBrowserCache(DevTools devTools) {
+        devTools.send(Network.clearBrowserCache());
+        devTools.send(Network.clearBrowserCookies());
+    }
     public File captureScreen(WebDriver driver, String tname) throws IOException {
         TakesScreenshot ts = (TakesScreenshot) driver;
         File source = ts.getScreenshotAs(OutputType.FILE);

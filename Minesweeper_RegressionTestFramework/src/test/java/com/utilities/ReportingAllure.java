@@ -108,18 +108,26 @@ import com.pageObjects.Iqsoft_001_BasePage;
 import com.testCases.Iqsoft_001_BaseTest;
 import io.qameta.allure.Attachment;
 import org.openqa.selenium.OutputType;
+import org.openqa.selenium.Point;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
+import javax.imageio.ImageIO;
 import java.awt.*;
+import java.awt.image.BufferedImage;
+import java.io.ByteArrayOutputStream;
+import java.io.File;
+import java.io.IOException;
 
 public class ReportingAllure extends Iqsoft_001_BaseTest implements ITestListener {
     public ReportingAllure() throws AWTException {
     }
 
+    Iqsoft_001_BasePage basePage = new Iqsoft_001_BasePage(driver);
     private static String getTestMethodName(ITestResult iTestResult) {
         return iTestResult.getMethod().getConstructorOrMethod().getName();
     }
@@ -173,7 +181,42 @@ public class ReportingAllure extends Iqsoft_001_BaseTest implements ITestListene
     @Attachment(value = "Page screenshot", type = "image/png")
     public byte[] saveScreenshotPNG(WebDriver driver) {
         return ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+
     }
+    @Attachment(value = "Page screenshot", type = "image/png")
+    public byte[] saveScreenshotAlineBorderPNG(WebDriver driver, WebElement element) {
+        // Capture the screenshot of the entire page
+        File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+
+        try {
+            // Read the image file
+            BufferedImage fullImg = ImageIO.read(screenshot);
+
+            // Get the location of the element on the page
+            Point point = element.getLocation();
+
+            // Get the size of the element
+            int elementWidth = element.getSize().getWidth();
+            int elementHeight = element.getSize().getHeight();
+
+            // Draw a rectangle around the element
+            Graphics2D g = fullImg.createGraphics();
+            g.setColor(Color.RED);
+            g.setStroke(new BasicStroke(3));
+            g.drawRect(point.getX(), point.getY(), elementWidth, elementHeight);
+            g.dispose();
+
+            // Convert BufferedImage to byte array
+            ByteArrayOutputStream baos = new ByteArrayOutputStream();
+            ImageIO.write(fullImg, "png", baos);
+            return baos.toByteArray();
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return new byte[0];
+    }
+
 
     //Text attachments for Allure
     @Attachment(value = "{0}", type = "text/plain")
@@ -217,10 +260,14 @@ public class ReportingAllure extends Iqsoft_001_BaseTest implements ITestListene
         Object testClass = iTestResult.getInstance();
         WebDriver driver = iqsoft001BasePage.getDriver();
 
+        WebElement element = iqsoft001BasePage.getElement();
         //Allure ScreenShotRobot and SaveTestLog
         if (driver != null) {
             Iqsoft_001_BasePage.logger.error("Screenshot captured for test case:" + getTestMethodName(iTestResult));
-            saveScreenshotPNG(driver);
+//            saveScreenshotPNG(driver);
+            if (element!=null){
+                saveScreenshotAlineBorderPNG(driver,element);
+            }
         }
 
         //Save a log on allure.

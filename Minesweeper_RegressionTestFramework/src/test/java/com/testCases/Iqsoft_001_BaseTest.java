@@ -1,17 +1,19 @@
 package com.testCases;
 
-import com.pageObjects.Iqsoft_Page_01;
+import com.pageObjects.Iqsoft_Page_01_Header;
 import com.pageObjects.Iqsoft_001_BasePage;
+import com.pageObjects.Iqsoft_Page_02_Lobby;
+import com.pageObjects.Iqsoft_Page_03_PlayGame;
 import kong.unirest.HttpResponse;
 import kong.unirest.Unirest;
 import kong.unirest.json.JSONObject;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
+import org.openqa.selenium.devtools.DevTools;
+import org.openqa.selenium.devtools.HasDevTools;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.SkipException;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import com.utilities.DriverFactory;
 import com.utilities.ReadConfig;
@@ -46,7 +48,9 @@ public class Iqsoft_001_BaseTest extends DriverFactory {
 
     //region <Page Class Instances  >
 
-    public Iqsoft_Page_01 iqsoftPage01;
+    public static Iqsoft_Page_01_Header iqsoftPage01;
+    public static Iqsoft_Page_02_Lobby iqsoftPage02;
+    public static Iqsoft_Page_03_PlayGame iqsoftPage03;
 
 
     //endregion
@@ -55,7 +59,7 @@ public class Iqsoft_001_BaseTest extends DriverFactory {
     public Iqsoft_001_BaseTest() {
     }
 
-
+    Iqsoft_001_BasePage basePage = new Iqsoft_001_BasePage();
 
     @BeforeSuite
     public void setupBeforeAll() {
@@ -78,6 +82,11 @@ public class Iqsoft_001_BaseTest extends DriverFactory {
         getProductUrl();
         try {
             super.initDriver(gameUrl, browser, isHeadless);
+            DevTools devTools = ((HasDevTools) driver).getDevTools();
+            devTools.createSession();
+
+            // Clear browser cache
+            Iqsoft_001_BasePage.clearBrowserCache(devTools);
             initElements();
             Dimension d = new Dimension(DimensionWidth, DimensionHeight);  //
             if (DimensionWidth > 1250 && DimensionHeight > 750) {
@@ -91,7 +100,7 @@ public class Iqsoft_001_BaseTest extends DriverFactory {
         }
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 
-        iqsoftPage01 = PageFactory.initElements(driver, Iqsoft_Page_01.class);
+        iqsoftPage01 = PageFactory.initElements(driver, Iqsoft_Page_01_Header.class);
 
         Iqsoft_001_BasePage.logger.info(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  Test Suite started ");
     }
@@ -103,23 +112,13 @@ public class Iqsoft_001_BaseTest extends DriverFactory {
 
     @AfterSuite
     public void Finish() {
-        try {
-            this.driver.quit();
-            Iqsoft_001_BasePage.logger.info("Browser closed");
-        } catch (Exception exception) {
-            this.driver.quit();
-            Iqsoft_001_BasePage.logger.info("Browser close_order has an exception");
-        }
+        if (driver != null)
+            driver.quit();
+        Iqsoft_001_BasePage.logger.info("Browser closed");
+
 
         Iqsoft_001_BasePage.logger.info("<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  Test Suite finished  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  ");
     }
-
-
-
-
-
-
-
 
 
     public void loginRequest() {
@@ -197,16 +196,16 @@ public class Iqsoft_001_BaseTest extends DriverFactory {
     }
 
     public void initElements() {
-      try{
-        iqsoftPage01 = PageFactory.initElements(driver, Iqsoft_Page_01.class);
-          System.out.println();
-      }
-      catch (Exception e){
+        try {
+            iqsoftPage01 = PageFactory.initElements(driver, Iqsoft_Page_01_Header.class);
+            iqsoftPage02 = PageFactory.initElements(driver, Iqsoft_Page_02_Lobby.class);
+            iqsoftPage03 = PageFactory.initElements(driver, Iqsoft_Page_03_PlayGame.class);
 
-          System.out.println();
-      }
+        } catch (Exception e) {
+
+            Iqsoft_001_BasePage.logger.error("initElements() has an Exception: " + e);
+        }
     }
-
 
 
 }
