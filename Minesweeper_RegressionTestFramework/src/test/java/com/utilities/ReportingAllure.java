@@ -264,10 +264,7 @@ public class ReportingAllure extends Iqsoft_001_BaseTest implements ITestListene
         //Allure ScreenShotRobot and SaveTestLog
         if (driver != null) {
             Iqsoft_001_BasePage.logger.error("Screenshot captured for test case:" + getTestMethodName(iTestResult));
-//            saveScreenshotPNG(driver);
-            if (element!=null){
-                saveScreenshotAlineBorderPNG(driver,element);
-            }
+            saveScreenshotPNG(driver);
         }
 
         //Save a log on allure.

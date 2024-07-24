@@ -24,7 +24,6 @@ public class Iqsoft_TestClass_02_Lobby  extends Iqsoft_001_BaseTest{
     @Description("Check Play now buttons functionality")
     @Severity(SeverityLevel.BLOCKER)
     public void checkPlayNowFunctionality()  {
-        basePage.setElement(iqsoftPage02.getWebElementButtonPlay());
         iqsoftPage02.clickOnButtonPlayNow();
         Assert.assertTrue(iqsoftPage03.isVisibleButtonCashout(),
                 "After clicking Play Now button game page didn't opened");

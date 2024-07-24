@@ -25,7 +25,6 @@ public class Iqsoft_TestClass_01_Header extends Iqsoft_001_BaseTest {
     @Description("Check logo image")
     @Severity(SeverityLevel.BLOCKER)
     public void checkLogoVisibility() {
-        basePage.setElement(iqsoftPage01.getWebElementLogoImg());
         Assert.assertTrue(iqsoftPage01.checkLogoImgLink(), "Invalid Logo");
     }
 
@@ -35,7 +34,6 @@ public class Iqsoft_TestClass_01_Header extends Iqsoft_001_BaseTest {
     @Description("Check Title visibility")
     @Severity(SeverityLevel.BLOCKER)
     public void checkTitleVisibility() {
-        basePage.setElement(iqsoftPage01.getWebElementGameTitle());
         Assert.assertEquals(iqsoftPage01.getTextGameTitle(), "Minesweeper","Invalid Title");
     }
 
@@ -45,7 +43,6 @@ public class Iqsoft_TestClass_01_Header extends Iqsoft_001_BaseTest {
     @Description("Check userId text visibility")
     @Severity(SeverityLevel.BLOCKER)
     public void checkTextUserIdVisibility() {
-        basePage.setElement(iqsoftPage01.getWebElementTextUserId());
         Assert.assertEquals(iqsoftPage01.getTextUserID(), "User ID","Invalid UserId text: " + iqsoftPage01.getTextUserID());
     }
 
@@ -55,7 +52,6 @@ public class Iqsoft_TestClass_01_Header extends Iqsoft_001_BaseTest {
     @Description("Check userId visibility")
     @Severity(SeverityLevel.BLOCKER)
     public void checkUserIdVisibility() {
-        basePage.setElement(iqsoftPage01.getWebElementUserId());
         Assert.assertNotEquals(iqsoftPage01.getUserID(), 0,"Invalid UserId: " + iqsoftPage01.getUserID());
     }
 
@@ -65,7 +61,6 @@ public class Iqsoft_TestClass_01_Header extends Iqsoft_001_BaseTest {
     @Description("Check Balance text visibility")
     @Severity(SeverityLevel.BLOCKER)
     public void checkTextBalanceVisibility() {
-        basePage.setElement(iqsoftPage01.getWebElementTextBalance());
         Assert.assertEquals(iqsoftPage01.getTextBalance(), "Balance","Invalid Balance text: " + iqsoftPage01.getTextBalance());
     }
 
@@ -75,7 +70,6 @@ public class Iqsoft_TestClass_01_Header extends Iqsoft_001_BaseTest {
     @Description("Check Balance visibility")
     @Severity(SeverityLevel.BLOCKER)
     public void checkBalanceVisibility() {
-        basePage.setElement(iqsoftPage01.getWebElementBalance());
         Assert.assertNotEquals(iqsoftPage01.getBalance(), -1,"Invalid ClientBalance");
     }
 

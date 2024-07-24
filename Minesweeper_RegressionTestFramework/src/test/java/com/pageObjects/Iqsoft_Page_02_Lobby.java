@@ -28,8 +28,8 @@ public class Iqsoft_Page_02_Lobby extends Iqsoft_001_BasePage{
 
     public void clickOnButtonPlayNow() {
         try {
-//            iqsoft001BasePage.waitElementToBeVisible(buttonPlayNow);
-//            iqsoft001BasePage.clickOnElementIfClickable(buttonPlayNow);
+            iqsoft001BasePage.waitElementToBeVisible(buttonPlayNow);
+            iqsoft001BasePage.clickOnElementIfClickable(buttonPlayNow);
 
         } catch (Exception e) {
             logger.error("clickOnButtonPlay() method has an Exception: " + e);

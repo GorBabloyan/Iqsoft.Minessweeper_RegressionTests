@@ -521,3 +521,17 @@ Session ID: 5895f227fa63230ec88511c243d4d8e0
 2024-07-23 14:22:20,512 [main] ERROR craftBet - Screenshot captured for test case:checkPlayNowFunctionality
 2024-07-23 14:22:23,637 [main] INFO craftBet - Browser closed
 2024-07-23 14:22:23,638 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  Test Suite finished  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-24 13:10:38,691 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<< Test Suite Started  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-24 13:10:38,699 [main] INFO craftBet - 
+2024-07-24 13:10:41,993 [main] INFO craftBet - Browser for test will be chrome as chosen
+2024-07-24 13:11:49,781 [main] INFO craftBet - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  Test Suite started 
+2024-07-24 13:11:56,077 [main] ERROR craftBet - getBalance() method has an Exception: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome-headless-shell on windows (0e054857e0e22f77bcc1fe89719615a4)] -> xpath: //div[@class='balance']//div[@class='balance-sum']] (tried for 5 second(s) with 500 milliseconds interval)
+2024-07-24 13:11:56,083 [main] INFO craftBet - checkBalanceVisibility test is succeed.
+2024-07-24 13:11:57,776 [main] INFO craftBet - checkLogoVisibility test is succeed.
+2024-07-24 13:11:58,081 [main] INFO craftBet - checkTextBalanceVisibility test is succeed.
+2024-07-24 13:11:58,196 [main] INFO craftBet - checkTextUserIdVisibility test is succeed.
+2024-07-24 13:11:58,243 [main] INFO craftBet - checkTitleVisibility test is succeed.
+2024-07-24 13:11:58,355 [main] INFO craftBet - checkUserIdVisibility test is succeed.
+2024-07-24 13:11:58,999 [main] INFO craftBet - checkPlayNowFunctionality test is succeed.
+2024-07-24 13:11:59,932 [main] INFO craftBet - Browser closed
+2024-07-24 13:11:59,932 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  Test Suite finished  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
