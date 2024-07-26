@@ -1,14 +1,30 @@
 package com.testCases;
 
+import com.Models.Iqsoft003_BackendLoggedIn.Iqsoft101_Response_NegotiateAPI;
+import com.Models.Iqsoft003_BackendLoggedIn.Iqsoft102_SportWebSocketClient;
+import com.Models.Iqsoft003_BackendLoggedIn.SocketMessages.Request.Iqsoft200_SocketMessage_WithoutArguments_Request;
+import com.Models.Iqsoft003_BackendLoggedIn.SocketMessages.Response.Iqsoft0300_SocketMessage_First_Response;
+import com.Models.Iqsoft003_BackendLoggedIn.SocketMessages.Response.Iqsoft300_SocketMessage_Authorized_Response;
+import com.Models.Iqsoft003_BackendLoggedIn.SocketMessages.Response.Iqsoft301_SocketMessage_Balance_Response;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.google.gson.Gson;
 import com.pageObjects.Iqsoft_Page_01_Header;
 import com.pageObjects.Iqsoft_001_BasePage;
 import com.pageObjects.Iqsoft_Page_02_Lobby;
 import com.pageObjects.Iqsoft_Page_03_PlayGame;
+import io.qameta.allure.Allure;
 import kong.unirest.HttpResponse;
 import kong.unirest.Unirest;
 import kong.unirest.json.JSONObject;
+import net.lightbody.bmp.BrowserMobProxy;
+import net.lightbody.bmp.BrowserMobProxyServer;
+import net.lightbody.bmp.client.ClientUtil;
+import net.lightbody.bmp.core.har.Har;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
+import org.openqa.selenium.Dimension;
+import org.openqa.selenium.Proxy;
 import org.openqa.selenium.devtools.DevTools;
 import org.openqa.selenium.devtools.HasDevTools;
 import org.openqa.selenium.support.PageFactory;
@@ -17,10 +33,16 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import com.utilities.DriverFactory;
 import com.utilities.ReadConfig;
-import org.openqa.selenium.Dimension;
 
 import java.io.File;
+import java.net.URI;
+import java.net.URL;
+import java.net.URLDecoder;
+import java.net.URLEncoder;
+import java.nio.charset.StandardCharsets;
 import java.time.Duration;
+import java.util.HashMap;
+import java.util.Map;
 
 
 public class Iqsoft_001_BaseTest extends DriverFactory {
@@ -37,14 +59,14 @@ public class Iqsoft_001_BaseTest extends DriverFactory {
     public int DimensionHeight = readConfig.getDimensionHeight();
     public int DimensionWidth = readConfig.getDimensionWidth();
 
-    public String loginPath = "LoginClient";
-    public String getProductUrlPath = "GetProductUrl";
-    public String token;
-    public int clientId;
-    public int partnerId;
-    public String languageId;
+    public static String loginPath = "LoginClient";
+    public static String getProductUrlPath = "GetProductUrl";
+    public static String token;
+    public static int clientId;
+    public static int partnerId;
+    public static String languageId;
 
-    public String gameUrl;
+    public static String gameUrl;
 
     //region <Page Class Instances  >
 
@@ -53,6 +75,14 @@ public class Iqsoft_001_BaseTest extends DriverFactory {
     public static Iqsoft_Page_03_PlayGame iqsoftPage03;
 
 
+    public static Iqsoft101_Response_NegotiateAPI iqsoft101_responseNegotiateAPI;
+    public static Iqsoft102_SportWebSocketClient client;
+
+    public static Iqsoft200_SocketMessage_WithoutArguments_Request iqsoft200_socketMessageWithoutArguments_request;
+    public static Iqsoft300_SocketMessage_Authorized_Response iqsoft300_socketMessage_authorized_response;
+    public static Iqsoft301_SocketMessage_Balance_Response iqsoft301_socketMessage_balance_response ;
+
+    public static Iqsoft0300_SocketMessage_First_Response iqsoft0300_socketMessage_first_response;
     //endregion
 
 
@@ -62,7 +92,7 @@ public class Iqsoft_001_BaseTest extends DriverFactory {
     Iqsoft_001_BasePage basePage = new Iqsoft_001_BasePage();
 
     @BeforeSuite
-    public void setupBeforeAll() {
+    public void setupBeforeAll() throws InterruptedException {
         Iqsoft_001_BasePage.logger = Logger.getLogger("craftBet");
         PropertyConfigurator.configure("Log4j.properties");
         Iqsoft_001_BasePage.logger.info("<<<<<<<<<<<<<<<<<<<<<<<<< Test Suite Started  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>  ");
@@ -78,16 +108,24 @@ public class Iqsoft_001_BaseTest extends DriverFactory {
         if (folderLogs.exists()) {
             Iqsoft_001_BasePage.deleteFolder(folderLogs);
         }
+
         loginRequest();
+
         getProductUrl();
         try {
             super.initDriver(gameUrl, browser, isHeadless);
-            DevTools devTools = ((HasDevTools) driver).getDevTools();
-            devTools.createSession();
-
-            // Clear browser cache
-            Iqsoft_001_BasePage.clearBrowserCache(devTools);
+//            DevTools devTools = ((HasDevTools) driver).getDevTools();
+//            devTools.createSession();
+//
+//            // Clear browser cache
+//            Iqsoft_001_BasePage.clearBrowserCache(devTools);
             initElements();
+
+
+
+
+
+
             Dimension d = new Dimension(DimensionWidth, DimensionHeight);  //
             if (DimensionWidth > 1250 && DimensionHeight > 750) {
 
@@ -101,33 +139,25 @@ public class Iqsoft_001_BaseTest extends DriverFactory {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 
         iqsoftPage01 = PageFactory.initElements(driver, Iqsoft_Page_01_Header.class);
-
-        Iqsoft_001_BasePage.logger.info(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  Test Suite started ");
     }
-
-
-
-
 
 
     @AfterSuite
     public void Finish() {
-        if (driver != null)
+        if (driver != null) {
             driver.quit();
+        }
+        try {
+            client.closeBlocking();
+            client.close();
+        } catch (InterruptedException e) {
+
+        }
         Iqsoft_001_BasePage.logger.info("Browser closed");
 
 
         Iqsoft_001_BasePage.logger.info("<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  Test Suite finished  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  ");
     }
-
-
-
-
-
-
-
-
-
 
 
     public void loginRequest() {
@@ -160,14 +190,20 @@ public class Iqsoft_001_BaseTest extends DriverFactory {
                 partnerId = Integer.parseInt(String.valueOf(responseJson.get("PartnerId")));
                 languageId = String.valueOf(responseJson.get("LanguageId"));
                 token = String.valueOf(responseJson.get("Token"));
+
+                Iqsoft_001_BasePage.logger.info("ClientId: " + clientId +
+                        "   token: " + token + "  partnerId: " + partnerId + "  languageId: " + languageId);
+
             } else {
-                throw new SkipException("GetProductUrl Response failed");
+                throw new SkipException("loginRequest Response failed");
             }
         } else {
-            throw new SkipException("GetProductUrl Request failed");
+            throw new SkipException("loginRequest Request failed");
         }
     }
 
+
+    public static String sessionToken = null;
 
     public void getProductUrl() {
         HttpResponse<String> response;
@@ -192,8 +228,10 @@ public class Iqsoft_001_BaseTest extends DriverFactory {
             int responseCode = Integer.parseInt(String.valueOf(responseJson.get("ResponseCode")));
             if (responseCode == 0) {
                 gameUrl = String.valueOf(responseJson.get("ResponseObject"));
+                Iqsoft_001_BasePage.logger.info("GameUrl: " + gameUrl);
+                sessionToken = getParameterFromURL(gameUrl, "token");
+                Iqsoft_001_BasePage.logger.info("GameToken: " + sessionToken);
 
-                System.out.println(gameUrl);
             } else {
                 throw new SkipException("GetProductUrl Response failed");
             }
@@ -204,6 +242,22 @@ public class Iqsoft_001_BaseTest extends DriverFactory {
         }
     }
 
+    public static String getParameterFromURL(String url, String parameterName) {
+        try {
+            URL urlObject = new URL(url);
+            String query = urlObject.getQuery();
+            Map<String, String> params = new HashMap<>();
+            for (String param : query.split("&")) {
+                String[] keyValue = param.split("=");
+                params.put(URLDecoder.decode(keyValue[0], "UTF-8"), URLDecoder.decode(keyValue[1], "UTF-8"));
+//                params.put((keyValue[0]), keyValue[1]);
+            }
+            return params.get(parameterName);
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
 
     public void initElements() {
         try {
@@ -211,10 +265,298 @@ public class Iqsoft_001_BaseTest extends DriverFactory {
             iqsoftPage02 = PageFactory.initElements(driver, Iqsoft_Page_02_Lobby.class);
             iqsoftPage03 = PageFactory.initElements(driver, Iqsoft_Page_03_PlayGame.class);
 
+            iqsoft101_responseNegotiateAPI = new Iqsoft101_Response_NegotiateAPI();
+
+
         } catch (Exception e) {
 
             Iqsoft_001_BasePage.logger.error("initElements() has an Exception: " + e);
         }
+    }
+
+    static String encodeData = "";
+    //region < negotiateApiSportsBook & SocketConnection LoggedIn>
+    public String negotiateHttpApiLoggedInVirtual() {
+        String connectionToken = null;
+        long responseTime;
+        HttpResponse<String> response;
+        encodeData =  URLEncoder.encode("[{\"name\":\"basehub\"},{\"name\":\"websitehub\"}]", StandardCharsets.UTF_8);
+        encodeData = "&connectionData=" + encodeData;
+        try {
+            String url = "https://virtualgameswebsitewebapi.craftbet.com/api/VirtualGamesWebSiteWebApi/signalr/hubs/negotiate?clientProtocol=1.5" +
+                    "&IntegrationToken=" + sessionToken + "&PartnerId=" + partnerId +
+                    "&LanguageId=" + languageId + "&TimeZone=4&EnvironmentId=1&GameId=" + "110"+encodeData + "&_=1721965060330";
+
+            System.out.println("Negotiation URL: " + url);
+
+            long start = System.currentTimeMillis();
+
+            Unirest.config().reset();
+            Unirest.config().connectTimeout(60000);
+            Unirest.config().socketTimeout(60000);
+            response = Unirest.get(url)
+                    .header("Origin","https://virtualgameswebsite.craftbet.com")
+                    .asString();
+            Unirest.shutDown();
+
+
+            long end = System.currentTimeMillis();
+            responseTime = end - start;
+            Allure.addAttachment("negotiateHttpApiLoggedInSportsBook:  Url: " + url + "    ResponseTime  " + responseTime + "ms", "");
+            Allure.addAttachment("negotiateHttpApiLoggedInSportsBook:  ResponseBody: ", "application/json", response.getBody());
+
+            int statusCode = response.getStatus();
+            if (statusCode == 200) {
+
+                String responseString = response.getBody();
+                System.out.println("Negotiation ResponseBody: " + url);
+                Unirest.shutDown();
+
+                ObjectMapper objectMapper = new ObjectMapper();
+                try {
+                    iqsoft101_responseNegotiateAPI = objectMapper.readValue(responseString, Iqsoft101_Response_NegotiateAPI.class);
+                    connectionToken = iqsoft101_responseNegotiateAPI.getConnectionToken();
+
+//                    JSONObject obh = new JSONObject(responseString);
+//                    connectionToken = obh.getString("ConnectionToken");
+                    System.out.println("connectionToken 1 :" + connectionToken);
+//                    connectionToken = connectionToken.replace("+", "%2B");
+                    connectionToken = URLEncoder.encode(connectionToken, StandardCharsets.UTF_8);
+                    System.out.println("connectionToken 2 :" + connectionToken);
+
+                } catch (Exception e) {
+                    throw new RuntimeException(e);
+                }
+            } else {
+                Iqsoft_001_BasePage.logger.fatal("negotiateHttpApiLoggedInSportsBook() has status code = " + statusCode);
+            }
+
+        } catch (Exception e1) {
+            try {
+                String url = "https://virtualgameswebsitewebapi.craftbet.com/api/VirtualGamesWebSiteWebApi/signalr/hubs/negotiate?clientProtocol=1.5" +
+                        "&IntegrationToken=" + sessionToken + "&PartnerId=" + partnerId +
+                        "&LanguageId=" + languageId + "&TimeZone=4&EnvironmentId=1&GameId=" + "110";
+
+
+                long start = System.currentTimeMillis();
+
+                Unirest.config().reset();
+                Unirest.config().connectTimeout(60000);
+                Unirest.config().socketTimeout(60000);
+                response = Unirest.get(url)
+                        .asString();
+                Unirest.shutDown();
+
+
+                long end = System.currentTimeMillis();
+                responseTime = end - start;
+                Allure.addAttachment("negotiateHttpApiLoggedInSportsBook:  Url: " + url + "    ResponseTime  " + responseTime + "ms", "");
+                Allure.addAttachment("negotiateHttpApiLoggedInSportsBook:  ResponseBody: ", "application/json", response.getBody());
+
+                int statusCode = response.getStatus();
+                if (statusCode == 200) {
+
+                    String responseString = response.getBody();
+                    Unirest.shutDown();
+
+                    ObjectMapper objectMapper = new ObjectMapper();
+                    try {
+                        iqsoft101_responseNegotiateAPI = objectMapper.readValue(responseString, Iqsoft101_Response_NegotiateAPI.class);
+                        connectionToken = iqsoft101_responseNegotiateAPI.getConnectionToken();
+
+//                    JSONObject obh = new JSONObject(responseString);
+//                    connectionToken = obh.getString("ConnectionToken");
+                        System.out.println("connectionToken 1 :" + connectionToken);
+//                    connectionToken = connectionToken.replace("+", "%2B");
+                        connectionToken = URLEncoder.encode(connectionToken, StandardCharsets.UTF_8);
+                        System.out.println("connectionToken 2 :" + connectionToken);
+
+                    } catch (Exception e) {
+                        throw new RuntimeException(e);
+                    }
+                } else {
+                    Iqsoft_001_BasePage.logger.fatal("negotiateHttpApiLoggedInSportsBook() has status code = " + statusCode);
+                }
+
+            } catch (Exception e) {
+                Iqsoft_001_BasePage.logger.error("negotiateHttpApiLoggedInSportsBook() call has exception: " + e);
+            }
+        }
+        return connectionToken;
+    }
+
+    public static URI serverUri;
+    public static boolean isSocketConnectionSuccess = false;
+    public static long responseTime;
+    public static long start;
+    public static long end;
+
+
+//    public void socketConnectionLoggedInVirtual() {
+//
+//        try {
+//
+////            serverUri = new URI("wss://virtualgameswebsitewebapi.craftbet.com/api/VirtualGamesWebSiteWebApi/signalr/hubs/connect?" +
+////                    "transport=webSockets&clientProtocol=1.5&IntegrationToken=f9c989e5fa8840a28a911159122c7139&PartnerId=1&" +
+////                    "LanguageId=en&TimeZone=4&EnvironmentId=1&GameId=110&connectionToken=" +
+////                    "LM098gPiXfhpQ4vkbTBYOTYMbIPue%2FkpVniatvGO6QQEPqkHqleMiuWgGIeJWAqTx1JgyxxJLjVPIh3RHX%2BRWMwH9YRn38K6LQ442Vf5iq0huJ%2BK4lIhW4hu4nRZjJHc");
+//
+//            negotiateHttpApiLoggedInVirtual();
+//            serverUri = new URI( "wss://virtualgameswebsitewebapi.craftbet.com" +
+//                    iqsoft101_responseNegotiateAPI.getUrl() +
+//                    "/connect?transport=webSockets&clientProtocol=1.5&IntegrationToken=" +
+//                    sessionToken +
+//                    "&PartnerId=1&LanguageId=en&TimeZone=4&EnvironmentId=1&GameId=110&connectionToken=" +
+//                    negotiateHttpApiLoggedInVirtual()+encodeData);
+//
+//
+//            System.out.println(">>>>>>>>>  " + serverUri);
+//            client = new Iqsoft102_SportWebSocketClient(serverUri);
+//            long start = System.currentTimeMillis();
+//
+////            client.connect();
+//            client.connectBlocking();
+//
+//            long end = System.currentTimeMillis();
+//            responseTime = end - start;
+//
+//            // Wait for a moment (optional) before sending messages
+//            Thread.sleep(1000);
+//
+////             Send messages to the WebSocket server
+//
+//            // Keep the application running to listen for messages
+//            Runtime.getRuntime().addShutdownHook(new Thread(() -> {
+//                try {
+//                    client.closeBlocking();
+//                } catch (InterruptedException e) {
+//                    e.printStackTrace();
+//                }
+//            }));
+//
+//
+//        } catch (Exception e) {
+//            Iqsoft_001_BasePage.logger.error("socketConnectionSportsBook() call has an exception: " + e);
+//        }
+//
+//    }
+    public void socketConnectionLoggedInVirtual() {
+
+        try {
+//
+//            serverUri = new URI( "wss://virtualgameswebsitewebapi.craftbet.com/api/VirtualGamesWebSiteWebApi/signalr/hubs" +
+//                    "/connect?transport=webSockets&clientProtocol=1.5&IntegrationToken=" +
+//                    sessionToken +
+//                    "&PartnerId=1&LanguageId=en&TimeZone=4&EnvironmentId=1&GameId=110&connectionToken=" +
+//                    negotiateHttpApiLoggedInVirtual()+encodeData + "&tid=0");
+
+
+
+
+
+
+
+
+
+
+
+            serverUri = new URI( webSocketUrl);
+
+
+            System.out.println(">>>>>>>>>  " + serverUri);
+
+            client = new Iqsoft102_SportWebSocketClient(serverUri);
+            long start = System.currentTimeMillis();
+
+//            client.connect();
+            client.connectBlocking();
+
+            long end = System.currentTimeMillis();
+            responseTime = end - start;
+
+            // Wait for a moment (optional) before sending messages
+            Thread.sleep(1000);
+
+//             Send messages to the WebSocket server
+
+            // Keep the application running to listen for messages
+            Runtime.getRuntime().addShutdownHook(new Thread(() -> {
+                try {
+                    client.closeBlocking();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }));
+
+
+        } catch (Exception e) {
+            Iqsoft_001_BasePage.logger.error("socketConnectionSportsBook() call has an exception: " + e);
+        }
+
+    }
+
+
+//    public static void main(String[] args) throws InterruptedException {
+//        Iqsoft_001_BasePage.logger = Logger.getLogger("craftBet");
+//        PropertyConfigurator.configure("Log4j.properties");
+//
+//        socketConnectionLoggedInVirtual();
+//        client.sendMessage(sendSocketMessageWithoutArgument("basehub", "Authorized", 0));
+//        iqsoft300SocketMessageAuthorizedResponse = (Iqsoft300_SocketMessage_Authorized_Response)
+//                mapReceivedMessage(Iqsoft300_SocketMessage_Authorized_Response.class, String.valueOf(I));
+//    }
+    //endregion
+    public static String receivedMessage;
+    public static int I = 0;
+
+    public static Object mapReceivedMessage(Class myClass, String I) throws InterruptedException {
+        Object mapObj;
+        try {
+            receivedMessage = client.waitForMessageWithInvocationId(I);
+            Allure.addAttachment("Received message: ResponseTime = " + responseTime + " ms ", receivedMessage);
+            Iqsoft_001_BasePage.logger.info("Received message: " + receivedMessage);
+
+            ObjectMapper objectMapper = new ObjectMapper();
+
+            mapObj = objectMapper.readValue(receivedMessage, myClass);
+        } catch (JsonProcessingException e) {
+            Iqsoft_001_BasePage.logger.error(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>     " + e);
+            throw new RuntimeException(e);
+        }
+        return mapObj;
+    }
+
+    public Object mapFirstReceivedMessage(Class myClass) throws InterruptedException {
+        Object mapObj;
+        try {
+            receivedMessage = client.waitForMessageWithInvocationIdFirst();
+//            System.out.println(">>>>>>>>>>>>>>>> Received message >>>>>>>>>>" + receivedMessage);
+            Allure.addAttachment("Received message: ResponseTime = " + responseTime + " ms ", receivedMessage);
+            Iqsoft_001_BasePage.logger.info("Received message: " + receivedMessage);
+
+            ObjectMapper objectMapper = new ObjectMapper();
+
+            mapObj = objectMapper.readValue(receivedMessage, myClass);
+        } catch (JsonProcessingException e) {
+            Iqsoft_001_BasePage.logger.error(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>     " + e);
+            throw new RuntimeException(e);
+        }
+        return mapObj;
+    }
+
+    public static String sendSocketMessageWithoutArgument(String H, String M, int I) {
+        String message;
+
+        iqsoft200_socketMessageWithoutArguments_request = new Iqsoft200_SocketMessage_WithoutArguments_Request();
+        iqsoft200_socketMessageWithoutArguments_request.setH(H);
+        iqsoft200_socketMessageWithoutArguments_request.setM(M);
+        iqsoft200_socketMessageWithoutArguments_request.setI(I);
+
+        Gson gson = new Gson();
+
+        message = gson.toJson(iqsoft200_socketMessageWithoutArguments_request);
+
+        return message;
     }
 
 
