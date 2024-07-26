@@ -25,11 +25,9 @@ public class Iqsoft102_SportWebSocketClient extends WebSocketClient {
 
     @Override
     public void onOpen(ServerHandshake handshakedata) {
-        System.out.println("WebSocket connection opened");
+
 
         Allure.addAttachment("SocketConnection Url:  " + serverUri.toString(), "WebSocket connection opened");
-        send("{\"protocol\":\"json\",\"version\":1}\u001E");
-
 
         if (handshakedata.getHttpStatus() < 300) {
             Iqsoft_001_BaseTest.isSocketConnectionSuccess = true;
@@ -63,12 +61,6 @@ public class Iqsoft102_SportWebSocketClient extends WebSocketClient {
         }
     }
 
-    public String waitForMessageWithInvocationIdFirst() throws InterruptedException {
-        while (true) {
-            String message = messageQueue.take(); // This will block until a message is available
-                return message;
-        }
-    }
 
     @Override
     public void onClose(int code, String reason, boolean remote) {

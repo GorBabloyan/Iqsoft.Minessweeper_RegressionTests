@@ -197,7 +197,7 @@ public class DriverFactory {
             e.printStackTrace();
         }
 
-
+        devTools.clearListeners();
 
     }
 

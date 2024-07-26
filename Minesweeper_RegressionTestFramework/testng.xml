@@ -11,6 +11,7 @@
 
             <class name="com.testCases.Iqsoft_TestClass_01_Header"/>
             <class name="com.testCases.Iqsoft_TestClass_02_Lobby"/>
+            <class name="com.testCases.SocketConnection.Iqsoft_TestClass_11_SocketConnection"/>
 
         </classes>
     </test>

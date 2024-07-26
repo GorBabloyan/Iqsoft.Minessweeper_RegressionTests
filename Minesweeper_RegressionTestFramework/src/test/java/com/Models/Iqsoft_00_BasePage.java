@@ -86,7 +86,7 @@
 //
 //
 //    public static Iqsoft300_SocketMessage_Authorized_Response iqsoft300_socketMessageAuthorized_response;
-//    public static Iqsoft301_SocketMessage_Balance_Response iqsoft301_socketMessage_Balance_response;
+//    public static Iqsoft303_SocketMessage_Balance_Response iqsoft301_socketMessage_Balance_response;
 //    public static Iqsoft302_SocketMessage_Bet_Response iqsoft302_socketMessage_bet_response;
 //    public static Iqsoft303_SocketMessage_GetOpenBetsCount_Response iqsoft303_socketMessage_getOpenBetsCount_response;
 //    public static Iqsoft304_SocketMessage_GetOpenBets_Response iqsoft304_socketMessage_getOpenBets_response;

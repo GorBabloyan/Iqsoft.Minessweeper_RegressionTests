@@ -3,10 +3,8 @@ package com.Models.Iqsoft003_BackendLoggedIn.SocketMessages.Response;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-import java.util.List;
-
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class Iqsoft301_SocketMessage_Balance_Response {
+public class Iqsoft303_SocketMessage_Balance_Response {
 
     @JsonProperty("I")
     private String I;
@@ -47,11 +45,11 @@ public class Iqsoft301_SocketMessage_Balance_Response {
             ResponseCode = responseCode;
         }
 
-        public Iqsoft301_SocketMessage_Balance_Response.R.ResponseObject getResponseObject() {
+        public Iqsoft303_SocketMessage_Balance_Response.R.ResponseObject getResponseObject() {
             return ResponseObject;
         }
 
-        public void setResponseObject(Iqsoft301_SocketMessage_Balance_Response.R.ResponseObject responseObject) {
+        public void setResponseObject(Iqsoft303_SocketMessage_Balance_Response.R.ResponseObject responseObject) {
             ResponseObject = responseObject;
         }
     }
@@ -65,11 +63,11 @@ public class Iqsoft301_SocketMessage_Balance_Response {
         I = i;
     }
 
-    public Iqsoft301_SocketMessage_Balance_Response.R getR() {
+    public Iqsoft303_SocketMessage_Balance_Response.R getR() {
         return R;
     }
 
-    public void setR(Iqsoft301_SocketMessage_Balance_Response.R r) {
+    public void setR(Iqsoft303_SocketMessage_Balance_Response.R r) {
         R = r;
     }
 }

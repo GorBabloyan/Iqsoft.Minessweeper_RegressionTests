@@ -1536,3 +1536,121 @@ wss://virtualgameswebsitewebapi.craftbet.com/api/VirtualGamesWebSiteWebApi/signa
 2024-07-26 17:37:41,839 [main] INFO craftBet - Received message: {"R":{"Authorized":true,"CurrencyId":"EUR","CurrencyRate":1.21000000,"CurrencySymbol":"€  ","ClientId":4212525,"Nickname":"4212525","NicknameChanged":false,"ClientExternalId":2239905,"Coins":[0.20,0.50,1.00,2.00,5.00,10.00,20.00]},"I":"0"}
 2024-07-26 17:37:55,329 [main] INFO craftBet - Browser closed
 2024-07-26 17:37:55,330 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  Test Suite finished  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-26 17:57:59,683 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<< Test Suite Started  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-26 17:57:59,688 [main] INFO craftBet - 
+2024-07-26 17:58:02,510 [main] INFO craftBet - ClientId: 2239905   token: fc843a64debe4b9a985d53074377b0dc  partnerId: 1  languageId: en
+2024-07-26 17:58:02,817 [main] INFO craftBet - GameUrl: https://virtualgameswebsite.craftbet.com/minesweeper/web?gameid=110&partnerid=1&languageid=en&token=6eea2f725eda4e169eed4a45e01ba798&viewtype=1&timezone=4
+2024-07-26 17:58:02,819 [main] INFO craftBet - GameToken: 6eea2f725eda4e169eed4a45e01ba798
+2024-07-26 17:58:02,819 [main] INFO craftBet - Browser for test will be chrome as chosen
+2024-07-26 17:58:24,973 [main] INFO craftBet - Message sent: {"H":"basehub","M":"Authorized","A":[],"I":0}
+2024-07-26 17:58:25,097 [main] INFO craftBet - Received message: {"R":{"Authorized":true,"CurrencyId":"EUR","CurrencyRate":1.21000000,"CurrencySymbol":"€  ","ClientId":4212525,"Nickname":"4212525","NicknameChanged":false,"ClientExternalId":2239905,"Coins":[0.20,0.50,1.00,2.00,5.00,10.00,20.00]},"I":"0"}
+2024-07-26 17:58:25,819 [main] INFO craftBet - Message sent: {"H":"playerhub","M":"Balance","A":[],"I":1}
+2024-07-26 18:02:57,275 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<< Test Suite Started  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-26 18:02:57,279 [main] INFO craftBet - 
+2024-07-26 18:02:59,174 [main] INFO craftBet - ClientId: 2239905   token: c9e5f3f5ace84d088e0ae19872fbed4c  partnerId: 1  languageId: en
+2024-07-26 18:02:59,484 [main] INFO craftBet - GameUrl: https://virtualgameswebsite.craftbet.com/minesweeper/web?gameid=110&partnerid=1&languageid=en&token=44d38a4f191b44369de8376cdd63bd19&viewtype=1&timezone=4
+2024-07-26 18:02:59,486 [main] INFO craftBet - GameToken: 44d38a4f191b44369de8376cdd63bd19
+2024-07-26 18:02:59,486 [main] INFO craftBet - Browser for test will be chrome as chosen
+2024-07-26 18:03:18,346 [main] INFO craftBet - Message sent: {"H":"basehub","M":"Authorized","A":[],"I":0}
+2024-07-26 18:03:18,467 [main] INFO craftBet - Received message: {"R":{"Authorized":true,"CurrencyId":"EUR","CurrencyRate":1.21000000,"CurrencySymbol":"€  ","ClientId":4212525,"Nickname":"4212525","NicknameChanged":false,"ClientExternalId":2239905,"Coins":[0.20,0.50,1.00,2.00,5.00,10.00,20.00]},"I":"0"}
+2024-07-26 18:03:19,140 [main] INFO craftBet - Message sent: {"H":"playerhub","M":"Balance","A":[],"I":1}
+2024-07-26 18:33:18,519 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<< Test Suite Started  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-26 18:33:18,525 [main] INFO craftBet - 
+2024-07-26 18:33:20,192 [main] INFO craftBet - ClientId: 2239905   token: 26a11022b9f54a13a702ddb542fa66ab  partnerId: 1  languageId: en
+2024-07-26 18:33:20,529 [main] INFO craftBet - GameUrl: https://virtualgameswebsite.craftbet.com/minesweeper/web?gameid=110&partnerid=1&languageid=en&token=b42220de2f2f43269c76a57c6b076ec4&viewtype=1&timezone=4
+2024-07-26 18:33:20,531 [main] INFO craftBet - GameToken: b42220de2f2f43269c76a57c6b076ec4
+2024-07-26 18:33:20,532 [main] INFO craftBet - Browser for test will be chrome as chosen
+2024-07-26 18:33:56,585 [main] INFO craftBet - SocketConnectionSportsBook_ValidatePositiveResponse test is succeed.
+2024-07-26 18:37:02,208 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<< Test Suite Started  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-26 18:37:02,213 [main] INFO craftBet - 
+2024-07-26 18:37:03,924 [main] INFO craftBet - ClientId: 2239905   token: b39939f6468345fd9a585ee3000a0930  partnerId: 1  languageId: en
+2024-07-26 18:37:04,259 [main] INFO craftBet - GameUrl: https://virtualgameswebsite.craftbet.com/minesweeper/web?gameid=110&partnerid=1&languageid=en&token=e278c46f99454f7794972246c60b8a84&viewtype=1&timezone=4
+2024-07-26 18:37:04,261 [main] INFO craftBet - GameToken: e278c46f99454f7794972246c60b8a84
+2024-07-26 18:37:04,261 [main] INFO craftBet - Browser for test will be chrome as chosen
+2024-07-26 18:37:23,119 [main] INFO craftBet - SocketConnectionSportsBook_ValidatePositiveResponse test is succeed.
+2024-07-26 18:37:23,270 [main] INFO craftBet - Message sent: {"H":"basehub","M":"Authorized","A":[],"I":0}
+2024-07-26 18:37:23,456 [main] INFO craftBet - Received message: {"R":{"Authorized":true,"CurrencyId":"EUR","CurrencyRate":1.21000000,"CurrencySymbol":"€  ","ClientId":4212525,"Nickname":"4212525","NicknameChanged":false,"ClientExternalId":2239905,"Coins":[0.20,0.50,1.00,2.00,5.00,10.00,20.00]},"I":"0"}
+2024-07-26 18:37:24,055 [main] INFO craftBet - MessageAuthorized_ValidatePositiveResponse test is succeed.
+2024-07-26 18:37:24,065 [main] INFO craftBet - Message sent: {"H":"playerhub","M":"Balance","A":[],"I":1}
+2024-07-26 18:38:57,494 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<< Test Suite Started  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-26 18:38:57,499 [main] INFO craftBet - 
+2024-07-26 18:39:01,687 [main] INFO craftBet - ClientId: 2239905   token: 16ea9d6e66a243cf8bf67ae18b0a0c62  partnerId: 1  languageId: en
+2024-07-26 18:39:02,301 [main] INFO craftBet - GameUrl: https://virtualgameswebsite.craftbet.com/minesweeper/web?gameid=110&partnerid=1&languageid=en&token=ec483219488a4eb0972f16ecfd344ed7&viewtype=1&timezone=4
+2024-07-26 18:39:02,303 [main] INFO craftBet - GameToken: ec483219488a4eb0972f16ecfd344ed7
+2024-07-26 18:39:02,303 [main] INFO craftBet - Browser for test will be chrome as chosen
+2024-07-26 18:39:20,771 [main] INFO craftBet - SocketConnectionSportsBook_ValidatePositiveResponse test is succeed.
+2024-07-26 18:39:20,924 [main] INFO craftBet - Message sent: {"H":"basehub","M":"Authorized","A":[],"I":0}
+2024-07-26 18:39:21,130 [main] INFO craftBet - Received message: {"R":{"Authorized":true,"CurrencyId":"EUR","CurrencyRate":1.21000000,"CurrencySymbol":"€  ","ClientId":4212525,"Nickname":"4212525","NicknameChanged":false,"ClientExternalId":2239905,"Coins":[0.20,0.50,1.00,2.00,5.00,10.00,20.00]},"I":"0"}
+2024-07-26 18:39:21,796 [main] INFO craftBet - MessageAuthorized_ValidatePositiveResponse test is succeed.
+2024-07-26 18:47:46,437 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<< Test Suite Started  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-26 18:47:46,441 [main] INFO craftBet - 
+2024-07-26 18:47:48,993 [main] INFO craftBet - ClientId: 2239905   token: a7df0d04d8a94dc09e07d01643ae7540  partnerId: 1  languageId: en
+2024-07-26 18:47:49,723 [main] INFO craftBet - GameUrl: https://virtualgameswebsite.craftbet.com/minesweeper/web?gameid=110&partnerid=1&languageid=en&token=90626248d30b4d459fb27409c932bb5a&viewtype=1&timezone=4
+2024-07-26 18:47:49,725 [main] INFO craftBet - GameToken: 90626248d30b4d459fb27409c932bb5a
+2024-07-26 18:47:49,726 [main] INFO craftBet - Browser for test will be chrome as chosen
+2024-07-26 18:48:08,292 [main] INFO craftBet - SocketConnectionSportsBook_ValidatePositiveResponse test is succeed.
+2024-07-26 18:48:08,477 [main] INFO craftBet - Message sent: {"H":"basehub","M":"Authorized","A":[],"I":0}
+2024-07-26 18:48:08,602 [main] INFO craftBet - Received message: {"R":{"Authorized":true,"CurrencyId":"EUR","CurrencyRate":1.21000000,"CurrencySymbol":"€  ","ClientId":4212525,"Nickname":"4212525","NicknameChanged":false,"ClientExternalId":2239905,"Coins":[0.20,0.50,1.00,2.00,5.00,10.00,20.00]},"I":"0"}
+2024-07-26 18:48:09,218 [main] INFO craftBet - MessageAuthorized_ValidatePositiveResponse test is succeed.
+2024-07-26 18:48:09,255 [main] INFO craftBet - Message sent: {"H":"playerhub","M":"Balance","A":[],"I":1}
+2024-07-26 18:55:47,533 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<< Test Suite Started  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-26 18:55:47,538 [main] INFO craftBet - 
+2024-07-26 18:55:49,246 [main] INFO craftBet - ClientId: 2239905   token: 4a38ab77ca9e484c9ced3325dc833ea3  partnerId: 1  languageId: en
+2024-07-26 18:55:49,594 [main] INFO craftBet - GameUrl: https://virtualgameswebsite.craftbet.com/minesweeper/web?gameid=110&partnerid=1&languageid=en&token=587147fccf2145a58e48e236a74d5cfd&viewtype=1&timezone=4
+2024-07-26 18:55:49,597 [main] INFO craftBet - GameToken: 587147fccf2145a58e48e236a74d5cfd
+2024-07-26 18:55:49,597 [main] INFO craftBet - Browser for test will be chrome as chosen
+2024-07-26 18:56:09,658 [main] INFO craftBet - SocketConnectionSportsBook_ValidatePositiveResponse test is succeed.
+2024-07-26 18:56:09,790 [main] INFO craftBet - Message sent: {"H":"basehub","M":"Authorized","A":[],"I":0}
+2024-07-26 18:56:09,909 [main] INFO craftBet - Received message: {"R":{"Authorized":true,"CurrencyId":"EUR","CurrencyRate":1.21000000,"CurrencySymbol":"€  ","ClientId":4212525,"Nickname":"4212525","NicknameChanged":false,"ClientExternalId":2239905,"Coins":[0.20,0.50,1.00,2.00,5.00,10.00,20.00]},"I":"0"}
+2024-07-26 18:56:10,474 [main] INFO craftBet - MessageAuthorized_ValidatePositiveResponse test is succeed.
+2024-07-26 18:56:10,483 [main] INFO craftBet - Message sent: {"H":"playerhub","M":"Balance","A":[],"I":1}
+2024-07-26 18:56:10,613 [main] INFO craftBet - Received message: {"R":{"ResponseCode":0,"ResponseObject":{"Balance":999.5}},"I":"1"}
+2024-07-26 18:56:10,620 [main] INFO craftBet - MessageBalance_ValidatePositiveResponse test is succeed.
+2024-07-26 18:56:10,639 [main] INFO craftBet - Browser closed
+2024-07-26 18:56:10,639 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  Test Suite finished  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-26 18:59:09,414 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<< Test Suite Started  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-26 18:59:09,419 [main] INFO craftBet - 
+2024-07-26 18:59:13,236 [main] INFO craftBet - ClientId: 2239905   token: 88854ea03f994d3286a35c11d5cfef24  partnerId: 1  languageId: en
+2024-07-26 18:59:13,568 [main] INFO craftBet - GameUrl: https://virtualgameswebsite.craftbet.com/minesweeper/web?gameid=110&partnerid=1&languageid=en&token=0a7c9b24338c4820aa22e4edf2735fe7&viewtype=1&timezone=4
+2024-07-26 18:59:13,569 [main] INFO craftBet - GameToken: 0a7c9b24338c4820aa22e4edf2735fe7
+2024-07-26 18:59:13,569 [main] INFO craftBet - Browser for test will be chrome as chosen
+2024-07-26 18:59:36,486 [main] INFO craftBet - Message sent: {"H":"basehub","M":"Authorized","A":[],"I":0}
+2024-07-26 18:59:36,606 [main] INFO craftBet - Received message: {"R":{"Authorized":true,"CurrencyId":"EUR","CurrencyRate":1.21000000,"CurrencySymbol":"€  ","ClientId":4212525,"Nickname":"4212525","NicknameChanged":false,"ClientExternalId":2239905,"Coins":[0.20,0.50,1.00,2.00,5.00,10.00,20.00]},"I":"0"}
+2024-07-26 18:59:37,201 [main] INFO craftBet - Message sent: {"H":"playerhub","M":"Balance","A":[],"I":1}
+2024-07-26 18:59:37,350 [main] INFO craftBet - Received message: {"R":{"ResponseCode":0,"ResponseObject":{"Balance":999.5}},"I":"1"}
+2024-07-26 18:59:37,363 [main] INFO craftBet - Message sent: {"H":"websitehub","M":"Units","A":[],"I":2}
+2024-07-26 18:59:37,431 [main] INFO craftBet - Received message: {"R":{"ResponseCode":0,"ResponseObject":[{"Id":73,"GameId":110,"CurrentRound":0,"NickName":"MinesweeperBoard","Name":"MinesweeperBoard","TranslationId":2636,"Blocked":false,"NextDrawDate":"","Outcome":null,"Jackpot":null,"PlayersCount":0,"BetMinLimit":null,"BetMaxLimit":null}]},"I":"2"}
+2024-07-26 18:59:37,447 [main] ERROR craftBet - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>     com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize value of type `com.Models.Iqsoft003_BackendLoggedIn.SocketMessages.Response.Iqsoft301_SocketMessage_Units_Response$R$ResponseObject` from Array value (token `JsonToken.START_ARRAY`)
+ at [Source: (String)"{"R":{"ResponseCode":0,"ResponseObject":[{"Id":73,"GameId":110,"CurrentRound":0,"NickName":"MinesweeperBoard","Name":"MinesweeperBoard","TranslationId":2636,"Blocked":false,"NextDrawDate":"","Outcome":null,"Jackpot":null,"PlayersCount":0,"BetMinLimit":null,"BetMaxLimit":null}]},"I":"2"}"; line: 1, column: 41] (through reference chain: com.Models.Iqsoft003_BackendLoggedIn.SocketMessages.Response.Iqsoft301_SocketMessage_Units_Response["R"]->com.Models.Iqsoft003_BackendLoggedIn.SocketMessages.Response.Iqsoft301_SocketMessage_Units_Response$R["ResponseObject"])
+2024-07-26 18:59:37,593 [main] INFO craftBet - Browser closed
+2024-07-26 18:59:37,593 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  Test Suite finished  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-26 19:02:23,119 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<< Test Suite Started  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-26 19:02:23,124 [main] INFO craftBet - 
+2024-07-26 19:02:26,507 [main] INFO craftBet - ClientId: 2239905   token: 88c05666d897471aa17df18d0008474c  partnerId: 1  languageId: en
+2024-07-26 19:02:27,327 [main] INFO craftBet - GameUrl: https://virtualgameswebsite.craftbet.com/minesweeper/web?gameid=110&partnerid=1&languageid=en&token=3ce22ff2b4a848b9a757780fb58f7d5d&viewtype=1&timezone=4
+2024-07-26 19:02:27,328 [main] INFO craftBet - GameToken: 3ce22ff2b4a848b9a757780fb58f7d5d
+2024-07-26 19:02:27,329 [main] INFO craftBet - Browser for test will be chrome as chosen
+2024-07-26 19:02:46,796 [main] INFO craftBet - Message sent: {"H":"basehub","M":"Authorized","A":[],"I":0}
+2024-07-26 19:02:46,915 [main] INFO craftBet - Received message: {"R":{"Authorized":true,"CurrencyId":"EUR","CurrencyRate":1.21000000,"CurrencySymbol":"€  ","ClientId":4212525,"Nickname":"4212525","NicknameChanged":false,"ClientExternalId":2239905,"Coins":[0.20,0.50,1.00,2.00,5.00,10.00,20.00]},"I":"0"}
+2024-07-26 19:02:47,556 [main] INFO craftBet - Message sent: {"H":"playerhub","M":"Balance","A":[],"I":1}
+2024-07-26 19:02:47,682 [main] INFO craftBet - Received message: {"R":{"ResponseCode":0,"ResponseObject":{"Balance":999.5}},"I":"1"}
+2024-07-26 19:02:47,694 [main] INFO craftBet - Message sent: {"H":"websitehub","M":"Units","A":[],"I":2}
+2024-07-26 19:02:47,759 [main] INFO craftBet - Received message: {"R":{"ResponseCode":0,"ResponseObject":[{"Id":73,"GameId":110,"CurrentRound":0,"NickName":"MinesweeperBoard","Name":"MinesweeperBoard","TranslationId":2636,"Blocked":false,"NextDrawDate":"","Outcome":null,"Jackpot":null,"PlayersCount":0,"BetMinLimit":null,"BetMaxLimit":null}]},"I":"2"}
+2024-07-26 19:02:47,775 [main] ERROR craftBet - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>     com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize value of type `com.Models.Iqsoft003_BackendLoggedIn.SocketMessages.Response.Iqsoft301_SocketMessage_Units_Response$R$ResponseObject` from Array value (token `JsonToken.START_ARRAY`)
+ at [Source: (String)"{"R":{"ResponseCode":0,"ResponseObject":[{"Id":73,"GameId":110,"CurrentRound":0,"NickName":"MinesweeperBoard","Name":"MinesweeperBoard","TranslationId":2636,"Blocked":false,"NextDrawDate":"","Outcome":null,"Jackpot":null,"PlayersCount":0,"BetMinLimit":null,"BetMaxLimit":null}]},"I":"2"}"; line: 1, column: 41] (through reference chain: com.Models.Iqsoft003_BackendLoggedIn.SocketMessages.Response.Iqsoft301_SocketMessage_Units_Response["R"]->com.Models.Iqsoft003_BackendLoggedIn.SocketMessages.Response.Iqsoft301_SocketMessage_Units_Response$R["ResponseObject"])
+2024-07-26 19:02:47,883 [main] INFO craftBet - Browser closed
+2024-07-26 19:02:47,884 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  Test Suite finished  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-26 19:04:21,981 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<< Test Suite Started  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2024-07-26 19:04:21,986 [main] INFO craftBet - 
+2024-07-26 19:04:23,873 [main] INFO craftBet - ClientId: 2239905   token: 8b5bf7b749cb44cb9f28740966550ef9  partnerId: 1  languageId: en
+2024-07-26 19:04:24,194 [main] INFO craftBet - GameUrl: https://virtualgameswebsite.craftbet.com/minesweeper/web?gameid=110&partnerid=1&languageid=en&token=cfee0dc6f4994cc5b7a6b46a9369b60b&viewtype=1&timezone=4
+2024-07-26 19:04:24,194 [main] INFO craftBet - GameToken: cfee0dc6f4994cc5b7a6b46a9369b60b
+2024-07-26 19:04:24,195 [main] INFO craftBet - Browser for test will be chrome as chosen
+2024-07-26 19:04:43,031 [main] INFO craftBet - Message sent: {"H":"basehub","M":"Authorized","A":[],"I":0}
+2024-07-26 19:04:43,158 [main] INFO craftBet - Received message: {"R":{"Authorized":true,"CurrencyId":"EUR","CurrencyRate":1.21000000,"CurrencySymbol":"€  ","ClientId":4212525,"Nickname":"4212525","NicknameChanged":false,"ClientExternalId":2239905,"Coins":[0.20,0.50,1.00,2.00,5.00,10.00,20.00]},"I":"0"}
+2024-07-26 19:04:43,747 [main] INFO craftBet - Message sent: {"H":"playerhub","M":"Balance","A":[],"I":1}
+2024-07-26 19:04:43,872 [main] INFO craftBet - Received message: {"R":{"ResponseCode":0,"ResponseObject":{"Balance":999.5}},"I":"1"}
+2024-07-26 19:04:43,883 [main] INFO craftBet - Message sent: {"H":"websitehub","M":"Units","A":[],"I":2}
+2024-07-26 19:04:43,946 [main] INFO craftBet - Received message: {"R":{"ResponseCode":0,"ResponseObject":[{"Id":73,"GameId":110,"CurrentRound":0,"NickName":"MinesweeperBoard","Name":"MinesweeperBoard","TranslationId":2636,"Blocked":false,"NextDrawDate":"","Outcome":null,"Jackpot":null,"PlayersCount":0,"BetMinLimit":null,"BetMaxLimit":null}]},"I":"2"}
+2024-07-26 19:04:44,183 [main] INFO craftBet - Browser closed
+2024-07-26 19:04:44,183 [main] INFO craftBet - <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  Test Suite finished  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
