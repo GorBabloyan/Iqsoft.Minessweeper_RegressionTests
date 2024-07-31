@@ -74,8 +74,6 @@ public class Iqsoft_001_BaseTest extends DriverFactory {
     public static Iqsoft204_SocketMessage_Cashout_Request iqsoft204_socketMessage_cashout_request;
 
 
-
-
     public static Iqsoft300_SocketMessage_Authorized_Response iqsoft300_socketMessage_authorized_response;
     public static Iqsoft301_SocketMessage_Units_Response iqsoft301_socketMessage_units_response;
     public static Iqsoft302_SocketMessage_Balance_Response iqsoft302_socketMessage_balance_response;
@@ -201,7 +199,9 @@ public class Iqsoft_001_BaseTest extends DriverFactory {
             throw new SkipException("loginRequest Request failed");
         }
     }
+
     public static String sessionToken = null;
+
     public void getProductUrl() {
         HttpResponse<String> response;
         int statusCode;
@@ -238,6 +238,7 @@ public class Iqsoft_001_BaseTest extends DriverFactory {
 
         }
     }
+
     public static String getParameterFromURL(String url, String parameterName) {
         try {
             URL urlObject = new URL(url);
@@ -261,6 +262,11 @@ public class Iqsoft_001_BaseTest extends DriverFactory {
             iqsoftPage02 = PageFactory.initElements(driver, Iqsoft_Page_02_Lobby.class);
             iqsoftPage03 = PageFactory.initElements(driver, Iqsoft_Page_03_PlayGame.class);
 
+            iqsoft200_socketMessageWithoutArguments_request = new Iqsoft200_SocketMessage_WithoutArguments_Request();
+            iqsoft201_socketMessage_state_request = new Iqsoft201_SocketMessage_State_Request();
+            iqsoft202_socketMessage_createBoard_request = new Iqsoft202_SocketMessage_CreateBoard_Request();
+            iqsoft203_socketMessage_bet_request = new Iqsoft203_SocketMessage_Bet_Request();
+            iqsoft204_socketMessage_cashout_request = new Iqsoft204_SocketMessage_Cashout_Request();
 
 
         } catch (Exception e) {
@@ -274,18 +280,17 @@ public class Iqsoft_001_BaseTest extends DriverFactory {
     public static long responseTime;
     public static long start;
     public static long end;
+
     public void socketConnectionLoggedInVirtual() {
 
         try {
-//
+
 //            serverUri = new URI( "wss://virtualgameswebsitewebapi.craftbet.com/api/VirtualGamesWebSiteWebApi/signalr/hubs" +
 //                    "/connect?transport=webSockets&clientProtocol=1.5&IntegrationToken=" +
 //                    sessionToken +
 //                    "&PartnerId=1&LanguageId=en&TimeZone=4&EnvironmentId=1&GameId=110&connectionToken=" +
 //                    negotiateHttpApiLoggedInVirtual()+encodeData + "&tid=0");
-
-
-            serverUri = new URI( webSocketUrl);
+            serverUri = new URI(webSocketUrl);
             client = new Iqsoft102_SportWebSocketClient(serverUri);
             long start = System.currentTimeMillis();
 
@@ -318,10 +323,10 @@ public class Iqsoft_001_BaseTest extends DriverFactory {
 
     public static String receivedMessage;
     public static int I = 0;
+
     public static String sendSocketMessageWithoutArgument(String H, String M, int I) {
         String message;
 
-        iqsoft200_socketMessageWithoutArguments_request = new Iqsoft200_SocketMessage_WithoutArguments_Request();
         iqsoft200_socketMessageWithoutArguments_request.setH(H);
         iqsoft200_socketMessageWithoutArguments_request.setM(M);
         iqsoft200_socketMessageWithoutArguments_request.setI(I);
@@ -336,7 +341,6 @@ public class Iqsoft_001_BaseTest extends DriverFactory {
     public static String sendSocketMessageState(String H, String M, int I, List<Integer> A) {
         String message;
 
-        iqsoft201_socketMessage_state_request = new Iqsoft201_SocketMessage_State_Request();
         iqsoft201_socketMessage_state_request.setH(H);
         iqsoft201_socketMessage_state_request.setM(M);
         iqsoft201_socketMessage_state_request.setI(I);
@@ -349,11 +353,10 @@ public class Iqsoft_001_BaseTest extends DriverFactory {
         return message;
     }
 
-    public static String sendSocketMessageCreateBoard(String H, String M, int I, int width,int height, int minesCount,
-                                                      int betType,int gameId,double Amount) {
+    public static String sendSocketMessageCreateBoard(String H, String M, int I, int width, int height, int minesCount,
+                                                      int betType, int gameId, double Amount) {
         String message;
 
-        iqsoft202_socketMessage_createBoard_request = new Iqsoft202_SocketMessage_CreateBoard_Request();
         iqsoft202_socketMessage_createBoard_request.setH(H);
         iqsoft202_socketMessage_createBoard_request.setM(M);
         iqsoft202_socketMessage_createBoard_request.setI(I);
@@ -370,7 +373,7 @@ public class Iqsoft_001_BaseTest extends DriverFactory {
         betInput.setAmount(Amount);
         betInput.setEvents(null);
 
-        Iqsoft202_SocketMessage_CreateBoard_Request.A a= new Iqsoft202_SocketMessage_CreateBoard_Request.A();
+        Iqsoft202_SocketMessage_CreateBoard_Request.A a = new Iqsoft202_SocketMessage_CreateBoard_Request.A();
         a.setBoardInput(boardInput);
         a.setBetInput(betInput);
 
@@ -389,13 +392,12 @@ public class Iqsoft_001_BaseTest extends DriverFactory {
     public static String sendSocketMessageBet(String H, String M, int I, int row, int column) {
         String message;
 
-        iqsoft203_socketMessage_bet_request = new Iqsoft203_SocketMessage_Bet_Request();
         iqsoft203_socketMessage_bet_request.setH(H);
         iqsoft203_socketMessage_bet_request.setM(M);
         iqsoft203_socketMessage_bet_request.setI(I);
 
 
-        Iqsoft203_SocketMessage_Bet_Request.A a= new Iqsoft203_SocketMessage_Bet_Request.A();
+        Iqsoft203_SocketMessage_Bet_Request.A a = new Iqsoft203_SocketMessage_Bet_Request.A();
         a.setColumn(column);
         a.setRow(row);
         List<Iqsoft203_SocketMessage_Bet_Request.A> aList = new ArrayList<>();
@@ -413,7 +415,6 @@ public class Iqsoft_001_BaseTest extends DriverFactory {
     public static String sendSocketMessageCashout(String H, String M, int I) {
         String message = null;
 
-        iqsoft204_socketMessage_cashout_request = new Iqsoft204_SocketMessage_Cashout_Request();
         iqsoft204_socketMessage_cashout_request.setH(H);
         iqsoft204_socketMessage_cashout_request.setM(M);
         iqsoft204_socketMessage_cashout_request.setI(I);
@@ -441,7 +442,6 @@ public class Iqsoft_001_BaseTest extends DriverFactory {
         return message;
     }
 
-
     public static Object mapReceivedMessage(Class myClass, String I) throws InterruptedException {
         Object mapObj;
         try {
@@ -459,8 +459,6 @@ public class Iqsoft_001_BaseTest extends DriverFactory {
         }
         return mapObj;
     }
-
-
 
 
     static String encodeData = "";
@@ -573,16 +571,6 @@ public class Iqsoft_001_BaseTest extends DriverFactory {
 //        }
 //        return connectionToken;
 //    }
-
-
-
-
-
-
-
-
-
-
 
 
 }

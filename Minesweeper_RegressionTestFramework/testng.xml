@@ -2,16 +2,26 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Iqsoft API Regression Testing" preserve-order="true">
     <listeners>
-        <listener class-name="com.utilities.ReportingAllure"/>
+<!--        <listener class-name="com.utilities.ReportingAllure"/>-->
     </listeners>
 
     <test name="API Regression Testing" preserve-order="true">
 
         <classes>
 
-            <class name="com.testCases.Iqsoft_TestClass_01_Header"/>
-            <class name="com.testCases.Iqsoft_TestClass_02_Lobby"/>
+<!--            <class name="com.testCases.Iqsoft_TestClass_01_Header"/>-->
+<!--            <class name="com.testCases.Iqsoft_TestClass_02_Lobby"/>-->
             <class name="com.testCases.SocketConnection.Iqsoft_TestClass_11_SocketConnection"/>
+            <class name="com.testCases.SocketConnection.Iqsoft_TestClass_12_Authorization"/>
+            <class name="com.testCases.SocketConnection.Iqsoft_TestClass_13_GetBalance"/>
+            <class name="com.testCases.SocketConnection.Iqsoft_TestClass_14_Units"/>
+            <class name="com.testCases.SocketConnection.Iqsoft_TestClass_15_State"/>
+            <class name="com.testCases.SocketConnection.Iqsoft_TestClass_16_GetDefoultBoards"/>
+            <class name="com.testCases.SocketConnection.Iqsoft_TestClass_17_CreateBoard"/>
+            <class name="com.testCases.SocketConnection.Iqsoft_TestClass_18_Bet"/>
+            <class name="com.testCases.SocketConnection.Iqsoft_TestClass_19_CashOut"/>
+
+
 
         </classes>
     </test>

@@ -40,12 +40,9 @@ public class Iqsoft102_SportWebSocketClient extends WebSocketClient {
 
     }
 
-
-
-
     @Override
     public void onMessage(String message) {
-        System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>" + message);
+//        System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>" + message);
         end = System.currentTimeMillis();
         responseTime = end - start;
 //        Allure.addAttachment("Received message:::  " + responseTime + " ms", "text/plain", message);
@@ -61,13 +58,11 @@ public class Iqsoft102_SportWebSocketClient extends WebSocketClient {
         }
     }
 
-
     @Override
     public void onClose(int code, String reason, boolean remote) {
 //        System.out.println("Socket successfully closed. " + " Code = " + code);
         Allure.addAttachment("Socket successfully closed. ", "Code = " + code);
     }
-
     @Override
     public void onError(Exception ex) {
         if (!intentionalClose) {
@@ -80,7 +75,7 @@ public class Iqsoft102_SportWebSocketClient extends WebSocketClient {
     public void sendMessage(String message) {
         if (isOpen()) {
             Allure.addAttachment("Message sent: " , "text/plain", message);
-            System.out.println("Message sent: "+ message);
+//            System.out.println("Message sent: "+ message);
             Iqsoft_001_BasePage.logger.info("Message sent: "+ message);
             start = System.currentTimeMillis();
             send(message);
@@ -111,15 +106,10 @@ public class Iqsoft102_SportWebSocketClient extends WebSocketClient {
             closeConnection(1000, "Socket closed Successfully");
         }
     }
+
     private void attemptReconnect() {
         scheduler.schedule(this::connect, 0, TimeUnit.SECONDS);
     }
-
-
-
-
-
-
 
 
 

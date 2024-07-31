@@ -23,50 +23,14 @@ public class Iqsoft_TestClass_14_Units extends Iqsoft_001_BaseTest {
 
     @BeforeClass
     public void setUp() {
-        driver.quit();
-        socketConnectionLoggedInVirtual();
+//        socketConnectionLoggedInVirtual();
     }
 
 
-    @Test(description = "SocketConnection")
-    @Feature("SocketConnection")
+    @Test(description = "SocketConnection",priority = 12)
+    @Feature("Units")
     @Story("002_RequestSucceeded_SocketConnectionLoggedIn")
-    @Description("Verify Socket Success connection")
-    @Severity(SeverityLevel.BLOCKER)
-    public void SocketConnectionSportsBook_ValidatePositiveResponse()  {
-        Assert.assertEquals(true, isSocketConnectionSuccess, "SocketConnectionSuccess: " + isSocketConnectionSuccess);
-    }
-
-
-
-    @Test(description = "SocketConnection", dependsOnMethods = "SocketConnectionSportsBook_ValidatePositiveResponse")
-    @Feature("SocketConnection")
-    @Story("002_RequestSucceeded_SocketConnectionLoggedIn")
-    @Description("Verify Socket Success connection")
-    @Severity(SeverityLevel.BLOCKER)
-    public void MessageAuthorized_ValidatePositiveResponse() throws InterruptedException {
-
-        SoftAssert softAssert = new SoftAssert();
-        client.sendMessage(sendSocketMessageWithoutArgument("basehub", "Authorized", I));
-        iqsoft300_socketMessage_authorized_response = (Iqsoft300_SocketMessage_Authorized_Response)
-                mapReceivedMessage(Iqsoft300_SocketMessage_Authorized_Response.class, String.valueOf(I));
-
-        I++;
-
-        softAssert.assertEquals(true, iqsoft300_socketMessage_authorized_response.getR().isAuthorized(),
-                "Authorized: " + iqsoft300_socketMessage_authorized_response.getR().isAuthorized());
-        softAssert.assertEquals(null, iqsoft300_socketMessage_authorized_response.getR().getCurrencyId(),
-                "CurrencyId: " + iqsoft300_socketMessage_authorized_response.getR().isAuthorized());
-        softAssert.assertEquals(0, iqsoft300_socketMessage_authorized_response.getR().getCurrencyRate(),
-                "CurrencyRate: " + iqsoft300_socketMessage_authorized_response.getR().isAuthorized());
-        softAssert.assertEquals(0, iqsoft300_socketMessage_authorized_response.getR().getClientId(),
-                "ClientId: " + iqsoft300_socketMessage_authorized_response.getR().isAuthorized());
-    }
-
-    @Test(description = "SocketConnection", dependsOnMethods = "SocketConnectionSportsBook_ValidatePositiveResponse")
-    @Feature("SocketConnection")
-    @Story("002_RequestSucceeded_SocketConnectionLoggedIn")
-    @Description("Verify Socket Success connection")
+    @Description("Verify Socket Units Message")
     @Severity(SeverityLevel.BLOCKER)
     public void MessageUnits_ValidatePositiveResponse() throws InterruptedException {
 
@@ -80,30 +44,6 @@ public class Iqsoft_TestClass_14_Units extends Iqsoft_001_BaseTest {
         Assert.assertNotEquals(null, iqsoft301_socketMessage_units_response.getR(),
                 "Units R: " + iqsoft301_socketMessage_units_response.getR());
     }
-
-
-    @Test(description = "SocketConnection", dependsOnMethods = "SocketConnectionSportsBook_ValidatePositiveResponse")
-    @Feature("SocketConnection")
-    @Story("002_RequestSucceeded_SocketConnectionLoggedIn")
-    @Description("Verify Socket Success connection")
-    @Severity(SeverityLevel.BLOCKER)
-    public void MessageBalance_ValidatePositiveResponse() throws InterruptedException {
-
-        client.sendMessage(sendSocketMessageWithoutArgument("playerhub", "Balance", I));
-        iqsoft302_socketMessage_balance_response = (Iqsoft302_SocketMessage_Balance_Response)
-                mapReceivedMessage(Iqsoft302_SocketMessage_Balance_Response.class, String.valueOf(I));
-        I++;
-
-        Assert.assertEquals(0, iqsoft302_socketMessage_balance_response.getR().getResponseCode(),
-                "ResponseCode: " + iqsoft300_socketMessage_authorized_response.getR().isAuthorized());
-        if (iqsoft302_socketMessage_balance_response.getR().getResponseObject().getBalance()>=0){
-            Assert.assertTrue(true);
-        }else{
-            Assert.fail("Balance: " + iqsoft302_socketMessage_balance_response.getR().getResponseObject().getBalance());
-        }
-    }
-
-
 
 
 
