@@ -174,7 +174,7 @@ public class Iqsoft_TestClass_17_CreateBoard extends Iqsoft_001_BaseTest {
     public void MessageCreateBoard_NegativeWidth_007() throws InterruptedException {
         System.out.println(">>>>>>>>>>>>>>>>>>" + iqsoft302_socketMessage_balance_response.getR().getResponseObject().getBalance());
         client.sendMessage(sendSocketMessageCreateBoard("playerhub", "CreateBoard", I,
-                100,10,1,1,110,6));
+                6,10,1,1,110,6));
         iqsoft305_socketMessage_createBoard_response = (Iqsoft305_SocketMessage_CreateBoard_Response)
                 mapReceivedMessage(Iqsoft305_SocketMessage_CreateBoard_Response.class, String.valueOf(I));
         I++;

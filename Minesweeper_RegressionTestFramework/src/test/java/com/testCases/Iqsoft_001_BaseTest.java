@@ -326,7 +326,7 @@ public class Iqsoft_001_BaseTest extends DriverFactory {
 
     public static String sendSocketMessageWithoutArgument(String H, String M, int I) {
         String message;
-
+        iqsoft200_socketMessageWithoutArguments_request = new Iqsoft200_SocketMessage_WithoutArguments_Request();
         iqsoft200_socketMessageWithoutArguments_request.setH(H);
         iqsoft200_socketMessageWithoutArguments_request.setM(M);
         iqsoft200_socketMessageWithoutArguments_request.setI(I);
@@ -340,7 +340,7 @@ public class Iqsoft_001_BaseTest extends DriverFactory {
 
     public static String sendSocketMessageState(String H, String M, int I, List<Integer> A) {
         String message;
-
+        iqsoft201_socketMessage_state_request = new Iqsoft201_SocketMessage_State_Request();
         iqsoft201_socketMessage_state_request.setH(H);
         iqsoft201_socketMessage_state_request.setM(M);
         iqsoft201_socketMessage_state_request.setI(I);
@@ -356,7 +356,7 @@ public class Iqsoft_001_BaseTest extends DriverFactory {
     public static String sendSocketMessageCreateBoard(String H, String M, int I, int width, int height, int minesCount,
                                                       int betType, int gameId, double Amount) {
         String message;
-
+        iqsoft202_socketMessage_createBoard_request = new Iqsoft202_SocketMessage_CreateBoard_Request();
         iqsoft202_socketMessage_createBoard_request.setH(H);
         iqsoft202_socketMessage_createBoard_request.setM(M);
         iqsoft202_socketMessage_createBoard_request.setI(I);
@@ -391,7 +391,7 @@ public class Iqsoft_001_BaseTest extends DriverFactory {
 
     public static String sendSocketMessageBet(String H, String M, int I, int row, int column) {
         String message;
-
+        iqsoft203_socketMessage_bet_request = new Iqsoft203_SocketMessage_Bet_Request();
         iqsoft203_socketMessage_bet_request.setH(H);
         iqsoft203_socketMessage_bet_request.setM(M);
         iqsoft203_socketMessage_bet_request.setI(I);
@@ -414,7 +414,7 @@ public class Iqsoft_001_BaseTest extends DriverFactory {
 
     public static String sendSocketMessageCashout(String H, String M, int I) {
         String message = null;
-
+        iqsoft204_socketMessage_cashout_request = new Iqsoft204_SocketMessage_Cashout_Request();
         iqsoft204_socketMessage_cashout_request.setH(H);
         iqsoft204_socketMessage_cashout_request.setM(M);
         iqsoft204_socketMessage_cashout_request.setI(I);
@@ -426,19 +426,17 @@ public class Iqsoft_001_BaseTest extends DriverFactory {
         List<Iqsoft204_SocketMessage_Cashout_Request.A> aList = new ArrayList<>();
         aList.add(aInstance);
         iqsoft204_socketMessage_cashout_request.setA(aList);
+        Gson gson = new Gson();
 
-        com.fasterxml.jackson.databind.ObjectMapper objectMapper = new com.fasterxml.jackson.databind.ObjectMapper();
+        message = gson.toJson(iqsoft204_socketMessage_cashout_request);
+//        com.fasterxml.jackson.databind.ObjectMapper objectMapper = new com.fasterxml.jackson.databind.ObjectMapper();
 
-        try {
-            message = objectMapper.writeValueAsString(iqsoft204_socketMessage_cashout_request);
-//            System.out.println(message); // Output will be {"A":[{}]}
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-//        Gson gson = new Gson();
-//
-//        message = gson.toJson(iqsoft204_socketMessage_cashout_request);
-
+//        try {
+//            message = objectMapper.writeValueAsString(iqsoft204_socketMessage_cashout_request);
+////            System.out.println(message); // Output will be {"A":[{}]}
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
         return message;
     }
 

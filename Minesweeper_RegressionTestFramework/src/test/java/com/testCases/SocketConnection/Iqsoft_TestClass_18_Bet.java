@@ -110,12 +110,14 @@ public class Iqsoft_TestClass_18_Bet extends Iqsoft_001_BaseTest {
         iqsoft306_socketMessage_bet_response = (Iqsoft306_SocketMessage_Bet_Response)
                 mapReceivedMessage(Iqsoft306_SocketMessage_Bet_Response.class, String.valueOf(I));
         I++;
+//        if (iqsoft306_socketMessage_bet_response.getR().getResponseObject().getWinAmount() != 0) {
             client.sendMessage(sendSocketMessageCashout("playerhub", "CashOut", I));
             iqsoft307_socketMessage_cashOut_response = (Iqsoft307_SocketMessage_CashOut_Response)
                     mapReceivedMessage(Iqsoft307_SocketMessage_CashOut_Response.class, String.valueOf(I));
             I++;
             Assert.assertEquals( iqsoft307_socketMessage_cashOut_response.getR().getResponseCode(),0,
                     "ResponseCode: " + iqsoft307_socketMessage_cashOut_response.getR().getResponseCode());
+//        }
         System.out.println(">>>>>>>>>>>>>>>>>>" + iqsoft302_socketMessage_balance_response.getR().getResponseObject().getBalance());
         Assert.assertNotEquals( iqsoft306_socketMessage_bet_response.getR().getResponseCode(),0,
                 "ResponseCode: " + iqsoft306_socketMessage_bet_response.getR().getResponseCode());
