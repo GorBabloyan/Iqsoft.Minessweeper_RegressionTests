@@ -1,10 +1,8 @@
 package com.testCases;
 
 import com.Models.Iqsoft003_BackendLoggedIn.Iqsoft102_SportWebSocketClient;
-import com.Models.Iqsoft003_BackendLoggedIn.SocketMessages.Request.Iqsoft200_SocketMessage_WithoutArguments_Request;
-import com.Models.Iqsoft003_BackendLoggedIn.SocketMessages.Response.Iqsoft300_SocketMessage_Authorized_Response;
-import com.Models.Iqsoft003_BackendLoggedIn.SocketMessages.Response.Iqsoft303_SocketMessage_Balance_Response;
-import com.Models.Iqsoft003_BackendLoggedIn.SocketMessages.Response.Iqsoft301_SocketMessage_Units_Response;
+import com.Models.Iqsoft003_BackendLoggedIn.SocketMessages.Request.*;
+import com.Models.Iqsoft003_BackendLoggedIn.SocketMessages.Response.*;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.gson.Gson;
@@ -31,7 +29,9 @@ import java.net.URI;
 import java.net.URL;
 import java.net.URLDecoder;
 import java.time.Duration;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 
@@ -68,10 +68,23 @@ public class Iqsoft_001_BaseTest extends DriverFactory {
     public static Iqsoft102_SportWebSocketClient client;
 
     public static Iqsoft200_SocketMessage_WithoutArguments_Request iqsoft200_socketMessageWithoutArguments_request;
-    public static Iqsoft300_SocketMessage_Authorized_Response iqsoft300_socketMessage_authorized_response;
-    public static Iqsoft303_SocketMessage_Balance_Response iqsoft303_socketMessage_balance_response;
-    public static Iqsoft301_SocketMessage_Units_Response iqsoft301_socketMessage_units_response;
+    public static Iqsoft201_SocketMessage_State_Request iqsoft201_socketMessage_state_request;
+    public static Iqsoft202_SocketMessage_CreateBoard_Request iqsoft202_socketMessage_createBoard_request;
+    public static Iqsoft203_SocketMessage_Bet_Request iqsoft203_socketMessage_bet_request;
+    public static Iqsoft204_SocketMessage_Cashout_Request iqsoft204_socketMessage_cashout_request;
 
+
+
+
+    public static Iqsoft300_SocketMessage_Authorized_Response iqsoft300_socketMessage_authorized_response;
+    public static Iqsoft301_SocketMessage_Units_Response iqsoft301_socketMessage_units_response;
+    public static Iqsoft302_SocketMessage_Balance_Response iqsoft302_socketMessage_balance_response;
+
+    public static Iqsoft303_SocketMessage_State_Response iqsoft303_socketMessage_state_response;
+    public static Iqsoft304_SocketMessage_GetDefaultBoards_Response iqsoft304_socketMessage_getDefaultBoards_response;
+    public static Iqsoft305_SocketMessage_CreateBoard_Response iqsoft305_socketMessage_createBoard_response;
+    public static Iqsoft306_SocketMessage_Bet_Response iqsoft306_socketMessage_bet_response;
+    public static Iqsoft307_SocketMessage_CashOut_Response iqsoft307_socketMessage_cashOut_response;
     //endregion
 
 
@@ -319,6 +332,116 @@ public class Iqsoft_001_BaseTest extends DriverFactory {
 
         return message;
     }
+
+    public static String sendSocketMessageState(String H, String M, int I, List<Integer> A) {
+        String message;
+
+        iqsoft201_socketMessage_state_request = new Iqsoft201_SocketMessage_State_Request();
+        iqsoft201_socketMessage_state_request.setH(H);
+        iqsoft201_socketMessage_state_request.setM(M);
+        iqsoft201_socketMessage_state_request.setI(I);
+        iqsoft201_socketMessage_state_request.setA(A);
+
+        Gson gson = new Gson();
+
+        message = gson.toJson(iqsoft201_socketMessage_state_request);
+
+        return message;
+    }
+
+    public static String sendSocketMessageCreateBoard(String H, String M, int I, int width,int height, int minesCount,
+                                                      int betType,int gameId,double Amount) {
+        String message;
+
+        iqsoft202_socketMessage_createBoard_request = new Iqsoft202_SocketMessage_CreateBoard_Request();
+        iqsoft202_socketMessage_createBoard_request.setH(H);
+        iqsoft202_socketMessage_createBoard_request.setM(M);
+        iqsoft202_socketMessage_createBoard_request.setI(I);
+
+        Iqsoft202_SocketMessage_CreateBoard_Request.A.BoardInput boardInput = new Iqsoft202_SocketMessage_CreateBoard_Request.A.BoardInput();
+        boardInput.setWidth(width);
+        boardInput.setHeight(height);
+        boardInput.setMinesCount(minesCount);
+
+        Iqsoft202_SocketMessage_CreateBoard_Request.A.BetInput betInput = new Iqsoft202_SocketMessage_CreateBoard_Request.A.BetInput();
+        betInput.setBetType(betType);
+        betInput.setClientId(iqsoft300_socketMessage_authorized_response.getR().getClientId());
+        betInput.setGameId(gameId);
+        betInput.setAmount(Amount);
+        betInput.setEvents(null);
+
+        Iqsoft202_SocketMessage_CreateBoard_Request.A a= new Iqsoft202_SocketMessage_CreateBoard_Request.A();
+        a.setBoardInput(boardInput);
+        a.setBetInput(betInput);
+
+        List<Iqsoft202_SocketMessage_CreateBoard_Request.A> aList = new ArrayList<>();
+        aList.add(a);
+
+        iqsoft202_socketMessage_createBoard_request.setA(aList);
+
+        Gson gson = new Gson();
+
+        message = gson.toJson(iqsoft202_socketMessage_createBoard_request);
+
+        return message;
+    }
+
+    public static String sendSocketMessageBet(String H, String M, int I, int row, int column) {
+        String message;
+
+        iqsoft203_socketMessage_bet_request = new Iqsoft203_SocketMessage_Bet_Request();
+        iqsoft203_socketMessage_bet_request.setH(H);
+        iqsoft203_socketMessage_bet_request.setM(M);
+        iqsoft203_socketMessage_bet_request.setI(I);
+
+
+        Iqsoft203_SocketMessage_Bet_Request.A a= new Iqsoft203_SocketMessage_Bet_Request.A();
+        a.setColumn(column);
+        a.setRow(row);
+        List<Iqsoft203_SocketMessage_Bet_Request.A> aList = new ArrayList<>();
+        aList.add(a);
+
+        iqsoft203_socketMessage_bet_request.setA(aList);
+
+        Gson gson = new Gson();
+
+        message = gson.toJson(iqsoft203_socketMessage_bet_request);
+
+        return message;
+    }
+
+    public static String sendSocketMessageCashout(String H, String M, int I) {
+        String message = null;
+
+        iqsoft204_socketMessage_cashout_request = new Iqsoft204_SocketMessage_Cashout_Request();
+        iqsoft204_socketMessage_cashout_request.setH(H);
+        iqsoft204_socketMessage_cashout_request.setM(M);
+        iqsoft204_socketMessage_cashout_request.setI(I);
+
+
+        Iqsoft204_SocketMessage_Cashout_Request.A aInstance = new Iqsoft204_SocketMessage_Cashout_Request.A();
+
+        // Create a list of A and add the instance to the list
+        List<Iqsoft204_SocketMessage_Cashout_Request.A> aList = new ArrayList<>();
+        aList.add(aInstance);
+        iqsoft204_socketMessage_cashout_request.setA(aList);
+
+        com.fasterxml.jackson.databind.ObjectMapper objectMapper = new com.fasterxml.jackson.databind.ObjectMapper();
+
+        try {
+            message = objectMapper.writeValueAsString(iqsoft204_socketMessage_cashout_request);
+//            System.out.println(message); // Output will be {"A":[{}]}
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+//        Gson gson = new Gson();
+//
+//        message = gson.toJson(iqsoft204_socketMessage_cashout_request);
+
+        return message;
+    }
+
+
     public static Object mapReceivedMessage(Class myClass, String I) throws InterruptedException {
         Object mapObj;
         try {

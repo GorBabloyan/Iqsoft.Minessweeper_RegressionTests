@@ -4,7 +4,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class Iqsoft303_SocketMessage_Balance_Response {
+public class Iqsoft302_SocketMessage_Balance_Response {
 
     @JsonProperty("I")
     private String I;
@@ -13,7 +13,7 @@ public class Iqsoft303_SocketMessage_Balance_Response {
     private R R ;
 
     @JsonIgnoreProperties(ignoreUnknown = true)
-    public static class R {
+    public class R {
 
         @JsonProperty("ResponseCode")
         private  int ResponseCode;
@@ -45,11 +45,11 @@ public class Iqsoft303_SocketMessage_Balance_Response {
             ResponseCode = responseCode;
         }
 
-        public Iqsoft303_SocketMessage_Balance_Response.R.ResponseObject getResponseObject() {
+        public Iqsoft302_SocketMessage_Balance_Response.R.ResponseObject getResponseObject() {
             return ResponseObject;
         }
 
-        public void setResponseObject(Iqsoft303_SocketMessage_Balance_Response.R.ResponseObject responseObject) {
+        public void setResponseObject(Iqsoft302_SocketMessage_Balance_Response.R.ResponseObject responseObject) {
             ResponseObject = responseObject;
         }
     }
@@ -63,11 +63,11 @@ public class Iqsoft303_SocketMessage_Balance_Response {
         I = i;
     }
 
-    public Iqsoft303_SocketMessage_Balance_Response.R getR() {
+    public Iqsoft302_SocketMessage_Balance_Response.R getR() {
         return R;
     }
 
-    public void setR(Iqsoft303_SocketMessage_Balance_Response.R r) {
+    public void setR(Iqsoft302_SocketMessage_Balance_Response.R r) {
         R = r;
     }
 }
