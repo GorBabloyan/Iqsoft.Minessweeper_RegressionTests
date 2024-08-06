@@ -18,27 +18,19 @@ public class Iqsoft_TestClass_19_CashOut extends Iqsoft_001_BaseTest {
     public Iqsoft_TestClass_19_CashOut() {
     }
 
-
-    @BeforeClass
-    public void setUp() {
-//        socketConnectionLoggedInVirtual();
-    }
-
-
-    @Test(description = "Socket", priority = 60)
-    @Feature("SocketConnection")
+    @Test(description = "Cashout", priority = 60)
+    @Feature("Cashout")
     @Story("Cashout_Message")
     @Description("Verify Socket Cashout Message")
     @Severity(SeverityLevel.BLOCKER)
     public void MessageCashout_ValidatePositiveResponse() throws InterruptedException {
-        System.out.println(">>>>>>>>>>>>>>>>>>" + iqsoft302_socketMessage_balance_response.getR().getResponseObject().getBalance());
         if (iqsoft306_socketMessage_bet_response.getR().getResponseObject().getWinAmount() != 0) {
 
             client.sendMessage(sendSocketMessageCashout("playerhub", "CashOut", I));
             iqsoft307_socketMessage_cashOut_response = (Iqsoft307_SocketMessage_CashOut_Response)
                     mapReceivedMessage(Iqsoft307_SocketMessage_CashOut_Response.class, String.valueOf(I));
             I++;
-            System.out.println(">>>>>>>>>>>>>>>>>>" + iqsoft302_socketMessage_balance_response.getR().getResponseObject().getBalance());
+
             Assert.assertEquals( iqsoft307_socketMessage_cashOut_response.getR().getResponseCode(),0,
                     "ResponseCode: " + iqsoft307_socketMessage_cashOut_response.getR().getResponseCode());
 
@@ -46,7 +38,7 @@ public class Iqsoft_TestClass_19_CashOut extends Iqsoft_001_BaseTest {
             iqsoft307_socketMessage_cashOut_response = (Iqsoft307_SocketMessage_CashOut_Response)
                     mapReceivedMessage(Iqsoft307_SocketMessage_CashOut_Response.class, String.valueOf(I));
             I++;
-            System.out.println(">>>>>>>>>>>>>>>>>>" + iqsoft302_socketMessage_balance_response.getR().getResponseObject().getBalance());
+
             Assert.assertEquals( iqsoft307_socketMessage_cashOut_response.getR().getResponseCode(),0,
                     "ResponseCode: " + iqsoft307_socketMessage_cashOut_response.getR().getResponseCode());
         }

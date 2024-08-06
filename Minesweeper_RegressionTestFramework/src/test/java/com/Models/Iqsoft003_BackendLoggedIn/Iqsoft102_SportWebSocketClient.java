@@ -27,7 +27,7 @@ public class Iqsoft102_SportWebSocketClient extends WebSocketClient {
     public void onOpen(ServerHandshake handshakedata) {
 
 
-        Allure.addAttachment("SocketConnection Url:  " + serverUri.toString(), "WebSocket connection opened");
+//        Allure.addAttachment("SocketConnection Url:  " + serverUri.toString(), "WebSocket connection opened");
 
         if (handshakedata.getHttpStatus() < 300) {
             Iqsoft_001_BaseTest.isSocketConnectionSuccess = true;

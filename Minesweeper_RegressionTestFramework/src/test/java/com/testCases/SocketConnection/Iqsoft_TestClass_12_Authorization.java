@@ -18,40 +18,36 @@ public class Iqsoft_TestClass_12_Authorization extends Iqsoft_001_BaseTest {
     }
 
     @BeforeClass
-    public void setUp() {
-//        socketConnectionLoggedInVirtual();
-    }
-
-
-    @Test(description = "SocketConnection",priority = 11)
-    @Feature("SocketConnection")
-    @Story("Authorized_Message")
-    @Description("Verify Socket Authorized Message")
-    @Severity(SeverityLevel.BLOCKER)
-    public void MessageAuthorized_ValidatePositiveResponse() throws InterruptedException {
-
-        SoftAssert softAssert = new SoftAssert();
+    public void setUp() throws InterruptedException {
         client.sendMessage(sendSocketMessageWithoutArgument("basehub", "Authorized", I));
         iqsoft300_socketMessage_authorized_response = (Iqsoft300_SocketMessage_Authorized_Response)
                 mapReceivedMessage(Iqsoft300_SocketMessage_Authorized_Response.class, String.valueOf(I));
 
         I++;
-
-        softAssert.assertEquals(true, iqsoft300_socketMessage_authorized_response.getR().isAuthorized(),
-                "Authorized: " + iqsoft300_socketMessage_authorized_response.getR().isAuthorized());
-        softAssert.assertEquals(null, iqsoft300_socketMessage_authorized_response.getR().getCurrencyId(),
-                "CurrencyId: " + iqsoft300_socketMessage_authorized_response.getR().isAuthorized());
-        softAssert.assertEquals(0, iqsoft300_socketMessage_authorized_response.getR().getCurrencyRate(),
-                "CurrencyRate: " + iqsoft300_socketMessage_authorized_response.getR().isAuthorized());
-        softAssert.assertEquals(0, iqsoft300_socketMessage_authorized_response.getR().getClientId(),
-                "ClientId: " + iqsoft300_socketMessage_authorized_response.getR().isAuthorized());
     }
 
 
+    @Test(description = "Authorization", priority = 11)
+    @Feature("Authorization")
+    @Story("Authorized_Message")
+    @Description("Verify Socket Authorized Message")
+    @Severity(SeverityLevel.BLOCKER)
+    public void MessageAuthorized_ValidatePositiveResponse() {
 
+        SoftAssert softAssert = new SoftAssert();
 
+        softAssert.assertEquals( iqsoft300_socketMessage_authorized_response.getR().isAuthorized(),true,
+                "Authorized: " + iqsoft300_socketMessage_authorized_response.getR().isAuthorized());
 
+        softAssert.assertNotEquals( iqsoft300_socketMessage_authorized_response.getR().getCurrencyId(),null,
+                "CurrencyId: " + iqsoft300_socketMessage_authorized_response.getR().isAuthorized());
+        softAssert.assertNotEquals(iqsoft300_socketMessage_authorized_response.getR().getCurrencyRate(),0,
+                "CurrencyRate: " + iqsoft300_socketMessage_authorized_response.getR().isAuthorized());
+        softAssert.assertNotEquals(iqsoft300_socketMessage_authorized_response.getR().getClientId(),0,
+                "ClientId: " + iqsoft300_socketMessage_authorized_response.getR().isAuthorized());
 
+        softAssert.assertAll();
+    }
 
 
 }

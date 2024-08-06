@@ -96,6 +96,61 @@ public class Iqsoft305_SocketMessage_CreateBoard_Response {
                     }
                 }
 
+                public int getPlayerId() {
+                    return PlayerId;
+                }
+
+                public void setPlayerId(int playerId) {
+                    PlayerId = playerId;
+                }
+
+                public List<List<Double>> getBoard() {
+                    return Board;
+                }
+
+                public void setBoard(List<List<Double>> board) {
+                    Board = board;
+                }
+
+                public int getPositionRow() {
+                    return PositionRow;
+                }
+
+                public void setPositionRow(int positionRow) {
+                    PositionRow = positionRow;
+                }
+
+                public double getBetAmount() {
+                    return BetAmount;
+                }
+
+                public void setBetAmount(double betAmount) {
+                    BetAmount = betAmount;
+                }
+
+                public double getWinAmount() {
+                    return WinAmount;
+                }
+
+                public void setWinAmount(double winAmount) {
+                    WinAmount = winAmount;
+                }
+
+                public Object getPositionColumn() {
+                    return PositionColumn;
+                }
+
+                public void setPositionColumn(Object positionColumn) {
+                    PositionColumn = positionColumn;
+                }
+
+                public Iqsoft305_SocketMessage_CreateBoard_Response.R.ResponseObject.BoardInfo.Dimension getDimension() {
+                    return Dimension;
+                }
+
+                public void setDimension(Iqsoft305_SocketMessage_CreateBoard_Response.R.ResponseObject.BoardInfo.Dimension dimension) {
+                    Dimension = dimension;
+                }
             }
 
 

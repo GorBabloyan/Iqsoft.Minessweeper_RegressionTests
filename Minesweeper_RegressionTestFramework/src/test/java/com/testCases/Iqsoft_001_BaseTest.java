@@ -10,7 +10,6 @@ import com.pageObjects.Iqsoft_Page_01_Header;
 import com.pageObjects.Iqsoft_001_BasePage;
 import com.pageObjects.Iqsoft_Page_02_Lobby;
 import com.pageObjects.Iqsoft_Page_03_PlayGame;
-import cucumber.api.java.sl.In;
 import io.qameta.allure.Allure;
 import kong.unirest.HttpResponse;
 import kong.unirest.Unirest;
@@ -24,6 +23,7 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import com.utilities.DriverFactory;
 import com.utilities.ReadConfig;
+import org.testng.annotations.Listeners;
 
 import java.io.File;
 import java.net.URI;
@@ -37,7 +37,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-
+@Listeners({com.utilities.ReportingAllure.class})
 public class Iqsoft_001_BaseTest extends DriverFactory {
 
     Iqsoft_001_BasePage iqsoft001BasePage = new Iqsoft_001_BasePage();
@@ -144,15 +144,16 @@ public class Iqsoft_001_BaseTest extends DriverFactory {
 
     }
 
-
     @AfterSuite
     public void Finish() {
         if (driver != null) {
             driver.quit();
         }
         try {
-            client.closeBlocking();
-            client.close();
+            if (client!=null){
+                client.closeBlocking();
+                client.close();
+            }
         } catch (InterruptedException e) {
 
         }
@@ -167,7 +168,7 @@ public class Iqsoft_001_BaseTest extends DriverFactory {
         HttpResponse<String> response;
         int statusCode;
         String urlLoginApi = webSitWebApiURL + loginPath;
-
+        String RequestBody = "{\"Data\":\"" + loginData + "\"}";
 
         Unirest.config().reset();
         Unirest.config().connectTimeout(60000);
@@ -175,7 +176,7 @@ public class Iqsoft_001_BaseTest extends DriverFactory {
         response = Unirest.post(urlLoginApi)
                 .header("content-type", "application/json")
                 .header("Origin", baseURL)
-                .body("{\"Data\":\"" + loginData + "\"}")
+                .body(RequestBody)
                 .asString();
         Unirest.shutDown();
 
@@ -194,6 +195,10 @@ public class Iqsoft_001_BaseTest extends DriverFactory {
                 languageId = String.valueOf(responseJson.get("LanguageId"));
                 token = String.valueOf(responseJson.get("Token"));
 
+                Allure.addAttachment("LoginAPIRequest:  Url  " + urlLoginApi + "        RequestBody", RequestBody);
+                Allure.addAttachment("LoginAPIResponse:   ", responseString);
+
+
                 Iqsoft_001_BasePage.logger.info("ClientId: " + clientId +
                         "   token: " + token + "  partnerId: " + partnerId + "  languageId: " + languageId);
 
@@ -211,14 +216,16 @@ public class Iqsoft_001_BaseTest extends DriverFactory {
         HttpResponse<String> response;
         int statusCode;
         String urlGetProductUrlApi = webSitWebApiURL + getProductUrlPath;
+        String RequestBody = "{\"IsForMobile\": false, \"LanguageId\": \"" + languageId + "\", \"PartnerId\":" + partnerId + ",\"ProductId\": " + productId +
+                ",\"TimeZone\": 4, " + "\"Token\": \"" + token + "\",\"ClientId\":" + clientId + ", \"IsForDemo\": false, \"IsAgent\": false}";
+
         Unirest.config().reset();
         Unirest.config().connectTimeout(60000);
         Unirest.config().socketTimeout(60000);
         response = Unirest.post(urlGetProductUrlApi)
                 .header("Content-Type", "application/json")
                 .header("Origin", baseURL)
-                .body("{\"IsForMobile\": false, \"LanguageId\": \"" + languageId + "\", \"PartnerId\":" + partnerId + ",\"ProductId\": " + productId +
-                        ",\"TimeZone\": 4, " + "\"Token\": \"" + token + "\",\"ClientId\":" + clientId + ", \"IsForDemo\": false, \"IsAgent\": false}")
+                .body(RequestBody)
                 .asString();
 
         statusCode = response.getStatus();
@@ -233,6 +240,10 @@ public class Iqsoft_001_BaseTest extends DriverFactory {
                 Iqsoft_001_BasePage.logger.info("GameUrl: " + gameUrl);
                 sessionToken = getParameterFromURL(gameUrl, "token");
                 Iqsoft_001_BasePage.logger.info("GameToken: " + sessionToken);
+
+                Allure.addAttachment("GetProductUrlAPIRequest:  Url  " + urlGetProductUrlApi + "        RequestBody", RequestBody);
+                Allure.addAttachment("GetProductUrlAPIResponse:   ", responseString);
+                Allure.addAttachment("SessionToken:   ", sessionToken);
 
             } else {
                 throw new SkipException("GetProductUrl Response failed");
@@ -323,7 +334,6 @@ public class Iqsoft_001_BaseTest extends DriverFactory {
         } catch (Exception e) {
             Iqsoft_001_BasePage.logger.error("socketConnectionSportsBook() call has an exception: " + e);
         }
-
     }
 
     public static String receivedMessage;
@@ -394,7 +404,6 @@ public class Iqsoft_001_BaseTest extends DriverFactory {
 
         return message;
     }
-
     public static String sendSocketMessageBet(String H, String M, int I, int row, int column) {
         String message;
         iqsoft203_socketMessage_bet_request = new Iqsoft203_SocketMessage_Bet_Request();
@@ -447,7 +456,7 @@ public class Iqsoft_001_BaseTest extends DriverFactory {
     }
 
     public static String sendSocketMessageTicketHistory(String H, String M, int I) {
-      //  {"H":"playerhub","M":"MinesweeperTicketsHistory","A":[{"FromDate":"2024-07-30T14:46:49.157Z","ToDate":"2024-07-31T19:46:49.157Z","PageNumber":1,"ItemsPerPage":13}],"I":9}
+        //  {"H":"playerhub","M":"MinesweeperTicketsHistory","A":[{"FromDate":"2024-07-30T14:46:49.157Z","ToDate":"2024-07-31T19:46:49.157Z","PageNumber":1,"ItemsPerPage":13}],"I":9}
 
 
         String message = null;
@@ -471,14 +480,12 @@ public class Iqsoft_001_BaseTest extends DriverFactory {
         iqsoft205_socketMessage_ticketsHistory_request.setA(aList);
 
 
-
         Gson gson = new Gson();
 
         message = gson.toJson(iqsoft205_socketMessage_ticketsHistory_request);
 
         return message;
     }
-
 
     public static Object mapReceivedMessage(Class myClass, String I) throws InterruptedException {
         Object mapObj;
@@ -529,9 +536,8 @@ public class Iqsoft_001_BaseTest extends DriverFactory {
         return formattedDateTime;
     }
 
-
-
     static String encodeData = "";
+
     //region < negotiateApiSportsBook & SocketConnection LoggedIn>
 //    public String negotiateHttpApiLoggedInVirtual() {
 //        String connectionToken = null;

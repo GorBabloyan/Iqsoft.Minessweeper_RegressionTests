@@ -19,24 +19,22 @@ public class Iqsoft_TestClass_13_GetBalance extends Iqsoft_001_BaseTest {
 
 
     @BeforeClass
-    public void setUp() {
-//        socketConnectionLoggedInVirtual();
-    }
-
-
-    @Test(description = "SocketConnection",priority = 13)
-    @Feature("SocketConnection")
-    @Story("Balance_Message")
-    @Description("Verify Socket Balance Message")
-    @Severity(SeverityLevel.BLOCKER)
-    public void MessageBalance_ValidatePositiveResponse() throws InterruptedException {
-
+    public void setUp() throws InterruptedException {
         client.sendMessage(sendSocketMessageWithoutArgument("playerhub", "Balance", I));
         iqsoft302_socketMessage_balance_response = (Iqsoft302_SocketMessage_Balance_Response)
                 mapReceivedMessage(Iqsoft302_SocketMessage_Balance_Response.class, String.valueOf(I));
         I++;
+    }
 
-        Assert.assertEquals(0, iqsoft302_socketMessage_balance_response.getR().getResponseCode(),
+
+    @Test(description = "GetBalance",priority = 13)
+    @Feature("GetBalance")
+    @Story("Balance_Message")
+    @Description("Verify Socket Balance Message")
+    @Severity(SeverityLevel.BLOCKER)
+    public void MessageBalance_ValidatePositiveResponse()  {
+
+        Assert.assertEquals(iqsoft302_socketMessage_balance_response.getR().getResponseCode(),0,
                 "ResponseCode: " + iqsoft300_socketMessage_authorized_response.getR().isAuthorized());
         if (iqsoft302_socketMessage_balance_response.getR().getResponseObject().getBalance()>=0){
             Assert.assertTrue(true);

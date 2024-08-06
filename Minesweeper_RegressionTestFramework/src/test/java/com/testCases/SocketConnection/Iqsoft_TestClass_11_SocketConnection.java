@@ -19,11 +19,10 @@ public class Iqsoft_TestClass_11_SocketConnection extends Iqsoft_001_BaseTest {
     }
 
     @BeforeClass
-    public void setUp() {
+    public void setUp() throws InterruptedException {
         driver.quit();
         socketConnectionLoggedInVirtual();
     }
-
 
     @Test(description = "SocketConnection",priority = 10)
     @Feature("SocketConnection")
@@ -31,7 +30,8 @@ public class Iqsoft_TestClass_11_SocketConnection extends Iqsoft_001_BaseTest {
     @Description("Verify Socket Success connection")
     @Severity(SeverityLevel.BLOCKER)
     public void SocketConnectionSportsBook_ValidatePositiveResponse()  {
-        Assert.assertEquals(true, isSocketConnectionSuccess, "SocketConnectionSuccess: " + isSocketConnectionSuccess);
+        Assert.assertEquals( isSocketConnectionSuccess,true,
+                "SocketConnectionSuccess: " + isSocketConnectionSuccess);
     }
 
 
