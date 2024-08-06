@@ -18,10 +18,6 @@ public class Iqsoft_TestClass_11_SocketConnection extends Iqsoft_001_BaseTest {
     public Iqsoft_TestClass_11_SocketConnection() {
     }
 
-    public static HttpResponse<String> negotiateApiSportsBookResponse;
-    int statusCode;
-    String jsonObjectBody;
-
     @BeforeClass
     public void setUp() {
         driver.quit();

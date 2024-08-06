@@ -21,9 +21,7 @@ public class Iqsoft_TestClass_16_GetDefoultBoards extends Iqsoft_001_BaseTest {
     public Iqsoft_TestClass_16_GetDefoultBoards() {
     }
 
-    public static HttpResponse<String> negotiateApiSportsBookResponse;
-    int statusCode;
-    String jsonObjectBody;
+
 
     @BeforeClass
     public void setUp() {
@@ -31,8 +29,8 @@ public class Iqsoft_TestClass_16_GetDefoultBoards extends Iqsoft_001_BaseTest {
     }
 
     @Test(description = "SocketConnection", priority = 15)
-    @Feature("GetDefaultBoard")
-    @Story("002_RequestSucceeded_SocketConnectionLoggedIn")
+    @Feature("SocketConnection")
+    @Story("DefaultBoard_Message")
     @Description("Verify Socket GetDefaultBoard Message")
     @Severity(SeverityLevel.BLOCKER)
     public void MessageDefaultBoard_ValidatePositiveResponse() throws InterruptedException {

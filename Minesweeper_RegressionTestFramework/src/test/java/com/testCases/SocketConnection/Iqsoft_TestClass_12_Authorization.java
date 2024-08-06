@@ -17,10 +17,6 @@ public class Iqsoft_TestClass_12_Authorization extends Iqsoft_001_BaseTest {
     public Iqsoft_TestClass_12_Authorization() {
     }
 
-    public static HttpResponse<String> negotiateApiSportsBookResponse;
-    int statusCode;
-    String jsonObjectBody;
-
     @BeforeClass
     public void setUp() {
 //        socketConnectionLoggedInVirtual();
@@ -28,8 +24,8 @@ public class Iqsoft_TestClass_12_Authorization extends Iqsoft_001_BaseTest {
 
 
     @Test(description = "SocketConnection",priority = 11)
-    @Feature("Authorized")
-    @Story("002_RequestSucceeded_SocketConnectionLoggedIn")
+    @Feature("SocketConnection")
+    @Story("Authorized_Message")
     @Description("Verify Socket Authorized Message")
     @Severity(SeverityLevel.BLOCKER)
     public void MessageAuthorized_ValidatePositiveResponse() throws InterruptedException {

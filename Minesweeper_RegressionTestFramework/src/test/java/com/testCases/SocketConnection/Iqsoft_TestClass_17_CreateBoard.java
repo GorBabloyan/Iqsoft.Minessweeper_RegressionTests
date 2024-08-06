@@ -15,19 +15,15 @@ public class Iqsoft_TestClass_17_CreateBoard extends Iqsoft_001_BaseTest {
     public Iqsoft_TestClass_17_CreateBoard() {
     }
 
-    public static HttpResponse<String> negotiateApiSportsBookResponse;
-    int statusCode;
-    String jsonObjectBody;
-
     @BeforeClass
     public void setUp() {
 //        socketConnectionLoggedInVirtual();
     }
 
 
-    @Test(description = "SocketConnection", priority = 43)
+    @Test(description = "CreateBoard", priority = 43)
     @Feature("SocketConnection")
-    @Story("CreateBoard")
+    @Story("CreateBoard_Message")
     @Description("Verify Socket CreateBoard Message")
     @Severity(SeverityLevel.BLOCKER)
     public void MessageBetBeforeCreateBoard_NegativeBet_001() throws InterruptedException {
@@ -48,9 +44,9 @@ public class Iqsoft_TestClass_17_CreateBoard extends Iqsoft_001_BaseTest {
                 "ResponseCode: " + iqsoft306_socketMessage_bet_response.getR().getResponseCode());
     }
 
-    @Test(description = "SocketConnection", priority = 43)
+    @Test(description = "CreateBoard", priority = 43)
     @Feature("SocketConnection")
-    @Story("CreateBoard")
+    @Story("CreateBoard_Message")
     @Description("Verify Socket CreateBoard Message")
     @Severity(SeverityLevel.BLOCKER)
     public void MessageCashoutBeforeCreateBoard_NegativeBet_001() throws InterruptedException {
@@ -73,9 +69,9 @@ public class Iqsoft_TestClass_17_CreateBoard extends Iqsoft_001_BaseTest {
 
 
 
-    @Test(description = "SocketConnection", priority = 44)
+    @Test(description = "CreateBoard", priority = 44)
     @Feature("SocketConnection")
-    @Story("CreateBoard")
+    @Story("CreateBoard_Message")
     @Description("Verify Socket CreateBoard Message")
     @Severity(SeverityLevel.BLOCKER)
     public void MessageCreateBoard_NegativeMinesCount_002() throws InterruptedException {
@@ -89,9 +85,9 @@ public class Iqsoft_TestClass_17_CreateBoard extends Iqsoft_001_BaseTest {
         Assert.assertNotEquals( iqsoft305_socketMessage_createBoard_response.getR().getResponseCode(),0,
                 "ResponseCode: " + iqsoft305_socketMessage_createBoard_response.getR().getResponseCode());
     }
-    @Test(description = "SocketConnection", priority = 44)
+    @Test(description = "CreateBoard", priority = 44)
     @Feature("SocketConnection")
-    @Story("CreateBoard")
+    @Story("CreateBoard_Message")
     @Description("Verify Socket CreateBoard Message")
     @Severity(SeverityLevel.BLOCKER)
     public void MessageCreateBoard_NegativeMinesCount_003() throws InterruptedException {
@@ -105,9 +101,9 @@ public class Iqsoft_TestClass_17_CreateBoard extends Iqsoft_001_BaseTest {
         Assert.assertNotEquals( iqsoft305_socketMessage_createBoard_response.getR().getResponseCode(),0,
                 "ResponseCode: " + iqsoft305_socketMessage_createBoard_response.getR().getResponseCode());
     }
-    @Test(description = "SocketConnection", priority = 44)
+    @Test(description = "CreateBoard", priority = 44)
     @Feature("SocketConnection")
-    @Story("CreateBoard")
+    @Story("CreateBoard_Message")
     @Description("Verify Socket CreateBoard Message")
     @Severity(SeverityLevel.BLOCKER)
     public void MessageCreateBoard_NegativeMinesCount_004() throws InterruptedException {
@@ -126,9 +122,9 @@ public class Iqsoft_TestClass_17_CreateBoard extends Iqsoft_001_BaseTest {
 
 
 
-    @Test(description = "SocketConnection", priority = 45)
+    @Test(description = "CreateBoard", priority = 45)
     @Feature("SocketConnection")
-    @Story("CreateBoard")
+    @Story("CreateBoard_Message")
     @Description("Verify Socket CreateBoard Message")
     @Severity(SeverityLevel.BLOCKER)
     public void MessageCreateBoard_NegativeBalance_005() throws InterruptedException {
@@ -143,9 +139,9 @@ public class Iqsoft_TestClass_17_CreateBoard extends Iqsoft_001_BaseTest {
                 "ResponseCode: " + iqsoft305_socketMessage_createBoard_response.getR().getResponseCode());
     }
 
-    @Test(description = "SocketConnection", priority = 45)
+    @Test(description = "CreateBoard", priority = 45)
     @Feature("SocketConnection")
-    @Story("CreateBoard")
+    @Story("CreateBoard_Message")
     @Description("Verify Socket CreateBoard Message")
     @Severity(SeverityLevel.BLOCKER)
     public void MessageCreateBoard_NegativeBalance_006() throws InterruptedException {
@@ -166,9 +162,9 @@ public class Iqsoft_TestClass_17_CreateBoard extends Iqsoft_001_BaseTest {
 
 
 
-    @Test(description = "SocketConnection", priority = 46)
+    @Test(description = "CreateBoard", priority = 46)
     @Feature("SocketConnection")
-    @Story("CreateBoard")
+    @Story("CreateBoard_Message")
     @Description("Verify Socket CreateBoard Message")
     @Severity(SeverityLevel.BLOCKER)
     public void MessageCreateBoard_NegativeWidth_007() throws InterruptedException {
@@ -182,9 +178,9 @@ public class Iqsoft_TestClass_17_CreateBoard extends Iqsoft_001_BaseTest {
         Assert.assertNotEquals( iqsoft305_socketMessage_createBoard_response.getR().getResponseCode(),0,
                 "ResponseCode: " + iqsoft305_socketMessage_createBoard_response.getR().getResponseCode());
     }
-    @Test(description = "SocketConnection", priority = 46)
+    @Test(description = "CreateBoard", priority = 46)
     @Feature("SocketConnection")
-    @Story("CreateBoard")
+    @Story("CreateBoard_Message")
     @Description("Verify Socket CreateBoard Message")
     @Severity(SeverityLevel.BLOCKER)
     public void MessageCreateBoard_NegativeWidth_008() throws InterruptedException {
@@ -198,9 +194,9 @@ public class Iqsoft_TestClass_17_CreateBoard extends Iqsoft_001_BaseTest {
         Assert.assertNotEquals( iqsoft305_socketMessage_createBoard_response.getR().getResponseCode(),0,
                 "ResponseCode: " + iqsoft305_socketMessage_createBoard_response.getR().getResponseCode());
     }
-    @Test(description = "SocketConnection", priority = 46)
+    @Test(description = "CreateBoard", priority = 46)
     @Feature("SocketConnection")
-    @Story("CreateBoard")
+    @Story("CreateBoard_Message")
     @Description("Verify Socket CreateBoard Message")
     @Severity(SeverityLevel.BLOCKER)
     public void MessageCreateBoard_NegativeWidth_009() throws InterruptedException {
@@ -219,9 +215,9 @@ public class Iqsoft_TestClass_17_CreateBoard extends Iqsoft_001_BaseTest {
 
 
 
-    @Test(description = "SocketConnection", priority = 47)
+    @Test(description = "CreateBoard", priority = 47)
     @Feature("SocketConnection")
-    @Story("CreateBoard")
+    @Story("CreateBoard_Message")
     @Description("Verify Socket CreateBoard Message")
     @Severity(SeverityLevel.BLOCKER)
     public void MessageCreateBoard_NegativeHeight_010() throws InterruptedException {
@@ -235,9 +231,9 @@ public class Iqsoft_TestClass_17_CreateBoard extends Iqsoft_001_BaseTest {
         Assert.assertNotEquals( iqsoft305_socketMessage_createBoard_response.getR().getResponseCode(),0,
                 "ResponseCode: " + iqsoft305_socketMessage_createBoard_response.getR().getResponseCode());
     }
-    @Test(description = "SocketConnection", priority = 47)
+    @Test(description = "CreateBoard", priority = 47)
     @Feature("SocketConnection")
-    @Story("CreateBoard")
+    @Story("CreateBoard_Message")
     @Description("Verify Socket CreateBoard Message")
     @Severity(SeverityLevel.BLOCKER)
     public void MessageCreateBoard_NegativeBetType_011() throws InterruptedException {
@@ -253,9 +249,9 @@ public class Iqsoft_TestClass_17_CreateBoard extends Iqsoft_001_BaseTest {
     }
 
 
-    @Test(description = "SocketConnection", priority = 48)
+    @Test(description = "CreateBoard", priority = 48)
     @Feature("SocketConnection")
-    @Story("CreateBoard")
+    @Story("CreateBoard_Message")
     @Description("Verify Socket CreateBoard Message")
     @Severity(SeverityLevel.BLOCKER)
     public void MessageCreateBoard_NegativeSecondBoard_012() throws InterruptedException {
@@ -294,9 +290,9 @@ public class Iqsoft_TestClass_17_CreateBoard extends Iqsoft_001_BaseTest {
 
 
 
-    @Test(description = "SocketConnection", priority = 49)
+    @Test(description = "CreateBoard", priority = 49)
     @Feature("SocketConnection")
-    @Story("CreateBoard")
+    @Story("CreateBoard_Message")
     @Description("Verify Socket CreateBoard Message")
     @Severity(SeverityLevel.BLOCKER)
     public void MessageCreateBoard_ValidatePositiveResponse() throws InterruptedException {

@@ -9,7 +9,6 @@ import java.util.List;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Iqsoft201_SocketMessage_State_Request {
 
-    //       {"H":"basehub","M":"Authorized","A":[],"I":0}
 
     public Iqsoft201_SocketMessage_State_Request() {
 

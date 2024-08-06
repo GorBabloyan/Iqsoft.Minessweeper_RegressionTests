@@ -17,9 +17,6 @@ public class Iqsoft_TestClass_13_GetBalance extends Iqsoft_001_BaseTest {
     public Iqsoft_TestClass_13_GetBalance() {
     }
 
-    public static HttpResponse<String> negotiateApiSportsBookResponse;
-    int statusCode;
-    String jsonObjectBody;
 
     @BeforeClass
     public void setUp() {
@@ -28,8 +25,8 @@ public class Iqsoft_TestClass_13_GetBalance extends Iqsoft_001_BaseTest {
 
 
     @Test(description = "SocketConnection",priority = 13)
-    @Feature("Balance")
-    @Story("002_RequestSucceeded_SocketConnectionLoggedIn")
+    @Feature("SocketConnection")
+    @Story("Balance_Message")
     @Description("Verify Socket Balance Message")
     @Severity(SeverityLevel.BLOCKER)
     public void MessageBalance_ValidatePositiveResponse() throws InterruptedException {

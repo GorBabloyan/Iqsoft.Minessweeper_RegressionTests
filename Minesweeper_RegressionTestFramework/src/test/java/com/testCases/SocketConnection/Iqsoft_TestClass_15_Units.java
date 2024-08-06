@@ -1,25 +1,18 @@
 package com.testCases.SocketConnection;
 
-import com.Models.Iqsoft003_BackendLoggedIn.SocketMessages.Response.Iqsoft300_SocketMessage_Authorized_Response;
 import com.Models.Iqsoft003_BackendLoggedIn.SocketMessages.Response.Iqsoft301_SocketMessage_Units_Response;
-import com.Models.Iqsoft003_BackendLoggedIn.SocketMessages.Response.Iqsoft302_SocketMessage_Balance_Response;
 import com.testCases.Iqsoft_001_BaseTest;
 import io.qameta.allure.*;
 import kong.unirest.HttpResponse;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
 
 
-public class Iqsoft_TestClass_14_Units extends Iqsoft_001_BaseTest {
+public class Iqsoft_TestClass_15_Units extends Iqsoft_001_BaseTest {
 
-    public Iqsoft_TestClass_14_Units() {
+    public Iqsoft_TestClass_15_Units() {
     }
-
-    public static HttpResponse<String> negotiateApiSportsBookResponse;
-    int statusCode;
-    String jsonObjectBody;
 
     @BeforeClass
     public void setUp() {
@@ -28,8 +21,8 @@ public class Iqsoft_TestClass_14_Units extends Iqsoft_001_BaseTest {
 
 
     @Test(description = "SocketConnection",priority = 12)
-    @Feature("Units")
-    @Story("002_RequestSucceeded_SocketConnectionLoggedIn")
+    @Feature("SocketConnection")
+    @Story("Units_Message")
     @Description("Verify Socket Units Message")
     @Severity(SeverityLevel.BLOCKER)
     public void MessageUnits_ValidatePositiveResponse() throws InterruptedException {

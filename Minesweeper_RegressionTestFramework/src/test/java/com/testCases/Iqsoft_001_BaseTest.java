@@ -10,6 +10,7 @@ import com.pageObjects.Iqsoft_Page_01_Header;
 import com.pageObjects.Iqsoft_001_BasePage;
 import com.pageObjects.Iqsoft_Page_02_Lobby;
 import com.pageObjects.Iqsoft_Page_03_PlayGame;
+import cucumber.api.java.sl.In;
 import io.qameta.allure.Allure;
 import kong.unirest.HttpResponse;
 import kong.unirest.Unirest;
@@ -29,6 +30,8 @@ import java.net.URI;
 import java.net.URL;
 import java.net.URLDecoder;
 import java.time.Duration;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -72,7 +75,7 @@ public class Iqsoft_001_BaseTest extends DriverFactory {
     public static Iqsoft202_SocketMessage_CreateBoard_Request iqsoft202_socketMessage_createBoard_request;
     public static Iqsoft203_SocketMessage_Bet_Request iqsoft203_socketMessage_bet_request;
     public static Iqsoft204_SocketMessage_Cashout_Request iqsoft204_socketMessage_cashout_request;
-
+    public static Iqsoft205_SocketMessage_TicketsHistory_Request iqsoft205_socketMessage_ticketsHistory_request;
 
     public static Iqsoft300_SocketMessage_Authorized_Response iqsoft300_socketMessage_authorized_response;
     public static Iqsoft301_SocketMessage_Units_Response iqsoft301_socketMessage_units_response;
@@ -83,6 +86,8 @@ public class Iqsoft_001_BaseTest extends DriverFactory {
     public static Iqsoft305_SocketMessage_CreateBoard_Response iqsoft305_socketMessage_createBoard_response;
     public static Iqsoft306_SocketMessage_Bet_Response iqsoft306_socketMessage_bet_response;
     public static Iqsoft307_SocketMessage_CashOut_Response iqsoft307_socketMessage_cashOut_response;
+
+    public static Iqsoft308_SocketMessage_TicketsHistory_Response iqsoft308_socketMessage_ticketsHistory_response;
     //endregion
 
 
@@ -331,6 +336,7 @@ public class Iqsoft_001_BaseTest extends DriverFactory {
         iqsoft200_socketMessageWithoutArguments_request.setM(M);
         iqsoft200_socketMessageWithoutArguments_request.setI(I);
 
+
         Gson gson = new Gson();
 
         message = gson.toJson(iqsoft200_socketMessageWithoutArguments_request);
@@ -440,6 +446,40 @@ public class Iqsoft_001_BaseTest extends DriverFactory {
         return message;
     }
 
+    public static String sendSocketMessageTicketHistory(String H, String M, int I) {
+      //  {"H":"playerhub","M":"MinesweeperTicketsHistory","A":[{"FromDate":"2024-07-30T14:46:49.157Z","ToDate":"2024-07-31T19:46:49.157Z","PageNumber":1,"ItemsPerPage":13}],"I":9}
+
+
+        String message = null;
+        iqsoft205_socketMessage_ticketsHistory_request = new Iqsoft205_SocketMessage_TicketsHistory_Request();
+        iqsoft205_socketMessage_ticketsHistory_request.setH(H);
+        iqsoft205_socketMessage_ticketsHistory_request.setM(M);
+        iqsoft205_socketMessage_ticketsHistory_request.setI(I);
+
+
+        Iqsoft205_SocketMessage_TicketsHistory_Request.A a = new Iqsoft205_SocketMessage_TicketsHistory_Request.A();
+
+        a.setItemsPerPage(2);
+        a.setPageNumber(1);
+        a.setFromDate(dateTimeNowMinusOneDay());
+        a.setToDate(dateTimeNow());
+
+
+        List<Iqsoft205_SocketMessage_TicketsHistory_Request.A> aList = new ArrayList<>();
+        aList.add(a);
+
+        iqsoft205_socketMessage_ticketsHistory_request.setA(aList);
+
+
+
+        Gson gson = new Gson();
+
+        message = gson.toJson(iqsoft205_socketMessage_ticketsHistory_request);
+
+        return message;
+    }
+
+
     public static Object mapReceivedMessage(Class myClass, String I) throws InterruptedException {
         Object mapObj;
         try {
@@ -457,6 +497,38 @@ public class Iqsoft_001_BaseTest extends DriverFactory {
         }
         return mapObj;
     }
+
+    public static String dateTimeNow() {
+        // Get the current date and time
+        LocalDateTime currentDateTime = LocalDateTime.now();
+
+//        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss.SSS");  //2024-05-29T15:30:45.123
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm");  //2024-06-09 12:39
+
+        // Format the current date and time
+        String formattedDateTime = currentDateTime.format(formatter);
+
+        return formattedDateTime;
+    }
+
+    public static String dateTimeNowMinusOneDay() {
+        // Get the current date and time
+        LocalDateTime currentDateTime = LocalDateTime.now();
+
+        // Subtract one day from the current date and time
+        LocalDateTime dateTimeMinusOneDay = currentDateTime.minusDays(1);
+
+        // Define the desired date-time format
+//        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss.SSS");  //2024-05-29T15:30:45.123
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm");  //2024-06-09 12:39
+
+
+        // Format the date and time minus one day
+        String formattedDateTime = dateTimeMinusOneDay.format(formatter);
+
+        return formattedDateTime;
+    }
+
 
 
     static String encodeData = "";
