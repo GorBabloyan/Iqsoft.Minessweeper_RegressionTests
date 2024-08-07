@@ -1,108 +1,4 @@
-package com.utilities;//package utilities;
-//
-//import io.qameta.allure.Allure;
-//import io.qameta.allure.Attachment;
-//import org.apache.commons.io.FileUtils;
-//import org.openqa.selenium.OutputType;
-//import org.openqa.selenium.TakesScreenshot;
-//import org.openqa.selenium.WebDriver;
-//import org.testng.ITestContext;
-//import org.testng.ITestListener;
-//import org.testng.ITestResult;
-//import org.testng.TestListenerAdapter;
-//import com.pageObjects.Iqsoft_001_BasePage;
-//import com.testCases.Iqsoft_001_BaseTest;
-//
-//import java.io.ByteArrayInputStream;
-//import java.io.File;
-//import java.io.IOException;
-//import java.util.Date;
-//
-//import static java.lang.String.format;
-//
-//public class ReportingAllure implements ITestListener {
-//
-//    private static String getTestMethodName(ITestResult iTestResult) {
-//        return iTestResult.getMethod().getConstructorOrMethod().getName();
-//    }
-//
-//    // Text attachments for Allure
-//    @Attachment(value = "Page screenshot", type = "image/png")
-//    public byte[] saveScreenshotPNG(WebDriver driver) {
-//        return ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
-//    }
-//
-//    // Text attachments for Allure
-//    @Attachment(value = "{0}", type = "text/plain")
-//    public static String saveTextLog(String message) {
-//        return message;
-//    }
-//
-//    // HTML attachments for Allure
-//    @Attachment(value = "{0}", type = "text/html")
-//    public static String attachHtml(String html) {
-//        return html;
-//    }
-//
-//    @Override
-//    public void onStart(ITestContext iTestContext) {
-//        saveTextLog((iTestContext.getName()) + " Test execution starts");
-//    }
-//
-//    @Override
-//    public void onFinish(ITestContext iTestContext) {
-//        saveTextLog((iTestContext.getName()) + " Test Finished");
-//    }
-//
-//    @Override
-//    public void onTestStart(ITestResult iTestResult) {
-//        saveTextLog(getTestMethodName(iTestResult) + " TestCase execution starts");
-//    }
-//
-//    @Override
-//    public void onTestSuccess(ITestResult iTestResult) {
-//        saveTextLog(getTestMethodName(iTestResult) + " Test passed");
-//    }
-//
-//    @Override
-//    public void onTestFailure(ITestResult iTestResult) {
-//        Object testClass = iTestResult.getInstance();
-//        WebDriver driver = Iqsoft_001_BaseTest.driver;
-//        // Allure ScreenShotRobot and SaveTestLog
-//
-//        saveTextLog(getTestMethodName(iTestResult) + " Test failed and screenshot taken!");
-//        if (driver instanceof WebDriver) {
-//            Allure.addAttachment(getTestMethodName(iTestResult)+"_", new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));
-//            saveScreenshotPNG(driver);
-//        }
-//        // Save a log on allure.
-//
-//    }
-//
-//    @Override
-//    public void onTestSkipped(ITestResult iTestResult) {
-//        WebDriver driver = Iqsoft_001_BaseTest.driver;
-//        // Allure ScreenShotRobot and SaveTestLog
-//        saveTextLog(getTestMethodName(iTestResult) + " Test Skipped and screenshot taken!");
-//        if (driver instanceof WebDriver) {
-//            Allure.addAttachment(getTestMethodName(iTestResult)+"_", new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));
-//            saveScreenshotPNG(driver);
-//        }
-//    }
-//
-//    @Override
-//    public void onTestFailedButWithinSuccessPercentage(ITestResult iTestResult) {
-//        // Allure ScreenShotRobot and SaveTestLog
-//        WebDriver driver = Iqsoft_001_BaseTest.driver;
-//        saveTextLog(getTestMethodName(iTestResult) + " Test failed and screenshot taken!");
-//        // Allure ScreenShotRobot and SaveTestLog
-//        if (driver instanceof WebDriver) {
-//            Allure.addAttachment(getTestMethodName(iTestResult)+"_", new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));
-//            saveScreenshotPNG(driver);
-//        }
-//    }
-//}
-
+package com.utilities;
 
 import com.pageObjects.Iqsoft_001_BasePage;
 import com.testCases.Iqsoft_001_BaseTest;
@@ -112,9 +8,8 @@ import org.openqa.selenium.Point;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.testng.ITestContext;
-import org.testng.ITestListener;
-import org.testng.ITestResult;
+import org.testng.*;
+import org.testng.annotations.ITestAnnotation;
 
 import javax.imageio.ImageIO;
 import java.awt.*;
@@ -122,12 +17,45 @@ import java.awt.image.BufferedImage;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.IOException;
+import java.lang.reflect.Constructor;
+import java.lang.reflect.Method;
 
-public class ReportingAllure extends Iqsoft_001_BaseTest implements ITestListener {
-    public ReportingAllure() throws AWTException {
+
+public class ReportingAllure extends Iqsoft_001_BaseTest implements IAnnotationTransformer, ITestListener, IConfigurationListener {
+    public ReportingAllure()  {
     }
 
-    Iqsoft_001_BasePage basePage = new Iqsoft_001_BasePage(driver);
+
+    @Override
+    public void transform(ITestAnnotation annotation, Class testClass, Constructor testConstructor, Method testMethod) {
+        if (testMethod != null) {
+            String[] groups = annotation.getGroups();
+            if (groups != null && groups.length > 0) {
+                annotation.setTestName(String.join(", ", groups)); // Set test name to groups joined by comma
+            } else {
+                String description = annotation.getDescription();
+                if (description != null && !description.isEmpty()) {
+                    annotation.setTestName(description); // Set test name to description if available
+                } else {
+                    annotation.setTestName(testMethod.getName()); // Set test name to method name
+                }
+            }
+        }
+    }
+
+    @Override
+    public void onTestStart(ITestResult result) {
+        String testName = result.getMethod().getMethodName();
+        String[] groups = result.getMethod().getGroups();
+        if (groups != null && groups.length > 0) {
+            result.setAttribute("allure-test-name", String.join(", ", groups)); // Set Allure attribute to groups joined by comma
+        } else {
+            result.setAttribute("allure-test-name", testName); // Set Allure attribute to method name if no groups
+        }
+    }
+
+
+
     private static String getTestMethodName(ITestResult iTestResult) {
         return iTestResult.getMethod().getConstructorOrMethod().getName();
     }
@@ -232,138 +160,52 @@ public class ReportingAllure extends Iqsoft_001_BaseTest implements ITestListene
 
     @Override
     public void onStart(ITestContext iTestContext) {
-//        logger.info("I am in onStart method " + iTestContext.getName());
-        iTestContext.setAttribute("WebDriver", this.driver);
+        attachHtml((iTestContext.getName()) + ": Test execution starts");
+        if (driver!=null)
+        iTestContext.setAttribute("WebDriver", driver);
     }
 
     @Override
     public void onFinish(ITestContext iTestContext) {
-//        logger.info("I am in onFinish method " + iTestContext.getName());
+        Iqsoft_001_BasePage.logger.info(" Test is Finished.");
+        attachHtml((iTestContext.getName()) + ": Test execution finished");
         }
 
-    @Override
-    public void onTestStart(ITestResult iTestResult) {
-//        logger.info(getTestMethodName(iTestResult) + " test is starting.");
-    }
 
     @Override
     public void onTestSuccess(ITestResult iTestResult) {
+        attachHtml(getTestMethodName(iTestResult) + ": Test passed");
         Iqsoft_001_BasePage.logger.info(getTestMethodName(iTestResult) + " test is succeed.");
     }
 
     @Override
     public void onTestFailure(ITestResult iTestResult) {
+        attachHtml(getTestMethodName(iTestResult) + ": Test failed");
         Iqsoft_001_BasePage.logger.info(getTestMethodName(iTestResult) + " test is failed.");
 
-        //Get driver from Iqsoft_001_BaseTest and assign to local webdriver variable.
-        Iqsoft_001_BasePage iqsoft001BasePage = new Iqsoft_001_BasePage();
-        Object testClass = iTestResult.getInstance();
-        WebDriver driver = iqsoft001BasePage.getDriver();
-
-        WebElement element = iqsoft001BasePage.getElement();
-        //Allure ScreenShotRobot and SaveTestLog
-        if (driver != null) {
-            Iqsoft_001_BasePage.logger.error("Screenshot captured for test case:" + getTestMethodName(iTestResult));
-            saveScreenshotPNG(driver);
-            //Save a log on allure.
-            saveTextLog(getTestMethodName(iTestResult) + " failed and screenshot taken!");
+      //Allure ScreenShotRobot and SaveTestLog
+        try{
+            if (driver != null) {
+                saveScreenshotPNG(driver);
+                Iqsoft_001_BasePage.logger.error("Screenshot captured for test case: " + getTestMethodName(iTestResult));
+                saveTextLog(getTestMethodName(iTestResult) + " failed and screenshot taken!");
+            }
         }
-
-
+        catch(Exception e){
+        }
 
     }
 
     @Override
     public void onTestSkipped(ITestResult iTestResult) {
         Iqsoft_001_BasePage.logger.info(getTestMethodName(iTestResult) + " test is skipped.");
+        attachHtml(getTestMethodName(iTestResult) + ": Test Skipped");
     }
 
     @Override
     public void onTestFailedButWithinSuccessPercentage(ITestResult iTestResult) {
         Iqsoft_001_BasePage.logger.info("Test failed but it is in defined success ratio " + getTestMethodName(iTestResult));
+        attachHtml(getTestMethodName(iTestResult) + ": Test failed partially");
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-//public class AllureListener implements ITestListener {
-//
-//    private static String getTestMethodName(ITestResult iTestResult) {
-//        return iTestResult.getMethod().getConstructorOrMethod().getName();
-//    }
-//
-//    @Attachment
-//    public byte[] saveFailureScreenShot(WebDriver driver) {
-//        return ((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES);
-//    }
-//
-//    @Attachment(value = "{0}", type = "text/plain")
-//    public static String saveTextLog(String message) {
-//        return message;
-//    }
-//
-//
-//    @Override
-//    public void onStart(ITestContext iTestContext) {
-//        System.out.println("I am in onStart method " + iTestContext.getName());
-//        iTestContext.setAttribute("WebDriver", BaseClass.getDriver());
-//    }
-//
-//    @Override
-//    public void onFinish(ITestContext iTestContext) {
-//        System.out.println("I am in onFinish method " + iTestContext.getName());
-//    }
-//
-//    @Override
-//    public void onTestStart(ITestResult iTestResult) {
-//        System.out.println("I am in onTestStart method " + getTestMethodName(iTestResult) + " start");
-//    }
-//
-//    @Override
-//    public void onTestSuccess(ITestResult iTestResult) {
-//        System.out.println("I am in onTestSuccess method " + getTestMethodName(iTestResult) + " succeed");
-//    }
-//
-//    @Override
-//    public void onTestFailure(ITestResult iTestResult) {
-//        System.out.println("I am in onTestFailure method " + getTestMethodName(iTestResult) + " failed");
-//        Object testClass = iTestResult.getInstance();
-//        WebDriver driver = BaseClass.getDriver();
-//        // Allure ScreenShot and SaveTestLog
-//        if (driver instanceof WebDriver) {
-//            System.out.println("Screenshot captured for test case:" + getTestMethodName(iTestResult));
-//            saveFailureScreenShot(driver);
-//        }
-//        saveTextLog(getTestMethodName(iTestResult) + " failed and screenshot taken!");
-//    }
-//
-//
-//    @Override
-//    public void onTestSkipped(ITestResult iTestResult) {
-//        System.out.println("I am in onTestSkipped method " + getTestMethodName(iTestResult) + " skipped");
-//    }
-//
-//    @Override
-//    public void onTestFailedButWithinSuccessPercentage(ITestResult iTestResult) {
-//        System.out.println("Test failed but it is in defined success ratio " + getTestMethodName(iTestResult));
-//    }
-//
-//}
-
-
-
-
-
-
-
 

@@ -1,24 +1,20 @@
 package com.testCases.SocketConnection;
 
-import com.Models.Iqsoft003_BackendLoggedIn.SocketMessages.Response.Iqsoft300_SocketMessage_Authorized_Response;
-import com.Models.Iqsoft003_BackendLoggedIn.SocketMessages.Response.Iqsoft301_SocketMessage_Units_Response;
-import com.Models.Iqsoft003_BackendLoggedIn.SocketMessages.Response.Iqsoft302_SocketMessage_Balance_Response;
 import com.Models.Iqsoft003_BackendLoggedIn.SocketMessages.Response.Iqsoft304_SocketMessage_GetDefaultBoards_Response;
 import com.testCases.Iqsoft_001_BaseTest;
 import io.qameta.allure.*;
-import kong.unirest.HttpResponse;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Test(groups = { "SocketMessages" },dependsOnGroups = {"SocketConnection"})
 
-public class Iqsoft_TestClass_16_GetDefoultBoards extends Iqsoft_001_BaseTest {
+public class Iqsoft_TestClass_16_GetDefaultBoards extends Iqsoft_001_BaseTest {
 
-    public Iqsoft_TestClass_16_GetDefoultBoards() {
+    public Iqsoft_TestClass_16_GetDefaultBoards() {
     }
 
 

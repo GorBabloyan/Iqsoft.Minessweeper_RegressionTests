@@ -2,7 +2,6 @@ package com.Models.Iqsoft003_BackendLoggedIn;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.pageObjects.Iqsoft_001_BasePage;
-import com.testCases.Iqsoft_001_BaseTest;
 import io.qameta.allure.Allure;
 import org.java_websocket.client.WebSocketClient;
 import org.java_websocket.handshake.ServerHandshake;
@@ -10,11 +9,11 @@ import org.java_websocket.handshake.ServerHandshake;
 import java.net.URI;
 import java.util.concurrent.*;
 
-import static com.testCases.Iqsoft_001_BaseTest.*;
+import static com.Models.Iqsoft003_BackendLoggedIn.Iqsoft_000_BasePage.client;
+import static com.Models.Iqsoft003_BackendLoggedIn.Iqsoft_000_BasePage.serverUri;
 
 
 public class Iqsoft102_SportWebSocketClient extends WebSocketClient {
-
     public Iqsoft102_SportWebSocketClient(URI serverUri) {
         super(serverUri);
     }
@@ -30,7 +29,7 @@ public class Iqsoft102_SportWebSocketClient extends WebSocketClient {
 //        Allure.addAttachment("SocketConnection Url:  " + serverUri.toString(), "WebSocket connection opened");
 
         if (handshakedata.getHttpStatus() < 300) {
-            Iqsoft_001_BaseTest.isSocketConnectionSuccess = true;
+            Iqsoft_000_BasePage.isSocketConnectionSuccess = true;
             Allure.addAttachment("SocketConnection Url:  " + serverUri.toString(), "WebSocket connection opened: Status code = " + handshakedata.getHttpStatus());
 //            Allure.addAttachment("WebSocket connection opened  ", "ServerHandshake: " + handshakedata);
 
@@ -43,8 +42,8 @@ public class Iqsoft102_SportWebSocketClient extends WebSocketClient {
     @Override
     public void onMessage(String message) {
 //        System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>" + message);
-        end = System.currentTimeMillis();
-        responseTime = end - start;
+        Iqsoft_000_BasePage.end = System.currentTimeMillis();
+        Iqsoft_000_BasePage.responseTime = Iqsoft_000_BasePage.end - Iqsoft_000_BasePage.start;
 //        Allure.addAttachment("Received message:::  " + responseTime + " ms", "text/plain", message);
         messageQueue.offer(message);
    }
@@ -77,7 +76,7 @@ public class Iqsoft102_SportWebSocketClient extends WebSocketClient {
             Allure.addAttachment("Message sent: " , "text/plain", message);
 //            System.out.println("Message sent: "+ message);
             Iqsoft_001_BasePage.logger.info("Message sent: "+ message);
-            start = System.currentTimeMillis();
+            Iqsoft_000_BasePage.start = System.currentTimeMillis();
             send(message);
 
 //            System.out.println("Message sent: " + message);
@@ -101,7 +100,7 @@ public class Iqsoft102_SportWebSocketClient extends WebSocketClient {
     public void close() {
 
 //        System.out.println("Socket close");
-        if (! Iqsoft_001_BaseTest.client.isClosed()) {
+        if (! client.isClosed()) {
             intentionalClose = true;
             closeConnection(1000, "Socket closed Successfully");
         }

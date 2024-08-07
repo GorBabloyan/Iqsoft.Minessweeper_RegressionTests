@@ -11,12 +11,13 @@
 
 <!--            <class name="com.testCases.Iqsoft_TestClass_01_Header"/>-->
 <!--            <class name="com.testCases.Iqsoft_TestClass_02_Lobby"/>-->
+            <class name="com.testCases.SocketConnection.Iqsoft_TestClass_10_GetProductUrl"/>
             <class name="com.testCases.SocketConnection.Iqsoft_TestClass_11_SocketConnection"/>
             <class name="com.testCases.SocketConnection.Iqsoft_TestClass_12_Authorization"/>
             <class name="com.testCases.SocketConnection.Iqsoft_TestClass_13_GetBalance"/>
             <class name="com.testCases.SocketConnection.Iqsoft_TestClass_15_Units"/>
             <class name="com.testCases.SocketConnection.Iqsoft_TestClass_14_State"/>
-            <class name="com.testCases.SocketConnection.Iqsoft_TestClass_16_GetDefoultBoards"/>
+            <class name="com.testCases.SocketConnection.Iqsoft_TestClass_16_GetDefaultBoards"/>
             <class name="com.testCases.SocketConnection.Iqsoft_TestClass_17_CreateBoard_Negative"/>
             <class name="com.testCases.SocketConnection.Iqsoft_TestClass_17_CreateBoard"/>
             <class name="com.testCases.SocketConnection.Iqsoft_TestClass_18_Bet_Negative"/>

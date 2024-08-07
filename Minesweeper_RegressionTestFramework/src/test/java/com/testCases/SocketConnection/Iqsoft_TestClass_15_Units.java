@@ -3,11 +3,11 @@ package com.testCases.SocketConnection;
 import com.Models.Iqsoft003_BackendLoggedIn.SocketMessages.Response.Iqsoft301_SocketMessage_Units_Response;
 import com.testCases.Iqsoft_001_BaseTest;
 import io.qameta.allure.*;
-import kong.unirest.HttpResponse;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+@Test(groups = { "SocketMessages" },dependsOnGroups = {"SocketConnection"})
 
 public class Iqsoft_TestClass_15_Units extends Iqsoft_001_BaseTest {
 

@@ -1,14 +1,13 @@
 package com.testCases.SocketConnection;
 
-import com.Models.Iqsoft003_BackendLoggedIn.SocketMessages.Response.Iqsoft307_SocketMessage_CashOut_Response;
 import com.Models.Iqsoft003_BackendLoggedIn.SocketMessages.Response.Iqsoft308_SocketMessage_TicketsHistory_Response;
 import com.testCases.Iqsoft_001_BaseTest;
 import io.qameta.allure.*;
-import kong.unirest.HttpResponse;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+@Test(groups = { "SocketMessages" },dependsOnGroups = {"SocketConnection"})
 
 public class Iqsoft_TestClass_20_TicketHistory extends Iqsoft_001_BaseTest {
 

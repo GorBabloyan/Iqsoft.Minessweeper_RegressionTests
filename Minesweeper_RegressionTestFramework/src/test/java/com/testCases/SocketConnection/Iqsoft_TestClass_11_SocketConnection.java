@@ -1,17 +1,13 @@
 package com.testCases.SocketConnection;
 
-import com.Models.Iqsoft003_BackendLoggedIn.SocketMessages.Response.*;
 import com.testCases.Iqsoft_001_BaseTest;
 import io.qameta.allure.*;
-import kong.unirest.HttpResponse;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
 
-import java.util.ArrayList;
-import java.util.List;
 
+@Test(groups = { "SocketConnection" },dependsOnGroups = {"GetProductUrl"})
 
 public class Iqsoft_TestClass_11_SocketConnection extends Iqsoft_001_BaseTest {
 

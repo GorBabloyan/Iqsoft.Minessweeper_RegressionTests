@@ -6,10 +6,10 @@ import com.Models.Iqsoft003_BackendLoggedIn.SocketMessages.Response.Iqsoft307_So
 import com.testCases.Iqsoft_001_BaseTest;
 import io.qameta.allure.*;
 import org.testng.Assert;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
+@Test(groups = { "SocketMessages" },dependsOnGroups = {"SocketConnection"})
 
 public class Iqsoft_TestClass_17_CreateBoard_Negative extends Iqsoft_001_BaseTest {
 

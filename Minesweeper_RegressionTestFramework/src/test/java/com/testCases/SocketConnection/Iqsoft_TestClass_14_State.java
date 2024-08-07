@@ -3,8 +3,6 @@ package com.testCases.SocketConnection;
 import com.Models.Iqsoft003_BackendLoggedIn.SocketMessages.Response.Iqsoft303_SocketMessage_State_Response;
 import com.testCases.Iqsoft_001_BaseTest;
 import io.qameta.allure.*;
-import kong.unirest.HttpResponse;
-import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
@@ -12,6 +10,7 @@ import org.testng.asserts.SoftAssert;
 import java.util.ArrayList;
 import java.util.List;
 
+@Test(groups = { "SocketMessages" },dependsOnGroups = {"SocketConnection"})
 
 public class Iqsoft_TestClass_14_State extends Iqsoft_001_BaseTest {
 

@@ -25,11 +25,11 @@ import java.util.concurrent.TimeUnit;
 
 
 public class DriverFactory {
-    public static WebDriver driver;
+    public static WebDriver driver = null;
     public static ChromeOptions cOptions;
     public static FirefoxOptions fOptions;
     public static EdgeOptions eOptions;
-    public String webSocketUrl;
+    public static String webSocketUrl;
     public DriverFactory() {
 
     }

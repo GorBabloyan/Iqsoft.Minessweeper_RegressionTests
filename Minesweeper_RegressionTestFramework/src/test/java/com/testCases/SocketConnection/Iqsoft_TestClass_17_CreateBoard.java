@@ -1,15 +1,13 @@
 package com.testCases.SocketConnection;
 
 import com.Models.Iqsoft003_BackendLoggedIn.SocketMessages.Response.Iqsoft305_SocketMessage_CreateBoard_Response;
-import com.Models.Iqsoft003_BackendLoggedIn.SocketMessages.Response.Iqsoft306_SocketMessage_Bet_Response;
-import com.Models.Iqsoft003_BackendLoggedIn.SocketMessages.Response.Iqsoft307_SocketMessage_CashOut_Response;
 import com.testCases.Iqsoft_001_BaseTest;
 import io.qameta.allure.*;
-import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
+@Test(groups = { "SocketMessages" },dependsOnGroups = {"SocketConnection"})
 
 public class Iqsoft_TestClass_17_CreateBoard extends Iqsoft_001_BaseTest {
 
@@ -58,9 +56,6 @@ public class Iqsoft_TestClass_17_CreateBoard extends Iqsoft_001_BaseTest {
         softAssert.assertAll();
 
     }
-
-
-
 
 
 

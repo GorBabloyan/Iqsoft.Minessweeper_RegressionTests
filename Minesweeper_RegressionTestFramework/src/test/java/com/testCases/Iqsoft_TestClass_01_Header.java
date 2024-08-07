@@ -1,6 +1,7 @@
 package com.testCases;
 
 import io.qameta.allure.*;
+import org.apache.logging.log4j.core.appender.rolling.action.IfAccumulatedFileCount;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -19,7 +20,7 @@ public class Iqsoft_TestClass_01_Header extends Iqsoft_001_BaseTest {
     }
 
 
-    @Test(description = "Check logo image")
+    @Test(description = "Check logo image",priority = -100)
     @Feature("Minesweeper header")
     @Story("check logo")
     @Description("Check logo image")
@@ -28,7 +29,7 @@ public class Iqsoft_TestClass_01_Header extends Iqsoft_001_BaseTest {
         Assert.assertTrue(iqsoftPage01.checkLogoImgLink(), "Invalid Logo");
     }
 
-    @Test(description = "Check game title")
+    @Test(description = "Check game title",priority = -100)
     @Feature("Minesweeper header")
     @Story("check Title")
     @Description("Check Title visibility")
@@ -37,7 +38,7 @@ public class Iqsoft_TestClass_01_Header extends Iqsoft_001_BaseTest {
         Assert.assertEquals(iqsoftPage01.getTextGameTitle(), "Minesweeper","Invalid Title");
     }
 
-    @Test(description = "Check game userId text")
+    @Test(description = "Check game userId text",priority = -100)
     @Feature("Minesweeper header")
     @Story("check userId text")
     @Description("Check userId text visibility")
@@ -46,7 +47,7 @@ public class Iqsoft_TestClass_01_Header extends Iqsoft_001_BaseTest {
         Assert.assertEquals(iqsoftPage01.getTextUserID(), "User ID","Invalid UserId text: " + iqsoftPage01.getTextUserID());
     }
 
-    @Test(description = "Check game userId")
+    @Test(description = "Check game userId",priority = -100)
     @Feature("Minesweeper header")
     @Story("check userId")
     @Description("Check userId visibility")
@@ -55,7 +56,7 @@ public class Iqsoft_TestClass_01_Header extends Iqsoft_001_BaseTest {
         Assert.assertNotEquals(iqsoftPage01.getUserID(), 0,"Invalid UserId: " + iqsoftPage01.getUserID());
     }
 
-    @Test(description = "Check game balance text")
+    @Test(description = "Check game balance text",priority = -100)
     @Feature("Minesweeper header")
     @Story("check Balance text")
     @Description("Check Balance text visibility")
@@ -64,13 +65,17 @@ public class Iqsoft_TestClass_01_Header extends Iqsoft_001_BaseTest {
         Assert.assertEquals(iqsoftPage01.getTextBalance(), "Balance","Invalid Balance text: " + iqsoftPage01.getTextBalance());
     }
 
-    @Test(description = "Check Client Balance")
+    @Test(description = "Check Client Balance",priority = -100)
     @Feature("Minesweeper header")
     @Story("Check Balance")
     @Description("Check Balance visibility")
     @Severity(SeverityLevel.BLOCKER)
     public void checkBalanceVisibility() {
-        Assert.assertNotEquals(iqsoftPage01.getBalance(), -1,"Invalid ClientBalance");
+        if (iqsoftPage01.getBalance()>0){
+            Assert.assertTrue(true);
+        }else{
+            Assert.fail("Balance is negative: " + iqsoftPage01.getBalance());
+        }
     }
 
 
