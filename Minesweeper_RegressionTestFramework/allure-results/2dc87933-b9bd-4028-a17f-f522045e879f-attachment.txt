@@ -1,0 +1,1 @@
+{"ResponseCode":0,"Description":null,"ResponseObject":"https://virtualgameswebsite.craftbet.com/minesweeper/web?gameid=110&partnerid=1&languageid=en&token=52a9018265d343e68c490fc11d30f6a5&viewtype=1&timezone=4"}

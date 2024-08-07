@@ -1,0 +1,1 @@
+{"H":"playerhub","M":"MinesweeperTicketsHistory","A":[{"FromDate":"2024-08-06 16:03","ToDate":"2024-08-07 16:03","PageNumber":1,"ItemsPerPage":2}],"I":38}

@@ -1,0 +1,1 @@
+{"R":{"Authorized":true,"CurrencyId":"EUR","CurrencyRate":1.21000000,"CurrencySymbol":"€  ","ClientId":4212678,"Nickname":"4212678","NicknameChanged":false,"ClientExternalId":2283816,"Coins":[0.20,0.50,1.00,2.00,5.00,10.00,20.00]},"I":"0"}

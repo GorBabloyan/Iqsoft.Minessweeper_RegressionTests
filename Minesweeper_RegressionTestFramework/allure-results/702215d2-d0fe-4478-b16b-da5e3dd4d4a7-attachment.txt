@@ -1,0 +1,1 @@
+{"R":{"ResponseCode":10031,"Description":"WrongInputData","ResponseObject":{"BoardInfo":null,"Status":0,"Balance":0.0}},"I":"7"}

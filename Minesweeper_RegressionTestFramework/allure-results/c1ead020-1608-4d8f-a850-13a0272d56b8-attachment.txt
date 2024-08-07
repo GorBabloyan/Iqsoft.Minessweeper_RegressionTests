@@ -1,0 +1,1 @@
+{"H":"playerhub","M":"CreateBoard","A":[{"BetInput":{"BetType":1,"ClientId":4212678,"GameId":110,"Amount":6.0},"BoardInput":{"Width":1,"Height":10,"MinesCount":1}}],"I":13}
