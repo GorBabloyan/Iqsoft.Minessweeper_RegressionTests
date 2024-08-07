@@ -1,1 +1,0 @@
-{"R":{"ClientId":0,"Coefficient":0.0,"GameId":null,"WinAmount":0.0,"Balance":0.0,"CurrencyId":null,"Status":0,"Info":null,"ResponseCode":1,"Description":"Sequence contains no elements"},"I":"28"}

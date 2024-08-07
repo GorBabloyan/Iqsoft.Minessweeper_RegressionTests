@@ -1,1 +1,0 @@
-{"R":{"ResponseCode":0,"ResponseObject":[{"Id":73,"GameId":110,"CurrentRound":0,"NickName":"MinesweeperBoard","Name":"MinesweeperBoard","TranslationId":2636,"Blocked":false,"NextDrawDate":"","Outcome":null,"Jackpot":null,"PlayersCount":0,"BetMinLimit":null,"BetMaxLimit":null}]},"I":"1"}
