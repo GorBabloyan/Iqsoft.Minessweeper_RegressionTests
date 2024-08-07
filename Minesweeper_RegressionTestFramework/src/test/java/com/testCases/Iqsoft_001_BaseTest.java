@@ -14,7 +14,6 @@ import java.io.File;
 import java.time.Duration;
 
 
-@Listeners({com.utilities.ReportingAllure.class})
 public class Iqsoft_001_BaseTest extends Iqsoft_000_BasePage {
 
     public Iqsoft_001_BaseTest() {

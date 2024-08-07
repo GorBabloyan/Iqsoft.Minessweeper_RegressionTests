@@ -18,7 +18,7 @@ public class Iqsoft_TestClass_14_State extends Iqsoft_001_BaseTest {
     }
 
     @BeforeClass
-    public void setUp() throws InterruptedException {
+    public void MessageState() throws InterruptedException {
         List<Integer> list = new ArrayList<>();
         list.add(iqsoft301_socketMessage_units_response.getR().getResponseObject().get(0).getId());
         list.add(iqsoft301_socketMessage_units_response.getR().getResponseObject().get(0).getId());

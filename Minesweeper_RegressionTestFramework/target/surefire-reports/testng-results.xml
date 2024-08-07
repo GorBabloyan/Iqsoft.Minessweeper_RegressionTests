@@ -1,11 +1,218 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="0" passed="0" failed="0" skipped="0">
+<testng-results ignored="24" total="51" passed="27" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-07-17T19:59:01 AMT" name="Iqsoft API Regression Testing" finished-at="2024-07-17T19:59:01 AMT" duration-ms="57">
+  <suite started-at="2024-08-07T13:13:12 AMT" name="Iqsoft API Regression Testing" finished-at="2024-08-07T13:13:24 AMT" duration-ms="12184">
     <groups>
+      <group name="SocketMessages">
+        <method signature="Iqsoft_TestClass_12_Authorization.MessageAuthorized_ValidatePositiveResponse()[pri:11, instance:com.testCases.SocketConnection.Iqsoft_TestClass_12_Authorization@6bf13698]" name="MessageAuthorized_ValidatePositiveResponse" class="com.testCases.SocketConnection.Iqsoft_TestClass_12_Authorization"/>
+        <method signature="Iqsoft_TestClass_15_Units.MessageUnits_ValidatePositiveResponse()[pri:12, instance:com.testCases.SocketConnection.Iqsoft_TestClass_15_Units@504e1599]" name="MessageUnits_ValidatePositiveResponse" class="com.testCases.SocketConnection.Iqsoft_TestClass_15_Units"/>
+        <method signature="Iqsoft_TestClass_13_GetBalance.MessageBalance_ValidatePositiveResponse()[pri:13, instance:com.testCases.SocketConnection.Iqsoft_TestClass_13_GetBalance@31f20c9f]" name="MessageBalance_ValidatePositiveResponse" class="com.testCases.SocketConnection.Iqsoft_TestClass_13_GetBalance"/>
+        <method signature="Iqsoft_TestClass_14_State.MessageState_ValidatePositiveResponse()[pri:14, instance:com.testCases.SocketConnection.Iqsoft_TestClass_14_State@5d1b9c3d]" name="MessageState_ValidatePositiveResponse" class="com.testCases.SocketConnection.Iqsoft_TestClass_14_State"/>
+        <method signature="Iqsoft_TestClass_16_GetDefaultBoards.MessageDefaultBoard_ValidatePositiveResponse()[pri:15, instance:com.testCases.SocketConnection.Iqsoft_TestClass_16_GetDefaultBoards@49a26d19]" name="MessageDefaultBoard_ValidatePositiveResponse" class="com.testCases.SocketConnection.Iqsoft_TestClass_16_GetDefaultBoards"/>
+        <method signature="Iqsoft_TestClass_17_CreateBoard_Negative.MessageBetBeforeCreateBoard_NegativeBet_001()[pri:43, instance:com.testCases.SocketConnection.Iqsoft_TestClass_17_CreateBoard_Negative@19058533]" name="MessageBetBeforeCreateBoard_NegativeBet_001" class="com.testCases.SocketConnection.Iqsoft_TestClass_17_CreateBoard_Negative"/>
+        <method signature="Iqsoft_TestClass_17_CreateBoard_Negative.MessageCashoutBeforeCreateBoard_NegativeBet_001()[pri:43, instance:com.testCases.SocketConnection.Iqsoft_TestClass_17_CreateBoard_Negative@19058533]" name="MessageCashoutBeforeCreateBoard_NegativeBet_001" class="com.testCases.SocketConnection.Iqsoft_TestClass_17_CreateBoard_Negative"/>
+        <method signature="Iqsoft_TestClass_17_CreateBoard_Negative.MessageCreateBoard_NegativeMinesCount_002()[pri:44, instance:com.testCases.SocketConnection.Iqsoft_TestClass_17_CreateBoard_Negative@19058533]" name="MessageCreateBoard_NegativeMinesCount_002" class="com.testCases.SocketConnection.Iqsoft_TestClass_17_CreateBoard_Negative"/>
+        <method signature="Iqsoft_TestClass_17_CreateBoard_Negative.MessageCreateBoard_NegativeMinesCount_003()[pri:44, instance:com.testCases.SocketConnection.Iqsoft_TestClass_17_CreateBoard_Negative@19058533]" name="MessageCreateBoard_NegativeMinesCount_003" class="com.testCases.SocketConnection.Iqsoft_TestClass_17_CreateBoard_Negative"/>
+        <method signature="Iqsoft_TestClass_17_CreateBoard_Negative.MessageCreateBoard_NegativeMinesCount_004()[pri:44, instance:com.testCases.SocketConnection.Iqsoft_TestClass_17_CreateBoard_Negative@19058533]" name="MessageCreateBoard_NegativeMinesCount_004" class="com.testCases.SocketConnection.Iqsoft_TestClass_17_CreateBoard_Negative"/>
+        <method signature="Iqsoft_TestClass_17_CreateBoard_Negative.MessageCreateBoard_NegativeBalance_005()[pri:45, instance:com.testCases.SocketConnection.Iqsoft_TestClass_17_CreateBoard_Negative@19058533]" name="MessageCreateBoard_NegativeBalance_005" class="com.testCases.SocketConnection.Iqsoft_TestClass_17_CreateBoard_Negative"/>
+        <method signature="Iqsoft_TestClass_17_CreateBoard_Negative.MessageCreateBoard_NegativeBalance_006()[pri:45, instance:com.testCases.SocketConnection.Iqsoft_TestClass_17_CreateBoard_Negative@19058533]" name="MessageCreateBoard_NegativeBalance_006" class="com.testCases.SocketConnection.Iqsoft_TestClass_17_CreateBoard_Negative"/>
+        <method signature="Iqsoft_TestClass_17_CreateBoard_Negative.MessageCreateBoard_NegativeWidth_007()[pri:46, instance:com.testCases.SocketConnection.Iqsoft_TestClass_17_CreateBoard_Negative@19058533]" name="MessageCreateBoard_NegativeWidth_007" class="com.testCases.SocketConnection.Iqsoft_TestClass_17_CreateBoard_Negative"/>
+        <method signature="Iqsoft_TestClass_17_CreateBoard_Negative.MessageCreateBoard_NegativeWidth_008()[pri:46, instance:com.testCases.SocketConnection.Iqsoft_TestClass_17_CreateBoard_Negative@19058533]" name="MessageCreateBoard_NegativeWidth_008" class="com.testCases.SocketConnection.Iqsoft_TestClass_17_CreateBoard_Negative"/>
+        <method signature="Iqsoft_TestClass_17_CreateBoard_Negative.MessageCreateBoard_NegativeWidth_009()[pri:46, instance:com.testCases.SocketConnection.Iqsoft_TestClass_17_CreateBoard_Negative@19058533]" name="MessageCreateBoard_NegativeWidth_009" class="com.testCases.SocketConnection.Iqsoft_TestClass_17_CreateBoard_Negative"/>
+        <method signature="Iqsoft_TestClass_17_CreateBoard_Negative.MessageCreateBoard_NegativeBetType_011()[pri:47, instance:com.testCases.SocketConnection.Iqsoft_TestClass_17_CreateBoard_Negative@19058533]" name="MessageCreateBoard_NegativeBetType_011" class="com.testCases.SocketConnection.Iqsoft_TestClass_17_CreateBoard_Negative"/>
+        <method signature="Iqsoft_TestClass_17_CreateBoard_Negative.MessageCreateBoard_NegativeHeight_010()[pri:47, instance:com.testCases.SocketConnection.Iqsoft_TestClass_17_CreateBoard_Negative@19058533]" name="MessageCreateBoard_NegativeHeight_010" class="com.testCases.SocketConnection.Iqsoft_TestClass_17_CreateBoard_Negative"/>
+        <method signature="Iqsoft_TestClass_17_CreateBoard_Negative.MessageCreateBoard_NegativeSecondBoard_012()[pri:48, instance:com.testCases.SocketConnection.Iqsoft_TestClass_17_CreateBoard_Negative@19058533]" name="MessageCreateBoard_NegativeSecondBoard_012" class="com.testCases.SocketConnection.Iqsoft_TestClass_17_CreateBoard_Negative"/>
+        <method signature="Iqsoft_TestClass_17_CreateBoard.MessageCreateBoard_ValidatePositiveResponse()[pri:49, instance:com.testCases.SocketConnection.Iqsoft_TestClass_17_CreateBoard@4315e9af]" name="MessageCreateBoard_ValidatePositiveResponse" class="com.testCases.SocketConnection.Iqsoft_TestClass_17_CreateBoard"/>
+        <method signature="Iqsoft_TestClass_18_Bet_Negative.MessageBet_Negative_001()[pri:50, instance:com.testCases.SocketConnection.Iqsoft_TestClass_18_Bet_Negative@2babf189]" name="MessageBet_Negative_001" class="com.testCases.SocketConnection.Iqsoft_TestClass_18_Bet_Negative"/>
+        <method signature="Iqsoft_TestClass_18_Bet_Negative.MessageBet_Negative_003()[pri:51, instance:com.testCases.SocketConnection.Iqsoft_TestClass_18_Bet_Negative@2babf189]" name="MessageBet_Negative_003" class="com.testCases.SocketConnection.Iqsoft_TestClass_18_Bet_Negative"/>
+        <method signature="Iqsoft_TestClass_18_Bet.MessageBet_ValidatePositiveResponse()[pri:59, instance:com.testCases.SocketConnection.Iqsoft_TestClass_18_Bet@479f2dc2]" name="MessageBet_ValidatePositiveResponse" class="com.testCases.SocketConnection.Iqsoft_TestClass_18_Bet"/>
+        <method signature="Iqsoft_TestClass_18_Bet_Negative.MessageBet_ValidatePositiveResponse()[pri:59, instance:com.testCases.SocketConnection.Iqsoft_TestClass_18_Bet_Negative@2babf189]" name="MessageBet_ValidatePositiveResponse" class="com.testCases.SocketConnection.Iqsoft_TestClass_18_Bet_Negative"/>
+        <method signature="Iqsoft_TestClass_19_CashOut.MessageCashout_ValidatePositiveResponse()[pri:60, instance:com.testCases.SocketConnection.Iqsoft_TestClass_19_CashOut@dab48d3]" name="MessageCashout_ValidatePositiveResponse" class="com.testCases.SocketConnection.Iqsoft_TestClass_19_CashOut"/>
+        <method signature="Iqsoft_TestClass_20_TicketHistory.MessageCTicketHistory_ValidatePositiveResponse()[pri:60, instance:com.testCases.SocketConnection.Iqsoft_TestClass_20_TicketHistory@58a2b4c]" name="MessageCTicketHistory_ValidatePositiveResponse" class="com.testCases.SocketConnection.Iqsoft_TestClass_20_TicketHistory"/>
+      </group> <!-- SocketMessages -->
+      <group name="SocketConnection">
+        <method signature="Iqsoft_TestClass_11_SocketConnection.SocketConnectionSportsBook_ValidatePositiveResponse()[pri:10, instance:com.testCases.SocketConnection.Iqsoft_TestClass_11_SocketConnection@629adce]" name="SocketConnectionSportsBook_ValidatePositiveResponse" class="com.testCases.SocketConnection.Iqsoft_TestClass_11_SocketConnection"/>
+      </group> <!-- SocketConnection -->
+      <group name="GetProductUrl">
+        <method signature="Iqsoft_TestClass_10_GetProductUrl.GetProductUrl_Success()[pri:10, instance:com.testCases.SocketConnection.Iqsoft_TestClass_10_GetProductUrl@35342d2f]" name="GetProductUrl_Success" class="com.testCases.SocketConnection.Iqsoft_TestClass_10_GetProductUrl"/>
+      </group> <!-- GetProductUrl -->
     </groups>
-    <test started-at="2024-07-17T19:59:01 AMT" name="API Regression Testing" finished-at="2024-07-17T19:59:01 AMT" duration-ms="57">
+    <test started-at="2024-08-07T13:13:12 AMT" name="API Regression Testing" finished-at="2024-08-07T13:13:24 AMT" duration-ms="12184">
+      <class name="com.testCases.SocketConnection.Iqsoft_TestClass_13_GetBalance">
+        <test-method is-config="true" signature="MessageBalance()[pri:0, instance:com.testCases.SocketConnection.Iqsoft_TestClass_13_GetBalance@31f20c9f]" started-at="2024-08-07T13:13:15 AMT" name="MessageBalance" finished-at="2024-08-07T13:13:15 AMT" duration-ms="143" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MessageBalance -->
+        <test-method signature="MessageBalance_ValidatePositiveResponse()[pri:13, instance:com.testCases.SocketConnection.Iqsoft_TestClass_13_GetBalance@31f20c9f]" started-at="2024-08-07T13:13:15 AMT" name="MessageBalance_ValidatePositiveResponse" description="GetBalance" depends-on-groups="SocketConnection" finished-at="2024-08-07T13:13:15 AMT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MessageBalance_ValidatePositiveResponse -->
+      </class> <!-- com.testCases.SocketConnection.Iqsoft_TestClass_13_GetBalance -->
+      <class name="com.testCases.SocketConnection.Iqsoft_TestClass_18_Bet">
+        <test-method signature="MessageBet_ValidatePositiveResponse()[pri:59, instance:com.testCases.SocketConnection.Iqsoft_TestClass_18_Bet@479f2dc2]" started-at="2024-08-07T13:13:24 AMT" name="MessageBet_ValidatePositiveResponse" description="Bet" depends-on-groups="SocketConnection" finished-at="2024-08-07T13:13:24 AMT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MessageBet_ValidatePositiveResponse -->
+      </class> <!-- com.testCases.SocketConnection.Iqsoft_TestClass_18_Bet -->
+      <class name="com.testCases.SocketConnection.Iqsoft_TestClass_16_GetDefaultBoards">
+        <test-method is-config="true" signature="MessageGetDefaultBoard()[pri:0, instance:com.testCases.SocketConnection.Iqsoft_TestClass_16_GetDefaultBoards@49a26d19]" started-at="2024-08-07T13:13:15 AMT" name="MessageGetDefaultBoard" finished-at="2024-08-07T13:13:15 AMT" duration-ms="157" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MessageGetDefaultBoard -->
+        <test-method signature="MessageDefaultBoard_ValidatePositiveResponse()[pri:15, instance:com.testCases.SocketConnection.Iqsoft_TestClass_16_GetDefaultBoards@49a26d19]" started-at="2024-08-07T13:13:15 AMT" name="MessageDefaultBoard_ValidatePositiveResponse" description="GetDefaultBoard" depends-on-groups="SocketConnection" finished-at="2024-08-07T13:13:15 AMT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MessageDefaultBoard_ValidatePositiveResponse -->
+      </class> <!-- com.testCases.SocketConnection.Iqsoft_TestClass_16_GetDefaultBoards -->
+      <class name="com.testCases.SocketConnection.Iqsoft_TestClass_17_CreateBoard">
+        <test-method is-config="true" signature="MessageCreateBoard()[pri:0, instance:com.testCases.SocketConnection.Iqsoft_TestClass_17_CreateBoard@4315e9af]" started-at="2024-08-07T13:13:22 AMT" name="MessageCreateBoard" finished-at="2024-08-07T13:13:22 AMT" duration-ms="378" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MessageCreateBoard -->
+        <test-method signature="MessageCreateBoard_ValidatePositiveResponse()[pri:49, instance:com.testCases.SocketConnection.Iqsoft_TestClass_17_CreateBoard@4315e9af]" started-at="2024-08-07T13:13:22 AMT" name="MessageCreateBoard_ValidatePositiveResponse" description="CreateBoard" depends-on-groups="SocketConnection" finished-at="2024-08-07T13:13:22 AMT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MessageCreateBoard_ValidatePositiveResponse -->
+      </class> <!-- com.testCases.SocketConnection.Iqsoft_TestClass_17_CreateBoard -->
+      <class name="com.testCases.SocketConnection.Iqsoft_TestClass_19_CashOut">
+        <test-method signature="MessageCashout_ValidatePositiveResponse()[pri:60, instance:com.testCases.SocketConnection.Iqsoft_TestClass_19_CashOut@dab48d3]" started-at="2024-08-07T13:13:24 AMT" name="MessageCashout_ValidatePositiveResponse" description="Cashout" depends-on-groups="SocketConnection" finished-at="2024-08-07T13:13:24 AMT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MessageCashout_ValidatePositiveResponse -->
+      </class> <!-- com.testCases.SocketConnection.Iqsoft_TestClass_19_CashOut -->
+      <class name="com.testCases.SocketConnection.Iqsoft_TestClass_11_SocketConnection">
+        <test-method is-config="true" signature="SocketConnection()[pri:0, instance:com.testCases.SocketConnection.Iqsoft_TestClass_11_SocketConnection@629adce]" started-at="2024-08-07T13:13:12 AMT" name="SocketConnection" finished-at="2024-08-07T13:13:14 AMT" duration-ms="1369" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SocketConnection -->
+        <test-method signature="SocketConnectionSportsBook_ValidatePositiveResponse()[pri:10, instance:com.testCases.SocketConnection.Iqsoft_TestClass_11_SocketConnection@629adce]" started-at="2024-08-07T13:13:14 AMT" name="SocketConnectionSportsBook_ValidatePositiveResponse" description="SocketConnection" depends-on-groups="GetProductUrl" finished-at="2024-08-07T13:13:14 AMT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SocketConnectionSportsBook_ValidatePositiveResponse -->
+      </class> <!-- com.testCases.SocketConnection.Iqsoft_TestClass_11_SocketConnection -->
+      <class name="com.testCases.SocketConnection.Iqsoft_TestClass_14_State">
+        <test-method is-config="true" signature="MessageState()[pri:0, instance:com.testCases.SocketConnection.Iqsoft_TestClass_14_State@5d1b9c3d]" started-at="2024-08-07T13:13:15 AMT" name="MessageState" finished-at="2024-08-07T13:13:15 AMT" duration-ms="219" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MessageState -->
+        <test-method signature="MessageState_ValidatePositiveResponse()[pri:14, instance:com.testCases.SocketConnection.Iqsoft_TestClass_14_State@5d1b9c3d]" started-at="2024-08-07T13:13:15 AMT" name="MessageState_ValidatePositiveResponse" description="State" depends-on-groups="SocketConnection" finished-at="2024-08-07T13:13:15 AMT" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MessageState_ValidatePositiveResponse -->
+      </class> <!-- com.testCases.SocketConnection.Iqsoft_TestClass_14_State -->
+      <class name="com.testCases.SocketConnection.Iqsoft_TestClass_18_Bet_Negative">
+        <test-method signature="MessageBet_Negative_001()[pri:50, instance:com.testCases.SocketConnection.Iqsoft_TestClass_18_Bet_Negative@2babf189]" started-at="2024-08-07T13:13:22 AMT" name="MessageBet_Negative_001" description="Bet Negative" depends-on-groups="SocketConnection" finished-at="2024-08-07T13:13:22 AMT" duration-ms="355" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MessageBet_Negative_001 -->
+        <test-method signature="MessageBet_Negative_003()[pri:51, instance:com.testCases.SocketConnection.Iqsoft_TestClass_18_Bet_Negative@2babf189]" started-at="2024-08-07T13:13:22 AMT" name="MessageBet_Negative_003" description="Bet Negative" depends-on-groups="SocketConnection" finished-at="2024-08-07T13:13:24 AMT" duration-ms="1606" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MessageBet_Negative_003 -->
+        <test-method signature="MessageBet_ValidatePositiveResponse()[pri:59, instance:com.testCases.SocketConnection.Iqsoft_TestClass_18_Bet_Negative@2babf189]" started-at="2024-08-07T13:13:24 AMT" name="MessageBet_ValidatePositiveResponse" description="Bet Negative" depends-on-groups="SocketConnection" finished-at="2024-08-07T13:13:24 AMT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MessageBet_ValidatePositiveResponse -->
+      </class> <!-- com.testCases.SocketConnection.Iqsoft_TestClass_18_Bet_Negative -->
+      <class name="com.testCases.SocketConnection.Iqsoft_TestClass_10_GetProductUrl">
+        <test-method is-config="true" signature="setupBeforeAll()[pri:0, instance:com.testCases.SocketConnection.Iqsoft_TestClass_10_GetProductUrl@35342d2f]" started-at="2024-08-07T13:12:48 AMT" name="setupBeforeAll" finished-at="2024-08-07T13:13:12 AMT" duration-ms="23596" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupBeforeAll -->
+        <test-method signature="GetProductUrl_Success()[pri:10, instance:com.testCases.SocketConnection.Iqsoft_TestClass_10_GetProductUrl@35342d2f]" started-at="2024-08-07T13:13:12 AMT" name="GetProductUrl_Success" description="GetProductUrl" finished-at="2024-08-07T13:13:12 AMT" duration-ms="46" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetProductUrl_Success -->
+        <test-method is-config="true" signature="Finish()[pri:0, instance:com.testCases.SocketConnection.Iqsoft_TestClass_10_GetProductUrl@35342d2f]" started-at="2024-08-07T13:13:24 AMT" name="Finish" finished-at="2024-08-07T13:13:24 AMT" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Finish -->
+      </class> <!-- com.testCases.SocketConnection.Iqsoft_TestClass_10_GetProductUrl -->
+      <class name="com.testCases.SocketConnection.Iqsoft_TestClass_15_Units">
+        <test-method is-config="true" signature="MessageUnits()[pri:0, instance:com.testCases.SocketConnection.Iqsoft_TestClass_15_Units@504e1599]" started-at="2024-08-07T13:13:15 AMT" name="MessageUnits" finished-at="2024-08-07T13:13:15 AMT" duration-ms="89" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MessageUnits -->
+        <test-method signature="MessageUnits_ValidatePositiveResponse()[pri:12, instance:com.testCases.SocketConnection.Iqsoft_TestClass_15_Units@504e1599]" started-at="2024-08-07T13:13:15 AMT" name="MessageUnits_ValidatePositiveResponse" description="Units" depends-on-groups="SocketConnection" finished-at="2024-08-07T13:13:15 AMT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MessageUnits_ValidatePositiveResponse -->
+      </class> <!-- com.testCases.SocketConnection.Iqsoft_TestClass_15_Units -->
+      <class name="com.testCases.SocketConnection.Iqsoft_TestClass_12_Authorization">
+        <test-method is-config="true" signature="MessageAuthorized()[pri:0, instance:com.testCases.SocketConnection.Iqsoft_TestClass_12_Authorization@6bf13698]" started-at="2024-08-07T13:13:14 AMT" name="MessageAuthorized" finished-at="2024-08-07T13:13:15 AMT" duration-ms="861" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MessageAuthorized -->
+        <test-method signature="MessageAuthorized_ValidatePositiveResponse()[pri:11, instance:com.testCases.SocketConnection.Iqsoft_TestClass_12_Authorization@6bf13698]" started-at="2024-08-07T13:13:15 AMT" name="MessageAuthorized_ValidatePositiveResponse" description="Authorization" depends-on-groups="SocketConnection" finished-at="2024-08-07T13:13:15 AMT" duration-ms="16" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MessageAuthorized_ValidatePositiveResponse -->
+      </class> <!-- com.testCases.SocketConnection.Iqsoft_TestClass_12_Authorization -->
+      <class name="com.testCases.SocketConnection.Iqsoft_TestClass_20_TicketHistory">
+        <test-method is-config="true" signature="MessageCTicketHistory()[pri:0, instance:com.testCases.SocketConnection.Iqsoft_TestClass_20_TicketHistory@58a2b4c]" started-at="2024-08-07T13:13:24 AMT" name="MessageCTicketHistory" finished-at="2024-08-07T13:13:24 AMT" duration-ms="201" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MessageCTicketHistory -->
+        <test-method signature="MessageCTicketHistory_ValidatePositiveResponse()[pri:60, instance:com.testCases.SocketConnection.Iqsoft_TestClass_20_TicketHistory@58a2b4c]" started-at="2024-08-07T13:13:24 AMT" name="MessageCTicketHistory_ValidatePositiveResponse" description="TicketHistory" depends-on-groups="SocketConnection" finished-at="2024-08-07T13:13:24 AMT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MessageCTicketHistory_ValidatePositiveResponse -->
+      </class> <!-- com.testCases.SocketConnection.Iqsoft_TestClass_20_TicketHistory -->
+      <class name="com.testCases.SocketConnection.Iqsoft_TestClass_17_CreateBoard_Negative">
+        <test-method signature="MessageBetBeforeCreateBoard_NegativeBet_001()[pri:43, instance:com.testCases.SocketConnection.Iqsoft_TestClass_17_CreateBoard_Negative@19058533]" started-at="2024-08-07T13:13:15 AMT" name="MessageBetBeforeCreateBoard_NegativeBet_001" description="CreateBoard Negative" depends-on-groups="SocketConnection" finished-at="2024-08-07T13:13:16 AMT" duration-ms="458" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MessageBetBeforeCreateBoard_NegativeBet_001 -->
+        <test-method signature="MessageCashoutBeforeCreateBoard_NegativeBet_001()[pri:43, instance:com.testCases.SocketConnection.Iqsoft_TestClass_17_CreateBoard_Negative@19058533]" started-at="2024-08-07T13:13:16 AMT" name="MessageCashoutBeforeCreateBoard_NegativeBet_001" description="CreateBoard Negative" depends-on-groups="SocketConnection" finished-at="2024-08-07T13:13:16 AMT" duration-ms="457" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MessageCashoutBeforeCreateBoard_NegativeBet_001 -->
+        <test-method signature="MessageCreateBoard_NegativeMinesCount_002()[pri:44, instance:com.testCases.SocketConnection.Iqsoft_TestClass_17_CreateBoard_Negative@19058533]" started-at="2024-08-07T13:13:16 AMT" name="MessageCreateBoard_NegativeMinesCount_002" description="CreateBoard Negative" depends-on-groups="SocketConnection" finished-at="2024-08-07T13:13:16 AMT" duration-ms="282" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MessageCreateBoard_NegativeMinesCount_002 -->
+        <test-method signature="MessageCreateBoard_NegativeMinesCount_003()[pri:44, instance:com.testCases.SocketConnection.Iqsoft_TestClass_17_CreateBoard_Negative@19058533]" started-at="2024-08-07T13:13:16 AMT" name="MessageCreateBoard_NegativeMinesCount_003" description="CreateBoard Negative" depends-on-groups="SocketConnection" finished-at="2024-08-07T13:13:17 AMT" duration-ms="257" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MessageCreateBoard_NegativeMinesCount_003 -->
+        <test-method signature="MessageCreateBoard_NegativeMinesCount_004()[pri:44, instance:com.testCases.SocketConnection.Iqsoft_TestClass_17_CreateBoard_Negative@19058533]" started-at="2024-08-07T13:13:17 AMT" name="MessageCreateBoard_NegativeMinesCount_004" description="CreateBoard Negative" depends-on-groups="SocketConnection" finished-at="2024-08-07T13:13:17 AMT" duration-ms="238" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MessageCreateBoard_NegativeMinesCount_004 -->
+        <test-method signature="MessageCreateBoard_NegativeBalance_005()[pri:45, instance:com.testCases.SocketConnection.Iqsoft_TestClass_17_CreateBoard_Negative@19058533]" started-at="2024-08-07T13:13:17 AMT" name="MessageCreateBoard_NegativeBalance_005" description="CreateBoard Negative" depends-on-groups="SocketConnection" finished-at="2024-08-07T13:13:17 AMT" duration-ms="294" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MessageCreateBoard_NegativeBalance_005 -->
+        <test-method signature="MessageCreateBoard_NegativeBalance_006()[pri:45, instance:com.testCases.SocketConnection.Iqsoft_TestClass_17_CreateBoard_Negative@19058533]" started-at="2024-08-07T13:13:17 AMT" name="MessageCreateBoard_NegativeBalance_006" description="CreateBoard Negative" depends-on-groups="SocketConnection" finished-at="2024-08-07T13:13:18 AMT" duration-ms="290" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MessageCreateBoard_NegativeBalance_006 -->
+        <test-method signature="MessageCreateBoard_NegativeWidth_007()[pri:46, instance:com.testCases.SocketConnection.Iqsoft_TestClass_17_CreateBoard_Negative@19058533]" started-at="2024-08-07T13:13:18 AMT" name="MessageCreateBoard_NegativeWidth_007" description="CreateBoard Negative" depends-on-groups="SocketConnection" finished-at="2024-08-07T13:13:18 AMT" duration-ms="268" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MessageCreateBoard_NegativeWidth_007 -->
+        <test-method signature="MessageCreateBoard_NegativeWidth_008()[pri:46, instance:com.testCases.SocketConnection.Iqsoft_TestClass_17_CreateBoard_Negative@19058533]" started-at="2024-08-07T13:13:18 AMT" name="MessageCreateBoard_NegativeWidth_008" description="CreateBoard Negative" depends-on-groups="SocketConnection" finished-at="2024-08-07T13:13:18 AMT" duration-ms="603" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MessageCreateBoard_NegativeWidth_008 -->
+        <test-method signature="MessageCreateBoard_NegativeWidth_009()[pri:46, instance:com.testCases.SocketConnection.Iqsoft_TestClass_17_CreateBoard_Negative@19058533]" started-at="2024-08-07T13:13:18 AMT" name="MessageCreateBoard_NegativeWidth_009" description="CreateBoard Negative" depends-on-groups="SocketConnection" finished-at="2024-08-07T13:13:19 AMT" duration-ms="330" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MessageCreateBoard_NegativeWidth_009 -->
+        <test-method signature="MessageCreateBoard_NegativeBetType_011()[pri:47, instance:com.testCases.SocketConnection.Iqsoft_TestClass_17_CreateBoard_Negative@19058533]" started-at="2024-08-07T13:13:19 AMT" name="MessageCreateBoard_NegativeBetType_011" description="CreateBoard Negative" depends-on-groups="SocketConnection" finished-at="2024-08-07T13:13:19 AMT" duration-ms="403" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MessageCreateBoard_NegativeBetType_011 -->
+        <test-method signature="MessageCreateBoard_NegativeHeight_010()[pri:47, instance:com.testCases.SocketConnection.Iqsoft_TestClass_17_CreateBoard_Negative@19058533]" started-at="2024-08-07T13:13:19 AMT" name="MessageCreateBoard_NegativeHeight_010" description="CreateBoard Negative" depends-on-groups="SocketConnection" finished-at="2024-08-07T13:13:19 AMT" duration-ms="167" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MessageCreateBoard_NegativeHeight_010 -->
+        <test-method signature="MessageCreateBoard_NegativeSecondBoard_012()[pri:48, instance:com.testCases.SocketConnection.Iqsoft_TestClass_17_CreateBoard_Negative@19058533]" started-at="2024-08-07T13:13:19 AMT" name="MessageCreateBoard_NegativeSecondBoard_012" description="CreateBoard Negative" depends-on-groups="SocketConnection" finished-at="2024-08-07T13:13:22 AMT" duration-ms="2273" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MessageCreateBoard_NegativeSecondBoard_012 -->
+      </class> <!-- com.testCases.SocketConnection.Iqsoft_TestClass_17_CreateBoard_Negative -->
     </test> <!-- API Regression Testing -->
   </suite> <!-- Iqsoft API Regression Testing -->
 </testng-results>

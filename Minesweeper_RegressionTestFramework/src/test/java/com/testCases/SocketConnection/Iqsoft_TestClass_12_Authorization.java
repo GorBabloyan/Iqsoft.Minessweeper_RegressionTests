@@ -15,7 +15,7 @@ public class Iqsoft_TestClass_12_Authorization extends Iqsoft_001_BaseTest {
     }
 
     @BeforeClass
-    public void setUp() throws InterruptedException {
+    public void MessageAuthorized() throws InterruptedException {
         client.sendMessage(sendSocketMessageWithoutArgument("basehub", "Authorized", I));
         iqsoft300_socketMessage_authorized_response = (Iqsoft300_SocketMessage_Authorized_Response)
                 mapReceivedMessage(Iqsoft300_SocketMessage_Authorized_Response.class, String.valueOf(I));

@@ -6,7 +6,7 @@ import io.qameta.allure.*;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-@Test(groups = { "SocketMessages" },dependsOnGroups = {"SocketConnection"})
+@Test(groups = {"SocketMessages"}, dependsOnGroups = {"SocketConnection"})
 
 public class Iqsoft_TestClass_19_CashOut extends Iqsoft_001_BaseTest {
 
@@ -19,24 +19,14 @@ public class Iqsoft_TestClass_19_CashOut extends Iqsoft_001_BaseTest {
     @Description("Verify Socket Cashout Message")
     @Severity(SeverityLevel.BLOCKER)
     public void MessageCashout_ValidatePositiveResponse() throws InterruptedException {
-        if (iqsoft306_socketMessage_bet_response.getR().getResponseObject().getWinAmount() != 0) {
 
-            client.sendMessage(sendSocketMessageCashout("playerhub", "CashOut", I));
-            iqsoft307_socketMessage_cashOut_response = (Iqsoft307_SocketMessage_CashOut_Response)
-                    mapReceivedMessage(Iqsoft307_SocketMessage_CashOut_Response.class, String.valueOf(I));
-            I++;
+        client.sendMessage(sendSocketMessageCashout("playerhub", "CashOut", I));
+        iqsoft307_socketMessage_cashOut_response = (Iqsoft307_SocketMessage_CashOut_Response)
+                mapReceivedMessage(Iqsoft307_SocketMessage_CashOut_Response.class, String.valueOf(I));
+        I++;
 
-            Assert.assertEquals( iqsoft307_socketMessage_cashOut_response.getR().getResponseCode(),0,
-                    "ResponseCode: " + iqsoft307_socketMessage_cashOut_response.getR().getResponseCode());
-
-            client.sendMessage(sendSocketMessageCashout("playerhub", "CashOut", I));
-            iqsoft307_socketMessage_cashOut_response = (Iqsoft307_SocketMessage_CashOut_Response)
-                    mapReceivedMessage(Iqsoft307_SocketMessage_CashOut_Response.class, String.valueOf(I));
-            I++;
-
-            Assert.assertEquals( iqsoft307_socketMessage_cashOut_response.getR().getResponseCode(),0,
-                    "ResponseCode: " + iqsoft307_socketMessage_cashOut_response.getR().getResponseCode());
-        }
+        Assert.assertEquals(iqsoft307_socketMessage_cashOut_response.getR().getResponseCode(), 0,
+                "ResponseCode: " + iqsoft307_socketMessage_cashOut_response.getR().getResponseCode());
     }
 
 

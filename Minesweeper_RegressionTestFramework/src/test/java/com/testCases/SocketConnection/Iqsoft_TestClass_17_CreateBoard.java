@@ -15,8 +15,7 @@ public class Iqsoft_TestClass_17_CreateBoard extends Iqsoft_001_BaseTest {
     }
 
     @BeforeClass
-    public void setUp() throws InterruptedException {
-        System.out.println(">>>>>>>>>>>>>>>>>>" + iqsoft302_socketMessage_balance_response.getR().getResponseObject().getBalance());
+    public void MessageCreateBoard() throws InterruptedException {
         client.sendMessage(sendSocketMessageCreateBoard("playerhub", "CreateBoard", I,
                 2,10,1,1,110,6));
         iqsoft305_socketMessage_createBoard_response = (Iqsoft305_SocketMessage_CreateBoard_Response)

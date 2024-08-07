@@ -20,7 +20,7 @@ public class Iqsoft_TestClass_16_GetDefaultBoards extends Iqsoft_001_BaseTest {
 
 
     @BeforeClass
-    public void setUp() throws InterruptedException {
+    public void MessageGetDefaultBoard() throws InterruptedException {
         List<Integer> list = new ArrayList<>();
         list.add(73);
         list.add(73);

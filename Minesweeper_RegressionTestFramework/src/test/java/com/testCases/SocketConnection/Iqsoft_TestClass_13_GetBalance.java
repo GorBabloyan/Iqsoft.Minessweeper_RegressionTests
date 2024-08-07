@@ -16,7 +16,7 @@ public class Iqsoft_TestClass_13_GetBalance extends Iqsoft_001_BaseTest {
 
 
     @BeforeClass
-    public void setUp() throws InterruptedException {
+    public void MessageBalance() throws InterruptedException {
         client.sendMessage(sendSocketMessageWithoutArgument("playerhub", "Balance", I));
         iqsoft302_socketMessage_balance_response = (Iqsoft302_SocketMessage_Balance_Response)
                 mapReceivedMessage(Iqsoft302_SocketMessage_Balance_Response.class, String.valueOf(I));

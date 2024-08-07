@@ -57,9 +57,7 @@
                 <artifactId>allure-maven</artifactId>
                 <version>2.12.0</version>
                 <configuration>
-                    <!--                    <resultsDirectory>${project.build.directory}/allure-results</resultsDirectory>-->
                     <resultsDirectory>${project.basedir}/allure-results</resultsDirectory>
-
                 </configuration>
             </plugin>
         </plugins>
@@ -112,12 +110,6 @@
             <version>2.7.1</version>
         </dependency>
 
-        <!--        <dependency>-->
-        <!--            <groupId>ru.yandex.qatools.ashot</groupId>-->
-        <!--            <artifactId>ashot</artifactId>-->
-        <!--            <version>1.5.4</version>-->
-        <!--        </dependency>-->
-
         <dependency>
             <groupId>org.hamcrest</groupId>
             <artifactId>hamcrest-all</artifactId>
@@ -141,7 +133,7 @@
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
-            <version>7.6.1</version>
+            <version>7.9.0</version>
             <scope>test</scope>
         </dependency>
 
@@ -165,10 +157,15 @@
             <version>2.27.0</version>
         </dependency>
 
+<!--        <dependency>-->
+<!--            <groupId>io.qameta.allure</groupId>-->
+<!--            <artifactId>allure-maven</artifactId>-->
+<!--            <version>2.12.0</version>-->
+<!--        </dependency>-->
         <dependency>
             <groupId>io.qameta.allure</groupId>
-            <artifactId>allure-maven</artifactId>
-            <version>2.12.0</version>
+            <artifactId>allure-java-commons</artifactId>
+            <version>2.27.0</version>
         </dependency>
 
 
@@ -204,11 +201,6 @@
             <scope>provided</scope>
         </dependency>
 
-        <dependency>
-            <groupId>org.java-websocket</groupId>
-            <artifactId>Java-WebSocket</artifactId>
-            <version>1.5.6</version>
-        </dependency>
 
         <dependency>
             <groupId>org.glassfish.tyrus.bundles</groupId>
@@ -229,26 +221,12 @@
         </dependency>
 
 
-
-
-        <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>javax.servlet-api</artifactId>
-            <version>4.0.1</version>
-            <scope>provided</scope>
-        </dependency>
-
         <dependency>
             <groupId>org.java-websocket</groupId>
             <artifactId>Java-WebSocket</artifactId>
             <version>1.5.6</version>
         </dependency>
 
-        <dependency>
-            <groupId>org.glassfish.tyrus.bundles</groupId>
-            <artifactId>tyrus-standalone-client</artifactId>
-            <version>2.1.4</version>
-        </dependency>
         <dependency>
             <groupId>net.lightbody.bmp</groupId>
             <artifactId>browsermob-core</artifactId>

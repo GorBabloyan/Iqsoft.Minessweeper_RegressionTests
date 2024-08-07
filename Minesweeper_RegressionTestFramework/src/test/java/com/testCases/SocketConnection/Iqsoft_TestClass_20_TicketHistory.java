@@ -15,7 +15,7 @@ public class Iqsoft_TestClass_20_TicketHistory extends Iqsoft_001_BaseTest {
     }
 
     @BeforeClass
-    public void setUp() throws InterruptedException {
+    public void MessageCTicketHistory() throws InterruptedException {
 
         client.sendMessage(sendSocketMessageTicketHistory("playerhub", "MinesweeperTicketsHistory", I));
         iqsoft308_socketMessage_ticketsHistory_response = (Iqsoft308_SocketMessage_TicketsHistory_Response)

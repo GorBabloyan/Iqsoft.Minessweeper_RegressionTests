@@ -1,33 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="2.031" tests="0" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="38.299" tests="27" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.1.3\plugins\maven\lib\maven3\boot\plexus-classworlds-2.6.0.jar;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.1.3\plugins\maven\lib\maven3\boot\plexus-classworlds.license"/>
+    <property name="java.class.path" value="C:\apache-maven-3.8.6-bin\apache-maven-3.8.6\boot\plexus-classworlds-2.6.0.jar"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
     <property name="java.vendor.url" value="https://java.oracle.com/"/>
     <property name="user.timezone" value="Asia/Yerevan"/>
-    <property name="maven.conf" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.1.3\plugins\maven\lib\maven3/conf"/>
+    <property name="maven.conf" value="C:\apache-maven-3.8.6-bin\apache-maven-3.8.6/conf"/>
     <property name="java.vm.specification.version" value="17"/>
     <property name="os.name" value="Windows 10"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17.0.2\bin"/>
-    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2022.1.3 install"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean install"/>
     <property name="jdk.debug" value="release"/>
-    <property name="maven.home" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.1.3\plugins\maven\lib\maven3"/>
+    <property name="maven.home" value="C:\apache-maven-3.8.6-bin\apache-maven-3.8.6"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\Nerses Khachatryan"/>
     <property name="user.language" value="en"/>
+    <property name="sun.stderr.encoding" value="cp437"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="java.version.date" value="2022-01-18"/>
     <property name="java.home" value="C:\Program Files\Java\jdk-17.0.2"/>
     <property name="file.separator" value="\"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="line.separator" value="&#10;"/>
+    <property name="sun.stdout.encoding" value="cp437"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="user.script" value=""/>
@@ -37,17 +39,15 @@
     <property name="path.separator" value=";"/>
     <property name="os.version" value="10.0"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
-    <property name="file.encoding" value="UTF-8"/>
+    <property name="file.encoding" value="Cp1252"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
-    <property name="maven.ext.class.path" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.1.3\plugins\maven\lib\maven-event-listener.jar"/>
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
     <property name="java.io.tmpdir" value="C:\Users\NERSES~1\AppData\Local\Temp\"/>
-    <property name="idea.version" value="2022.1.3"/>
     <property name="java.version" value="17.0.2"/>
-    <property name="user.dir" value="C:\Users\Nerses Khachatryan\Desktop\Repositries\MyRepository\ProjectsIqsoftSingly\Minesweeper_RegressionTestFramework"/>
+    <property name="user.dir" value="C:\Users\Nerses Khachatryan\Desktop\Repositries\MyRepository\ProjectsIqsoftSingly\Iqsoft.Minessweeper_RegressionTests\Minesweeper_RegressionTestFramework"/>
     <property name="os.arch" value="amd64"/>
-    <property name="maven.multiModuleProjectDirectory" value="C:\Users\Nerses Khachatryan\Desktop\Repositries\MyRepository\ProjectsIqsoftSingly\Minesweeper_RegressionTestFramework"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\Nerses Khachatryan\Desktop\Repositries\MyRepository\ProjectsIqsoftSingly\Iqsoft.Minessweeper_RegressionTests\Minesweeper_RegressionTestFramework"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="native.encoding" value="Cp1252"/>
@@ -55,8 +55,36 @@
     <property name="java.vm.info" value="mixed mode, sharing"/>
     <property name="java.vendor" value="Oracle Corporation"/>
     <property name="java.vm.version" value="17.0.2+8-LTS-86"/>
-    <property name="classworlds.conf" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.1.3\plugins\maven\lib\maven3\bin\m2.conf"/>
+    <property name="classworlds.conf" value="C:\apache-maven-3.8.6-bin\apache-maven-3.8.6\bin\m2.conf"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="library.jansi.path" value="C:\apache-maven-3.8.6-bin\apache-maven-3.8.6\lib\jansi-native"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
+  <testcase name="GetProductUrl_Success" classname="com.testCases.SocketConnection.Iqsoft_TestClass_10_GetProductUrl" time="0.169"/>
+  <testcase name="SocketConnectionSportsBook_ValidatePositiveResponse" classname="com.testCases.SocketConnection.Iqsoft_TestClass_11_SocketConnection" time="0.004"/>
+  <testcase name="MessageAuthorized_ValidatePositiveResponse" classname="com.testCases.SocketConnection.Iqsoft_TestClass_12_Authorization" time="0.02"/>
+  <testcase name="MessageUnits_ValidatePositiveResponse" classname="com.testCases.SocketConnection.Iqsoft_TestClass_15_Units" time="0.004"/>
+  <testcase name="MessageBalance_ValidatePositiveResponse" classname="com.testCases.SocketConnection.Iqsoft_TestClass_13_GetBalance" time="0"/>
+  <testcase name="MessageState_ValidatePositiveResponse" classname="com.testCases.SocketConnection.Iqsoft_TestClass_14_State" time="0.005"/>
+  <testcase name="MessageDefaultBoard_ValidatePositiveResponse" classname="com.testCases.SocketConnection.Iqsoft_TestClass_16_GetDefaultBoards" time="0.004"/>
+  <testcase name="MessageBetBeforeCreateBoard_NegativeBet_001" classname="com.testCases.SocketConnection.Iqsoft_TestClass_17_CreateBoard_Negative" time="0.46"/>
+  <testcase name="MessageCashoutBeforeCreateBoard_NegativeBet_001" classname="com.testCases.SocketConnection.Iqsoft_TestClass_17_CreateBoard_Negative" time="0.463"/>
+  <testcase name="MessageCreateBoard_NegativeMinesCount_002" classname="com.testCases.SocketConnection.Iqsoft_TestClass_17_CreateBoard_Negative" time="0.279"/>
+  <testcase name="MessageCreateBoard_NegativeMinesCount_003" classname="com.testCases.SocketConnection.Iqsoft_TestClass_17_CreateBoard_Negative" time="0.259"/>
+  <testcase name="MessageCreateBoard_NegativeMinesCount_004" classname="com.testCases.SocketConnection.Iqsoft_TestClass_17_CreateBoard_Negative" time="0.242"/>
+  <testcase name="MessageCreateBoard_NegativeBalance_005" classname="com.testCases.SocketConnection.Iqsoft_TestClass_17_CreateBoard_Negative" time="0.314"/>
+  <testcase name="MessageCreateBoard_NegativeBalance_006" classname="com.testCases.SocketConnection.Iqsoft_TestClass_17_CreateBoard_Negative" time="0.286"/>
+  <testcase name="MessageCreateBoard_NegativeWidth_007" classname="com.testCases.SocketConnection.Iqsoft_TestClass_17_CreateBoard_Negative" time="0.259"/>
+  <testcase name="MessageCreateBoard_NegativeWidth_008" classname="com.testCases.SocketConnection.Iqsoft_TestClass_17_CreateBoard_Negative" time="0.62"/>
+  <testcase name="MessageCreateBoard_NegativeWidth_009" classname="com.testCases.SocketConnection.Iqsoft_TestClass_17_CreateBoard_Negative" time="0.34"/>
+  <testcase name="MessageCreateBoard_NegativeBetType_011" classname="com.testCases.SocketConnection.Iqsoft_TestClass_17_CreateBoard_Negative" time="0.403"/>
+  <testcase name="MessageCreateBoard_NegativeHeight_010" classname="com.testCases.SocketConnection.Iqsoft_TestClass_17_CreateBoard_Negative" time="0.154"/>
+  <testcase name="MessageCreateBoard_NegativeSecondBoard_012" classname="com.testCases.SocketConnection.Iqsoft_TestClass_17_CreateBoard_Negative" time="2.28"/>
+  <testcase name="MessageCreateBoard_ValidatePositiveResponse" classname="com.testCases.SocketConnection.Iqsoft_TestClass_17_CreateBoard" time="0.003"/>
+  <testcase name="MessageBet_Negative_001" classname="com.testCases.SocketConnection.Iqsoft_TestClass_18_Bet_Negative" time="0.361"/>
+  <testcase name="MessageBet_Negative_003" classname="com.testCases.SocketConnection.Iqsoft_TestClass_18_Bet_Negative" time="1.605"/>
+  <testcase name="MessageBet_ValidatePositiveResponse" classname="com.testCases.SocketConnection.Iqsoft_TestClass_18_Bet_Negative" time="0.003"/>
+  <testcase name="MessageBet_ValidatePositiveResponse" classname="com.testCases.SocketConnection.Iqsoft_TestClass_18_Bet" time="0.003"/>
+  <testcase name="MessageCashout_ValidatePositiveResponse" classname="com.testCases.SocketConnection.Iqsoft_TestClass_19_CashOut" time="0.002"/>
+  <testcase name="MessageCTicketHistory_ValidatePositiveResponse" classname="com.testCases.SocketConnection.Iqsoft_TestClass_20_TicketHistory" time="0.003"/>
 </testsuite>

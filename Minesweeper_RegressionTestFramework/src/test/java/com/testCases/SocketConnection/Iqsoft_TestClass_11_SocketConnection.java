@@ -15,7 +15,7 @@ public class Iqsoft_TestClass_11_SocketConnection extends Iqsoft_001_BaseTest {
     }
 
     @BeforeClass
-    public void setUp() throws InterruptedException {
+    public void SocketConnection() throws InterruptedException {
         driver.quit();
         socketConnectionLoggedInVirtual();
     }

@@ -15,7 +15,7 @@ public class Iqsoft_TestClass_15_Units extends Iqsoft_001_BaseTest {
     }
 
     @BeforeClass
-    public void setUp() throws InterruptedException {
+    public void MessageUnits() throws InterruptedException {
 
         client.sendMessage(sendSocketMessageWithoutArgument("websitehub", "Units", I));
         iqsoft301_socketMessage_units_response = (Iqsoft301_SocketMessage_Units_Response)

@@ -6,16 +6,30 @@ import com.Models.Iqsoft003_BackendLoggedIn.SocketMessages.Response.Iqsoft307_So
 import com.testCases.Iqsoft_001_BaseTest;
 import io.qameta.allure.*;
 import org.testng.Assert;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-@Test(groups = { "SocketMessages" },dependsOnGroups = {"SocketConnection"})
+@Test(groups = {"SocketMessages"}, dependsOnGroups = {"SocketConnection"})
 
 public class Iqsoft_TestClass_18_Bet_Negative extends Iqsoft_001_BaseTest {
 
     public Iqsoft_TestClass_18_Bet_Negative() {
     }
 
+    @BeforeMethod
+    public void MessageBet_Negative() throws InterruptedException {
+        client.sendMessage(sendSocketMessageCashout("playerhub", "CashOut", I));
+        iqsoft307_socketMessage_cashOut_response = (Iqsoft307_SocketMessage_CashOut_Response)
+                mapReceivedMessage(Iqsoft307_SocketMessage_CashOut_Response.class, String.valueOf(I));
+        I++;
 
+        client.sendMessage(sendSocketMessageCreateBoard("playerhub", "CreateBoard", I,
+                2, 10, 1, 1, 110, 6));
+        iqsoft305_socketMessage_createBoard_response = (Iqsoft305_SocketMessage_CreateBoard_Response)
+                mapReceivedMessage(Iqsoft305_SocketMessage_CreateBoard_Response.class, String.valueOf(I));
+        I++;
+    }
 
 //    @Test(description = "Bet Negative", priority = 50)
 //    @Feature("Bet_Message")
@@ -83,108 +97,55 @@ public class Iqsoft_TestClass_18_Bet_Negative extends Iqsoft_001_BaseTest {
     @Test(description = "Bet Negative", priority = 50)
     @Feature("Bet")
     @Story("Bet_Message")
-    @Description("Verify Socket Bet Message NegativeTest")
+    @Description("Verify Socket Bet Message NegativeTest Bet on row 5 at once")
     @Severity(SeverityLevel.BLOCKER)
     public void MessageBet_Negative_001() throws InterruptedException {
-        System.out.println(">>>>>>>>>>>>>>>>>>" + iqsoft302_socketMessage_balance_response.getR().getResponseObject().getBalance());
-        client.sendMessage(sendSocketMessageBet("playerhub", "RevealCell", I,5,0));
+
+
+        client.sendMessage(sendSocketMessageBet("playerhub", "RevealCell", I, 5, 0));
         iqsoft306_socketMessage_bet_response = (Iqsoft306_SocketMessage_Bet_Response)
                 mapReceivedMessage(Iqsoft306_SocketMessage_Bet_Response.class, String.valueOf(I));
         I++;
 
-        System.out.println(">>>>>>>>>>>>>>>>>>" + iqsoft302_socketMessage_balance_response.getR().getResponseObject().getBalance());
-        Assert.assertNotEquals( iqsoft306_socketMessage_bet_response.getR().getResponseCode(),0,
+        Assert.assertNotEquals(iqsoft306_socketMessage_bet_response.getR().getResponseCode(), 0,
                 "ResponseCode: " + iqsoft306_socketMessage_bet_response.getR().getResponseCode());
     }
 
-//    @Test(description = "Socket", priority = 50)
-//    @Feature("SocketConnection")
-//    @Story("Bet")
-//    @Description("Verify Socket Bet Message")
+//    @Test(description = "Bet Negative", priority = 51)
+//    @Feature("Bet")
+//    @Story("Bet_Message")
+//    @Description("Verify Socket Bet Message NegativeTest Bet without mentioning row/column")
 //    @Severity(SeverityLevel.BLOCKER)
 //    public void MessageBet_Negative_002() throws InterruptedException {
-//        System.out.println(">>>>>>>>>>>>>>>>>>" + iqsoft302_socketMessage_balance_response.getR().getResponseObject().getBalance());
-//        client.sendMessage("{\"H\":\"playerhub\",\"M\":\"RevealCell\",\"A\":[],\"I\":30}");
+//        client.sendMessage("{\"H\":\"playerhub\",\"M\":\"RevealCell\",\"A\":[],\"I\":" + I + "}");
 //        iqsoft306_socketMessage_bet_response = (Iqsoft306_SocketMessage_Bet_Response)
 //                mapReceivedMessage(Iqsoft306_SocketMessage_Bet_Response.class, String.valueOf(I));
 //        I++;
 //
-//        System.out.println(">>>>>>>>>>>>>>>>>>" + iqsoft302_socketMessage_balance_response.getR().getResponseObject().getBalance());
-//        Assert.assertNotEquals( iqsoft306_socketMessage_bet_response.getR().getResponseCode(),0,
+//        Assert.assertNotEquals(iqsoft306_socketMessage_bet_response.getR().getResponseCode(), 0,
 //                "ResponseCode: " + iqsoft306_socketMessage_bet_response.getR().getResponseCode());
 //    }
 
 
-
-    @Test(description = "Bet Negative" , priority = 51)
+    @Test(description = "Bet Negative", priority = 52)
     @Feature("Bet")
     @Story("Bet_Message")
-    @Description("Verify Socket Bet Message NegativeTest")
+    @Description("Verify Socket Bet Message NegativeTest Bet on same row second time")
     @Severity(SeverityLevel.BLOCKER)
     public void MessageBet_Negative_003() throws InterruptedException {
-        System.out.println(">>>>>>>>>>>>>>>>>>" + iqsoft302_socketMessage_balance_response.getR().getResponseObject().getBalance());
-        client.sendMessage(sendSocketMessageBet("playerhub", "RevealCell", I,0,0));
+
+        client.sendMessage(sendSocketMessageBet("playerhub", "RevealCell", I, 0, 0));
         iqsoft306_socketMessage_bet_response = (Iqsoft306_SocketMessage_Bet_Response)
                 mapReceivedMessage(Iqsoft306_SocketMessage_Bet_Response.class, String.valueOf(I));
         I++;
-        client.sendMessage(sendSocketMessageBet("playerhub", "RevealCell", I,0,0));
+        client.sendMessage(sendSocketMessageBet("playerhub", "RevealCell", I, 0, 1));
         iqsoft306_socketMessage_bet_response = (Iqsoft306_SocketMessage_Bet_Response)
                 mapReceivedMessage(Iqsoft306_SocketMessage_Bet_Response.class, String.valueOf(I));
         I++;
-        client.sendMessage(sendSocketMessageBet("playerhub", "RevealCell", I,0,0));
-        iqsoft306_socketMessage_bet_response = (Iqsoft306_SocketMessage_Bet_Response)
-                mapReceivedMessage(Iqsoft306_SocketMessage_Bet_Response.class, String.valueOf(I));
-        I++;
-//        if (iqsoft306_socketMessage_bet_response.getR().getResponseObject().getWinAmount() != 0) {
-            client.sendMessage(sendSocketMessageCashout("playerhub", "CashOut", I));
-            iqsoft307_socketMessage_cashOut_response = (Iqsoft307_SocketMessage_CashOut_Response)
-                    mapReceivedMessage(Iqsoft307_SocketMessage_CashOut_Response.class, String.valueOf(I));
-            I++;
-//            Assert.assertEquals( iqsoft307_socketMessage_cashOut_response.getR().getResponseCode(),0,
-//                    "ResponseCode: " + iqsoft307_socketMessage_cashOut_response.getR().getResponseCode());
-//        }
-        System.out.println(">>>>>>>>>>>>>>>>>>" + iqsoft302_socketMessage_balance_response.getR().getResponseObject().getBalance());
-        Assert.assertNotEquals( iqsoft306_socketMessage_bet_response.getR().getResponseCode(),0,
+
+        Assert.assertNotEquals(iqsoft306_socketMessage_bet_response.getR().getResponseCode(), 0,
                 "ResponseCode: " + iqsoft306_socketMessage_bet_response.getR().getResponseCode());
     }
-
-
-
-
-
-
-
-    @Test(description = "Bet Negative", priority = 59)
-    @Feature("Bet")
-    @Story("Bet_Message")
-    @Description("Verify Socket Bet Message")
-    @Severity(SeverityLevel.BLOCKER)
-    public void MessageBet_ValidatePositiveResponse() throws InterruptedException {
-        System.out.println(">>>>>>>>>>>>>>>>>>" + iqsoft302_socketMessage_balance_response.getR().getResponseObject().getBalance());
-
-
-        while (iqsoft306_socketMessage_bet_response.getR().getResponseObject().getWinAmount() != 0) {
-
-            client.sendMessage(sendSocketMessageCreateBoard("playerhub", "CreateBoard", I,
-                    2, 10, 1, 1, 110, 6));
-            iqsoft305_socketMessage_createBoard_response = (Iqsoft305_SocketMessage_CreateBoard_Response)
-                    mapReceivedMessage(Iqsoft305_SocketMessage_CreateBoard_Response.class, String.valueOf(I));
-            I++;
-
-
-            client.sendMessage(sendSocketMessageBet("playerhub", "RevealCell", I, 0, 0));
-            iqsoft306_socketMessage_bet_response = (Iqsoft306_SocketMessage_Bet_Response)
-                    mapReceivedMessage(Iqsoft306_SocketMessage_Bet_Response.class, String.valueOf(I));
-            I++;
-            System.out.println(">>>>>>>>>>>>>>>>>>" + iqsoft302_socketMessage_balance_response.getR().getResponseObject().getBalance());
-
-            Assert.assertEquals(iqsoft306_socketMessage_bet_response.getR().getResponseCode(), 0,
-                    "ResponseCode: " + iqsoft306_socketMessage_bet_response.getR().getResponseCode());
-        }
-    }
-
-
-
 
 
 }
