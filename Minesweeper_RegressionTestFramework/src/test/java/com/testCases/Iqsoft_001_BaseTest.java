@@ -71,15 +71,23 @@ public class Iqsoft_001_BaseTest extends Iqsoft_000_BasePage {
 
     @AfterSuite
     public void Finish() {
-        if (driver != null) {
-            driver.quit();
-        }
+
         try {
             if (client!=null){
                 client.closeBlocking();
                 client.close();
             }
-        } catch (InterruptedException e) {
+        } catch (InterruptedException e1) {
+
+            try{
+            if (driver != null) {
+                driver.close();
+                driver.quit();
+            }
+        }
+        catch(Exception e2){
+
+        }
 
         }
         Iqsoft_001_BasePage.logger.info("Browser closed");
